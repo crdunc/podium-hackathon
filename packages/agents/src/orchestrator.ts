@@ -19,7 +19,7 @@ import { createRun, emitEvent } from './utils/events';
 import type { ScraperSource } from './scrapers';
 
 const AGENT_NAME = 'Orchestrator';
-const MAX_ITERATIONS = 15;
+const DEFAULT_MAX_STEPS = 15;
 const CLAUDE_API_TIMEOUT_MS = 60_000; // 60s per Claude call
 const TOOL_TIMEOUT_MS = 120_000; // 120s per tool execution
 
@@ -37,6 +37,7 @@ export interface OrchestratorOptions {
   googleApiKey?: string;
   sources?: ScraperSource[];
   model?: string;
+  maxSteps?: number;
 }
 
 const SYSTEM_PROMPT = `You are Lead Hunter, an autonomous lead generation system for local trade businesses (HVAC, Electrical, Plumbing, Lawn Care, Roofing, Painting, etc.).
@@ -70,6 +71,7 @@ export async function runOrchestrator(options: OrchestratorOptions) {
     googleApiKey = process.env.GOOGLE_PLACES_API_KEY,
     sources,
     model = 'claude-sonnet-4-6',
+    maxSteps = DEFAULT_MAX_STEPS,
   } = options;
 
   const client = new Anthropic();
@@ -93,7 +95,7 @@ export async function runOrchestrator(options: OrchestratorOptions) {
   log('pipeline', AGENT_NAME, `Google API: ${googleApiKey ? 'YES' : 'NO'}`);
 
   // Create a tracked run for the dashboard
-  const runId = createRun(task, model, MAX_ITERATIONS);
+  const runId = createRun(task, model, maxSteps);
   emitEvent(runId, 'run_started', `Starting pipeline: ${task}`, { agent: AGENT_NAME });
 
   // Initialize conversation with the user's task
@@ -102,11 +104,11 @@ export async function runOrchestrator(options: OrchestratorOptions) {
   ];
 
   // ── ReAct Loop ──────────────────────────────────────────────
-  for (let i = 0; i < MAX_ITERATIONS; i++) {
-    log('info', AGENT_NAME, `Step ${i + 1}/${MAX_ITERATIONS}`);
-    emitEvent(runId, 'step_started', `Step ${i + 1} of ${MAX_ITERATIONS}`, {
+  for (let i = 0; i < maxSteps; i++) {
+    log('info', AGENT_NAME, `Step ${i + 1}/${maxSteps}`);
+    emitEvent(runId, 'step_started', `Step ${i + 1} of ${maxSteps}`, {
       step: i + 1,
-      maxSteps: MAX_ITERATIONS,
+      maxSteps: maxSteps,
       agent: AGENT_NAME,
     });
 
@@ -226,10 +228,10 @@ export async function runOrchestrator(options: OrchestratorOptions) {
     messages.push({ role: 'user', content: toolResults });
   }
 
-  log('warn', AGENT_NAME, `Hit max iterations (${MAX_ITERATIONS})`);
-  emitEvent(runId, 'run_completed', `Reached maximum iterations (${MAX_ITERATIONS})`, {
-    step: MAX_ITERATIONS,
+  log('warn', AGENT_NAME, `Hit max iterations (${maxSteps})`);
+  emitEvent(runId, 'run_completed', `Reached maximum iterations (${maxSteps})`, {
+    step: maxSteps,
     agent: AGENT_NAME,
   });
-  return { message: 'Reached maximum iterations', steps: MAX_ITERATIONS };
+  return { message: 'Reached maximum iterations', steps: maxSteps };
 }
