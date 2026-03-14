@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "plumbing in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 881-7189",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:00.661043+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:00.661043+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJPR1yBgV-VIcRx3VDCaT-wz8",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "electrical in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 787-1865",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:01.951604+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:01.951604+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJF3fFKVeHVIcR2EAJH7-26CQ",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "electrical in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 753-0343",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:01.951649+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:01.951649+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJnVxtOTCAU4cRj5FzGbJdgyY",
@@ -75,7 +108,18 @@
       "metadata": {
         "search_query": "lawn care in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 494-9788",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:03.387967+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:03.387967+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJNVo9AJl_VIcRp4x_jnPq574",
@@ -94,7 +138,18 @@
       "metadata": {
         "search_query": "lawn care in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 557-9914",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:03.387984+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:03.387984+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJo01BwAx-VIcRCMQuv_pS6_k",
@@ -113,7 +168,18 @@
       "metadata": {
         "search_query": "roofing in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 512-9303",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:06.055856+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:06.055856+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJKyZbvQh_VIcRqOJJNVJgctU",
@@ -132,7 +198,18 @@
       "metadata": {
         "search_query": "roofing in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 753-2784",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:06.055901+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:06.055901+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJOy0CYayBVIcRbksxh8nP1Ws",
@@ -151,7 +228,18 @@
       "metadata": {
         "search_query": "painting in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 881-1967",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:07.686989+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:07.686989+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJQ9PVus9_VIcRXAGyHPQ_MAU",
@@ -170,7 +258,18 @@
       "metadata": {
         "search_query": "pest control in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 363-6849",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:09.119703+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:09.119703+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJk4Prrx-XVIcRKnyT5f_FyFA",
@@ -189,7 +288,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 257-3220",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:10.655486+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:10.655486+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJD4eLmTt-VIcRjALa40OK1IM",
@@ -208,7 +318,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 754-7777",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:10.655501+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:10.655501+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJl6Hl5cB9VIcRuJHfhiAJZbM",
@@ -227,7 +348,13 @@
       "metadata": {
         "search_query": "carpet cleaning in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:10.655506+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:10.655506+00:00",
+      "updated_at": "2026-03-14T17:45:10.655506+00:00"
     },
     {
       "id": "google_places_ChIJ2_9Gpzh_VIcRenUxc_bSPpg",
@@ -246,7 +373,18 @@
       "metadata": {
         "search_query": "handyman in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 760-3234",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:12.098847+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:12.098847+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJfdCXIuh9VIcR_a9ALkme0Rg",
@@ -265,7 +403,18 @@
       "metadata": {
         "search_query": "handyman in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 494-6106",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:12.098889+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:12.098889+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJN4yuqeZjVIcRa_uqCIPNQ6k",
@@ -284,7 +433,18 @@
       "metadata": {
         "search_query": "appliance repair in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 799-9938",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:15.062531+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:15.062531+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJEY_TeBxjVIcRivDgcIljw7c",
@@ -303,7 +463,18 @@
       "metadata": {
         "search_query": "appliance repair in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 294-7922",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:15.062579+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:15.062579+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJOacUkxJ-VIcRsJA0JfgTmkI",
@@ -322,7 +493,18 @@
       "metadata": {
         "search_query": "tree service in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 881-9155",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:16.492013+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:16.492013+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJRRyxhA99VIcR4mXHzd7hNao",
@@ -341,7 +523,18 @@
       "metadata": {
         "search_query": "tree service in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 374-2430",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:16.492027+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:16.492027+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ17vJUbGUzkIRN7PstAUWxNM",
@@ -360,7 +553,18 @@
       "metadata": {
         "search_query": "tree service in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 757-6212",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:16.492031+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:16.492031+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJjWxPQqKBVIcRN9kL7oq59I0",
@@ -379,7 +583,18 @@
       "metadata": {
         "search_query": "fencing in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 890-0341",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:17.928144+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:17.928144+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJc5t65Od9VIcRMzxt7AkgzrI",
@@ -398,7 +613,18 @@
       "metadata": {
         "search_query": "concrete in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 265-0408",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:19.295304+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:19.295304+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJBYUWpPiBVIcRft_shLIgZRo",
@@ -417,7 +643,18 @@
       "metadata": {
         "search_query": "concrete in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 881-6023",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:19.295351+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:19.295351+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJDb2sy6eAVIcR3HNwkelxg6A",
@@ -436,7 +673,18 @@
       "metadata": {
         "search_query": "concrete in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 232-6075",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:19.295390+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:19.295390+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJkR2scFCkuEYRj1NcZ_CNLt4",
@@ -455,7 +703,18 @@
       "metadata": {
         "search_query": "concrete in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 890-5357",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:19.295402+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:19.295402+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJd9mCc4VjVIcR9qQ9pEFSn8U",
@@ -474,8 +733,19 @@
       "metadata": {
         "search_query": "concrete in Logan, UT",
         "location": "Logan, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 770-2366",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:19.295412+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:19.295412+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:45:19.296185+00:00"
+  "updated_at": "2026-03-14T18:20:07.930Z"
 }

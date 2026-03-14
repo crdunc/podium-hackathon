@@ -97,4 +97,3 @@ export const RATE_LIMITS = {
 
 /** Paths */
 export const LEADS_DIR = './data/leads';
-export const DB_PATH = './data/leads.json';

@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "electrical in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 515-1111",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:06.974603+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:06.974603+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJH0bl2dpVrlQR80yVuMi48fs",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "electrical in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 407-5261",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:06.974617+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:06.974617+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ_XFlAUf4rlQR8I9JfNW6udg",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "lawn care in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 794-1627",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:08.302049+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:08.302049+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ02oKWSpVrlQRmbGkcn5Dpeg",
@@ -75,7 +108,18 @@
       "metadata": {
         "search_query": "lawn care in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 605-0650",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:08.302065+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:08.302065+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJM-qdnjFUrlQRLCtEmDJ7DSs",
@@ -94,7 +138,18 @@
       "metadata": {
         "search_query": "lawn care in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 703-7217",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:08.302070+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:08.302070+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ_cY1k8T5rlQRTsx_IacUCWk",
@@ -113,7 +168,18 @@
       "metadata": {
         "search_query": "lawn care in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 713-2851",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:08.302075+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:08.302075+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJNTXpWa1XrlQRamnkkngDFRw",
@@ -132,7 +198,18 @@
       "metadata": {
         "search_query": "roofing in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 795-4913",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:11.279810+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:11.279810+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJdaHL1AwJ5gQRzLDzotOEOts",
@@ -151,7 +228,18 @@
       "metadata": {
         "search_query": "pest control in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 379-9793",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:15.054568+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:15.054568+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJdaEtQdtWrlQRh-_Zfb5q2R0",
@@ -170,7 +258,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 388-4626",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:16.630884+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:16.630884+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ2Vy2QkJVrlQRtFS8fWZIMPk",
@@ -189,7 +288,18 @@
       "metadata": {
         "search_query": "handyman in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 593-6939",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:18.137675+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:18.137675+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJfc07o95XrlQRNsLevsgn6LE",
@@ -208,7 +318,18 @@
       "metadata": {
         "search_query": "handyman in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 362-3624",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:18.137692+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:18.137692+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ9WsoEQBVrlQRqhCuzkCcjCA",
@@ -227,7 +348,18 @@
       "metadata": {
         "search_query": "garage door repair in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 361-5041",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:19.573461+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:19.573461+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJPbh5IXhXrlQRjI0Ji4eeY3w",
@@ -246,7 +378,18 @@
       "metadata": {
         "search_query": "appliance repair in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 571-1588",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:21.107028+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:21.107028+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJY0q1D1q0r1QR6BBYfzfMjtw",
@@ -265,7 +408,18 @@
       "metadata": {
         "search_query": "appliance repair in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 995-6480",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:21.107042+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:21.107042+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJKyNQ6574rlQRNBTx5pNYIMg",
@@ -284,7 +438,18 @@
       "metadata": {
         "search_query": "appliance repair in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (986) 207-2650",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:21.107046+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:21.107046+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJT3hXVpz5rlQRRNkGFpdxNU8",
@@ -303,8 +468,19 @@
       "metadata": {
         "search_query": "concrete in Boise, ID",
         "location": "Boise, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 269-4415",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:25.415508+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:25.415508+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:46:25.416279+00:00"
+  "updated_at": "2026-03-14T18:20:07.923Z"
 }

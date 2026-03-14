@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "plumbing in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 467-2432",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:30.806209+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:30.806209+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJwUBFcWyLUocRv0EtPZ24JjY",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "electrical in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 348-4906",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:32.239320+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:32.239320+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJk0u_RFCHUocRCkLoN5xQoco",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "electrical in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 516-3723",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:32.239343+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:32.239343+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJD1cudtn1UocRSbQ9yVntIlM",
@@ -75,7 +108,18 @@
       "metadata": {
         "search_query": "electrical in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 213-4682",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:32.239351+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:32.239351+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJtzpU__b1UocRLxHjqhNUtx0",
@@ -94,7 +138,18 @@
       "metadata": {
         "search_query": "electrical in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (839) 303-9383",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:32.239356+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:32.239356+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJWXBp1x2LUocR_-3JwZl2AXM",
@@ -113,7 +168,18 @@
       "metadata": {
         "search_query": "handyman in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 759-3773",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:42.260557+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:42.260557+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJyRPGP4phUocRFEdQY8iLpGI",
@@ -132,7 +198,18 @@
       "metadata": {
         "search_query": "handyman in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 347-6263",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:42.260576+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:42.260576+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ03b9R0OLUocR-d3SNA9VplI",
@@ -151,7 +228,18 @@
       "metadata": {
         "search_query": "appliance repair in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 378-4693",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:45.303953+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:45.303953+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJtwXI-Xr1UocR12zMqSPcTGM",
@@ -170,7 +258,18 @@
       "metadata": {
         "search_query": "appliance repair in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 438-4977",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:45.303992+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:45.303992+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJeQFKhfiKUocRYA3JCTnLkEI",
@@ -189,7 +288,18 @@
       "metadata": {
         "search_query": "appliance repair in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 688-1012",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:45.304001+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:45.304001+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJKbqPvh99TYcRqi4jYHeGjcc",
@@ -208,7 +318,18 @@
       "metadata": {
         "search_query": "fencing in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 842-1886",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:48.113295+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:48.113295+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJd_hrHIuETYcRwKk5whzgqO4",
@@ -227,7 +348,18 @@
       "metadata": {
         "search_query": "concrete in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 709-5555",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:49.648839+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:49.648839+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJBXWN6AL1UocR9dwBaXX0TlI",
@@ -246,7 +378,18 @@
       "metadata": {
         "search_query": "concrete in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 456-6833",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:49.648886+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:49.648886+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJVVUeLfH0UocR59fATGzpPVo",
@@ -265,7 +408,18 @@
       "metadata": {
         "search_query": "concrete in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 210-5639",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:42:49.648899+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:42:49.648899+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJZVod20j1UocRRJh2N1ezoIY",
@@ -284,8 +438,19 @@
       "metadata": {
         "search_query": "electrical in Salt Lake City, UT",
         "location": "Salt Lake City, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (840) 225-3264",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:36.038779+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:36.038779+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:43:53.549846+00:00"
+  "updated_at": "2026-03-14T18:20:07.928Z"
 }

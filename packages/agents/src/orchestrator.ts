@@ -1,132 +1,179 @@
 // ============================================================
-// Pipeline Orchestrator
-// Chains all 5 agents in sequence:
-//   Search → Qualify → Enrich → Store → Report
+// ReAct Orchestrator
+// Uses Claude to reason about which agent to invoke next.
+// Loop: Observe → Think → Act → Observe → Think → Act...
+//
+// The orchestrator IS the AI. Each agent is a tool it can call.
+// Claude decides the flow based on the task and results.
 // ============================================================
 
-import { randomUUID } from 'crypto';
-import type { PipelineRun, SearchConfig } from '@podium/shared';
-import { runSearchAgent } from './agents/search-agent';
-import { runQualificationAgent } from './agents/qualification-agent';
-import { runEnrichmentAgent } from './agents/enrichment-agent';
-import { runStorageAgent } from './agents/storage-agent';
-import { runReportAgent } from './agents/report-agent';
+import Anthropic from '@anthropic-ai/sdk';
+import { LEADS_DIR } from '@podium/shared';
+import {
+  TOOL_DEFINITIONS,
+  executeTool,
+  type ToolContext,
+  type PipelineState,
+} from './tools/registry';
 import { log, logDivider } from './utils/logger';
-import { LEADS_DIR, DB_PATH } from '@podium/shared';
+import type { ScraperSource } from './scrapers';
 
 const AGENT_NAME = 'Orchestrator';
+const MAX_ITERATIONS = 15;
 
 export interface OrchestratorOptions {
-  config: SearchConfig;
-  useMock?: boolean;
+  task: string;
   leadsDir?: string;
-  dbPath?: string;
   reportDir?: string;
-  skipEnrichment?: boolean;
-  skipReport?: boolean;
+  googleApiKey?: string;
+  sources?: ScraperSource[];
+  model?: string;
 }
 
-export async function runPipeline(options: OrchestratorOptions): Promise<PipelineRun> {
+const SYSTEM_PROMPT = `You are Lead Hunter, an autonomous lead generation system for local trade businesses (HVAC, Electrical, Plumbing, Lawn Care, Roofing, Painting, etc.).
+
+You have these tools available:
+- search_leads: Scrape the web for new business leads in specific trades and cities
+- qualify_leads: Score and filter leads by data quality (0-100)
+- enrich_leads: Visit business websites to extract emails, socials, owner names, services
+- store_leads: Save leads to the database (per-city JSON files with deduplication)
+- generate_report: Create a summary report of all stored leads
+- get_database_stats: Check what's currently in the database
+
+IMPORTANT RULES:
+- You are a ReAct agent. Think step by step about what to do, then act.
+- Always check database stats first if you need to understand current state.
+- search_leads returns raw data → qualify_leads filters it → enrich_leads adds depth → store_leads persists it.
+- You must qualify before enriching (enrichment only works on qualified leads).
+- You must qualify or enrich before storing (storage needs scored leads).
+- After storing, generate a report so the user can see results.
+- If a tool returns an error, reason about what went wrong and adapt.
+- Be efficient — don't re-scrape cities/trades you already have data for unless asked.`;
+
+export async function runOrchestrator(options: OrchestratorOptions) {
   const {
-    config,
-    useMock = false,
+    task,
     leadsDir = LEADS_DIR,
-    dbPath = DB_PATH,
     reportDir,
-    skipEnrichment = false,
-    skipReport = false,
+    googleApiKey = process.env.GOOGLE_PLACES_API_KEY,
+    sources,
+    model = 'claude-sonnet-4-20250514',
   } = options;
 
-  const run: PipelineRun = {
-    runId: randomUUID().slice(0, 8),
-    startedAt: new Date().toISOString(),
-    config,
-    results: {
-      searched: 0,
-      qualified: 0,
-      enriched: 0,
-      stored: 0,
-      duplicatesSkipped: 0,
-    },
-    agentResults: [],
+  const client = new Anthropic();
+
+  // Pipeline state — shared across tool calls within this run
+  const state: PipelineState = {
+    rawLeads: [],
+    qualifiedLeads: [],
+    enrichedLeads: [],
   };
 
-  logDivider(`LEAD HUNTER PIPELINE — Run ${run.runId}`);
-  log('pipeline', AGENT_NAME, `Mode: ${useMock ? 'MOCK (demo data)' : 'LIVE (city files + web scraping)'}`);
-  log('pipeline', AGENT_NAME, `Trades: ${config.trades.join(', ')}`);
-  log('pipeline', AGENT_NAME, `Locations: ${config.locations.join(', ')}`);
-  log('pipeline', AGENT_NAME, `Leads dir: ${leadsDir}`);
+  const context: ToolContext = {
+    leadsDir,
+    reportDir,
+    searchOptions: { googleApiKey, sources },
+    state,
+  };
 
-  // ── Stage 1: Search ─────────────────────────────────────────
-  logDivider('STAGE 1: SEARCH');
-  const searchResult = await runSearchAgent(config, useMock, leadsDir);
-  run.agentResults.push(searchResult);
-  run.results.searched = searchResult.data.length;
+  logDivider('LEAD HUNTER — ReAct Orchestrator');
+  log('pipeline', AGENT_NAME, `Task: ${task}`);
+  log('pipeline', AGENT_NAME, `Model: ${model}`);
+  log('pipeline', AGENT_NAME, `Storage: ${leadsDir}`);
+  log('pipeline', AGENT_NAME, `Google API: ${googleApiKey ? 'YES' : 'NO'}`);
 
-  if (searchResult.data.length === 0) {
-    log('warn', AGENT_NAME, 'No leads found. Pipeline stopping.');
-    run.completedAt = new Date().toISOString();
-    return run;
+  // Initialize conversation with the user's task
+  const messages: Anthropic.Messages.MessageParam[] = [
+    { role: 'user', content: task },
+  ];
+
+  // ── ReAct Loop ──────────────────────────────────────────────
+  for (let i = 0; i < MAX_ITERATIONS; i++) {
+    log('info', AGENT_NAME, `Step ${i + 1}/${MAX_ITERATIONS}`);
+
+    // Ask Claude what to do next
+    const response = await client.messages.create({
+      model,
+      max_tokens: 4096,
+      system: SYSTEM_PROMPT,
+      tools: TOOL_DEFINITIONS,
+      messages,
+    });
+
+    // Process Claude's response
+    const assistantContent = response.content;
+    messages.push({ role: 'assistant', content: assistantContent });
+
+    // Check if Claude is done (no more tool calls)
+    if (response.stop_reason === 'end_turn') {
+      // Extract final text response
+      const textBlocks = assistantContent.filter(
+        (block): block is Anthropic.Messages.TextBlock => block.type === 'text'
+      );
+      const finalMessage = textBlocks.map(b => b.text).join('\n');
+
+      logDivider('ORCHESTRATOR COMPLETE');
+      console.log('\n' + finalMessage + '\n');
+      return { message: finalMessage, steps: i + 1 };
+    }
+
+    // Execute tool calls
+    const toolUseBlocks = assistantContent.filter(
+      (block): block is Anthropic.Messages.ToolUseBlock => block.type === 'tool_use'
+    );
+
+    if (toolUseBlocks.length === 0) {
+      // No tools and not end_turn — shouldn't happen, but break to be safe
+      break;
+    }
+
+    const toolResults: Anthropic.Messages.ToolResultBlockParam[] = [];
+
+    for (const toolUse of toolUseBlocks) {
+      log('agent', AGENT_NAME, `Calling: ${toolUse.name}`);
+
+      // Print Claude's reasoning if it came before the tool call
+      const textBefore = assistantContent.filter(
+        (block): block is Anthropic.Messages.TextBlock => block.type === 'text'
+      );
+      if (textBefore.length > 0 && i === 0) {
+        // Only print reasoning on first step to avoid noise
+        for (const t of textBefore) {
+          log('info', AGENT_NAME, `Thinking: ${t.text.slice(0, 200)}...`);
+        }
+      }
+
+      try {
+        const result = await executeTool(
+          toolUse.name,
+          toolUse.input as Record<string, unknown>,
+          context
+        );
+
+        log('success', AGENT_NAME, `${toolUse.name} complete`);
+
+        toolResults.push({
+          type: 'tool_result',
+          tool_use_id: toolUse.id,
+          content: result,
+        });
+      } catch (err) {
+        const errorMsg = `Tool ${toolUse.name} failed: ${(err as Error).message}`;
+        log('error', AGENT_NAME, errorMsg);
+
+        toolResults.push({
+          type: 'tool_result',
+          tool_use_id: toolUse.id,
+          content: JSON.stringify({ error: errorMsg }),
+          is_error: true,
+        });
+      }
+    }
+
+    // Feed tool results back to Claude
+    messages.push({ role: 'user', content: toolResults });
   }
 
-  // ── Stage 2: Qualify ────────────────────────────────────────
-  logDivider('STAGE 2: QUALIFY');
-  const qualifyResult = await runQualificationAgent(
-    searchResult.data,
-    config.minQualificationScore
-  );
-  run.agentResults.push(qualifyResult);
-  run.results.qualified = qualifyResult.data.length;
-
-  if (qualifyResult.data.length === 0) {
-    log('warn', AGENT_NAME, 'No leads passed qualification. Pipeline stopping.');
-    run.completedAt = new Date().toISOString();
-    return run;
-  }
-
-  // ── Stage 3: Enrich ─────────────────────────────────────────
-  let enrichedLeads = qualifyResult.data.map(l => ({
-    ...l,
-    enriched_at: new Date().toISOString(),
-  }));
-
-  if (!skipEnrichment) {
-    logDivider('STAGE 3: ENRICH');
-    const enrichResult = await runEnrichmentAgent(qualifyResult.data, useMock);
-    run.agentResults.push(enrichResult);
-    enrichedLeads = enrichResult.data;
-    run.results.enriched = enrichResult.data.length;
-  } else {
-    log('info', AGENT_NAME, 'Skipping enrichment stage');
-    run.results.enriched = enrichedLeads.length;
-  }
-
-  // ── Stage 4: Store ──────────────────────────────────────────
-  logDivider('STAGE 4: STORE');
-  const storageResult = await runStorageAgent(enrichedLeads, dbPath);
-  run.agentResults.push(storageResult);
-  run.results.stored = storageResult.data.stored;
-  run.results.duplicatesSkipped = storageResult.data.duplicates;
-
-  // ── Stage 5: Report ─────────────────────────────────────────
-  if (!skipReport) {
-    logDivider('STAGE 5: REPORT');
-    run.completedAt = new Date().toISOString();
-    const reportResult = await runReportAgent(run, reportDir);
-    run.agentResults.push(reportResult);
-  }
-
-  run.completedAt = new Date().toISOString();
-
-  logDivider('PIPELINE COMPLETE');
-  log('pipeline', AGENT_NAME,
-    `Finished run ${run.runId}: ` +
-    `${run.results.searched} searched → ` +
-    `${run.results.qualified} qualified → ` +
-    `${run.results.enriched} enriched → ` +
-    `${run.results.stored} stored ` +
-    `(${run.results.duplicatesSkipped} dupes)`
-  );
-
-  return run;
+  log('warn', AGENT_NAME, `Hit max iterations (${MAX_ITERATIONS})`);
+  return { message: 'Reached maximum iterations', steps: MAX_ITERATIONS };
 }

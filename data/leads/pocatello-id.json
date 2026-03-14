@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "hvac in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 900-4151",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:26.842342+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:26.842342+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ9_a2OBJPVVMRvfDaWYmJCsU",
@@ -37,7 +48,13 @@
       "metadata": {
         "search_query": "hvac in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:46:26.842356+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:26.842356+00:00",
+      "updated_at": "2026-03-14T17:46:26.842356+00:00"
     },
     {
       "id": "google_places_ChIJNWfwQyFPVVMRLqTa8REip2U",
@@ -56,7 +73,18 @@
       "metadata": {
         "search_query": "plumbing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 494-9970",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:28.133231+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:28.133231+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJGZyGvatIVVMRQgy4SUAGP1s",
@@ -75,7 +103,18 @@
       "metadata": {
         "search_query": "plumbing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 915-4636",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:28.133247+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:28.133247+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ7WzKDvBHVVMR2_DYpScLXK0",
@@ -94,7 +133,18 @@
       "metadata": {
         "search_query": "plumbing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 241-4468",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:28.133251+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:28.133251+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJo0YlgbBOVVMRorm1FR1hJaE",
@@ -113,7 +163,18 @@
       "metadata": {
         "search_query": "plumbing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 232-7464",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:28.133255+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:28.133255+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJAefBwaVIVVMR19MyL0xOCNs",
@@ -132,7 +193,13 @@
       "metadata": {
         "search_query": "plumbing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:46:28.133258+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:28.133258+00:00",
+      "updated_at": "2026-03-14T17:46:28.133258+00:00"
     },
     {
       "id": "google_places_ChIJAQY-_v5FVVMRx5IDA81oOPM",
@@ -151,7 +218,18 @@
       "metadata": {
         "search_query": "plumbing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 237-6001",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:28.133262+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:28.133262+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJJbj6SBZPVVMRy0dyj3VzkuU",
@@ -170,7 +248,18 @@
       "metadata": {
         "search_query": "electrical in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 233-1335",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:29.471195+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:29.471195+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJPYbF4txHVVMRrAUqPJJBADg",
@@ -189,7 +278,18 @@
       "metadata": {
         "search_query": "electrical in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 201-8614",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:29.471259+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:29.471259+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ26Reqx9PVVMRjmP4iVT-Rok",
@@ -208,7 +308,18 @@
       "metadata": {
         "search_query": "electrical in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 234-9999",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:29.471273+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:29.471273+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJDz6dlB5PVVMRrrNLEUjEWqI",
@@ -227,7 +338,18 @@
       "metadata": {
         "search_query": "electrical in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 232-2919",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:29.471288+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:29.471288+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJGU4rqJdFVVMRwo-_F_l6T3k",
@@ -246,7 +368,18 @@
       "metadata": {
         "search_query": "electrical in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 716-5847",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:29.471302+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:29.471302+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJE4c17KRFVVMRfkjVbLoWXqU",
@@ -265,7 +398,13 @@
       "metadata": {
         "search_query": "electrical in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:46:29.471315+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:29.471315+00:00",
+      "updated_at": "2026-03-14T17:46:29.471315+00:00"
     },
     {
       "id": "google_places_ChIJp9NqlBpPVVMRXmvR2UM1rn0",
@@ -284,7 +423,18 @@
       "metadata": {
         "search_query": "lawn care in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 589-3034",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:30.816466+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:30.816466+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJkZLf3wxJVVMR0L-__jrO8lU",
@@ -303,7 +453,18 @@
       "metadata": {
         "search_query": "lawn care in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 821-4426",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:30.816492+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:30.816492+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ5Rjr_pFPVVMREddzIDClflM",
@@ -322,7 +483,18 @@
       "metadata": {
         "search_query": "roofing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (908) 408-5721",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:33.603256+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:33.603256+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ6bH71TtGVVMR11Q0Efv8fnM",
@@ -341,7 +513,18 @@
       "metadata": {
         "search_query": "roofing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 406-6729",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:33.603299+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:33.603299+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJCwuoIczzP2kRp2msEYwHxsw",
@@ -360,7 +543,18 @@
       "metadata": {
         "search_query": "roofing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 242-8532",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:33.603308+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:33.603308+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJY58wu7NFVVMRNyjpVFxrbyY",
@@ -379,7 +573,18 @@
       "metadata": {
         "search_query": "roofing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 241-1159",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:33.603315+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:33.603315+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJFfq5o2tFVVMRnk1uNaiy79Q",
@@ -398,7 +603,18 @@
       "metadata": {
         "search_query": "roofing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 760-7553",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:33.603323+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:33.603323+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJj2RmPIFPVVMRFd9Lz5sLjf0",
@@ -417,7 +633,18 @@
       "metadata": {
         "search_query": "painting in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 244-8323",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:34.953322+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:34.953322+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ7agioNhFVVMRA3-390vFkzM",
@@ -436,7 +663,18 @@
       "metadata": {
         "search_query": "painting in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 406-4326",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:34.953340+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:34.953340+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJtce9mg9GVVMRVZ3qUP8q4no",
@@ -455,7 +693,18 @@
       "metadata": {
         "search_query": "painting in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 251-9126",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:34.953344+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:34.953344+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJZ_KgkfZFVVMRqicLcR-Bd3o",
@@ -474,7 +723,18 @@
       "metadata": {
         "search_query": "painting in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 240-7625",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:34.953348+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:34.953348+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJvxzYqCVqi6sRaN-AuYNAJlE",
@@ -493,7 +753,18 @@
       "metadata": {
         "search_query": "painting in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 242-6327",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:34.953352+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:34.953352+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJwd8JpQZPVVMRpUYlH3gkGlo",
@@ -512,7 +783,18 @@
       "metadata": {
         "search_query": "pest control in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 232-0606",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:36.270363+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:36.270363+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ7yoyaD1PVVMRvhiMQFH8kkQ",
@@ -531,7 +813,18 @@
       "metadata": {
         "search_query": "pest control in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 223-0703",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:36.270390+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:36.270390+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJCzAnxBpPVVMRrJaabMWxfeA",
@@ -550,7 +843,18 @@
       "metadata": {
         "search_query": "pest control in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 716-5616",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:36.270399+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:36.270399+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJQb2oRq9IVVMRhOVXRgCX6Z0",
@@ -569,7 +873,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 744-7990",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:37.702898+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:37.702898+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJuQ9Q0mZPVVMR8-p77KH_BEs",
@@ -588,7 +903,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 705-5669",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:37.702944+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:37.702944+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ7fPBmPtHVVMRo7cPsYQc3u8",
@@ -607,7 +933,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 237-0114",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:37.702958+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:37.702958+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJQxHatoRGVVMR5uXfGJZIPrA",
@@ -626,7 +963,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 220-3680",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:37.702970+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:37.702970+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJjYIjT7ZIVVMRgNsrbebMano",
@@ -645,7 +993,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 233-5663",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:37.702981+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:37.702981+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ1ayRHCDg1EkRSFCEJF68k8U",
@@ -664,7 +1023,18 @@
       "metadata": {
         "search_query": "handyman in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 380-6803",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:39.130026+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:39.130026+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJWV2mSVtPVVMR3yjWWaFB_dw",
@@ -683,7 +1053,18 @@
       "metadata": {
         "search_query": "handyman in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 546-4812",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:39.130040+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:39.130040+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJq3XgkCTETA0RTzbWLcqNB_c",
@@ -702,7 +1083,18 @@
       "metadata": {
         "search_query": "handyman in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 251-2411",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:39.130045+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:39.130045+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ_7ezZRdPVVMRKGJo_cKy_W0",
@@ -721,7 +1113,13 @@
       "metadata": {
         "search_query": "handyman in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:46:39.130049+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:39.130049+00:00",
+      "updated_at": "2026-03-14T17:46:39.130049+00:00"
     },
     {
       "id": "google_places_ChIJuSFfEEdPVVMR9rpGhsNKpmg",
@@ -740,7 +1138,18 @@
       "metadata": {
         "search_query": "handyman in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 478-1808",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:39.130052+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:39.130052+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJHVQWCHJPVVMRNCjEycDbeRE",
@@ -759,7 +1168,18 @@
       "metadata": {
         "search_query": "garage door repair in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 221-2477",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:40.583276+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:40.583276+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJE9NTQ5lGVVMRt3-12QuMw6c",
@@ -778,7 +1198,18 @@
       "metadata": {
         "search_query": "appliance repair in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 604-3100",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:41.920675+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:41.920675+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ-TPGJgBPVVMRhnUqmFDmEOc",
@@ -797,7 +1228,13 @@
       "metadata": {
         "search_query": "appliance repair in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:46:41.920699+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:41.920699+00:00",
+      "updated_at": "2026-03-14T17:46:41.920699+00:00"
     },
     {
       "id": "google_places_ChIJCfUXe75LVVMREFJlRdb0TUk",
@@ -816,7 +1253,18 @@
       "metadata": {
         "search_query": "tree service in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 775-4547",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:43.276933+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:43.276933+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ79kHEINGVVMRT38bmOHEjRU",
@@ -835,7 +1283,18 @@
       "metadata": {
         "search_query": "fencing in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 237-1491",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:44.594820+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:44.594820+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJWeLq7lpPVVMRfYsfNgF9FOs",
@@ -854,7 +1313,18 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 242-6166",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992792+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992792+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJqWPb021PVVMRZISFmBaXS6o",
@@ -873,7 +1343,18 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 234-2420",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992817+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992817+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJv4a-sDxPVVMRsplzc6blGkM",
@@ -892,7 +1373,18 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 233-4151",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992822+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992822+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJA7QECuhOVVMRh-KFZsRoFu0",
@@ -911,7 +1403,18 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 530-0783",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992826+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992826+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJj2-haJ5FVVMRBAbsR-G5Dd8",
@@ -930,7 +1433,18 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 234-1332",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992833+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992833+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJV4eKPdFFVVMRxSDgKHCg31o",
@@ -949,7 +1463,18 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 681-8685",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992836+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992836+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJH19spVBPVVMRhdKVC5aHb0Y",
@@ -968,7 +1493,18 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 530-0783",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992840+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992840+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJrVKlV2xPVVMRaCz20tvShiY",
@@ -987,8 +1523,19 @@
       "metadata": {
         "search_query": "concrete in Pocatello, ID",
         "location": "Pocatello, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 237-2371",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:45.992844+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:45.992844+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:46:45.993125+00:00"
+  "updated_at": "2026-03-14T18:20:07.931Z"
 }

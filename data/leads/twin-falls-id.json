@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "hvac in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 730-8366",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:47.427103+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:47.427103+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJl3LS_aOjrFQRpoanymDV--E",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "electrical in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 733-1901",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:50.292435+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:50.292435+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJkbCEhJejrFQRwYLGoro8ZaE",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "electrical in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 734-7664",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:50.292452+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:50.292452+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ1YsE_AijrFQR2OEIO3iFRVk",
@@ -75,7 +108,18 @@
       "metadata": {
         "search_query": "electrical in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 733-0251",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:50.292457+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:50.292457+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJLf_6SOOdrFQRzv5QF_Eq7D0",
@@ -94,7 +138,18 @@
       "metadata": {
         "search_query": "lawn care in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 308-5264",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:51.834300+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:51.834300+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJLVCTtEy9rFQRr7Ys2bvmx_A",
@@ -113,7 +168,18 @@
       "metadata": {
         "search_query": "lawn care in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 731-6200",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:51.834353+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:51.834353+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJMXviZwOjrFQRwFX9FKIjzVM",
@@ -132,7 +198,18 @@
       "metadata": {
         "search_query": "lawn care in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 613-5232",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:51.834365+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:51.834365+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ_VFSYoOjrFQRX7o0tQg2fmM",
@@ -151,7 +228,18 @@
       "metadata": {
         "search_query": "roofing in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 733-8302",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:54.702037+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:54.702037+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJW5ChjR2iiw4RMBWH57Zh4KQ",
@@ -170,7 +258,18 @@
       "metadata": {
         "search_query": "roofing in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 421-2458",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:54.702078+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:54.702078+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ5SXrVeujrFQRWFxa1zIlO6o",
@@ -189,7 +288,18 @@
       "metadata": {
         "search_query": "roofing in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 731-7854",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:54.702087+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:54.702087+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJG9gYg9ujrFQR0dmNIMaHvMQ",
@@ -208,7 +318,18 @@
       "metadata": {
         "search_query": "painting in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 543-1018",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:56.081726+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:56.081726+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ10RxqYyjrFQRxoLhldVgm5o",
@@ -227,7 +348,18 @@
       "metadata": {
         "search_query": "painting in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 948-3249",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:56.081742+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:56.081742+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJE8LmV0-jrFQRPbIb1LCDurM",
@@ -246,7 +378,18 @@
       "metadata": {
         "search_query": "painting in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 720-2068",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:56.081746+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:56.081746+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ8fJzdXujrFQR23GcMLlMqZM",
@@ -265,7 +408,18 @@
       "metadata": {
         "search_query": "painting in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 613-7810",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:56.081750+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:56.081750+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJdyqSCuajrFQR29xe6Uf74IM",
@@ -284,7 +438,18 @@
       "metadata": {
         "search_query": "painting in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 490-4161",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:56.081754+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:56.081754+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJM1_v_2GYsgMR_g1AI86235E",
@@ -303,7 +468,18 @@
       "metadata": {
         "search_query": "painting in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 226-0400",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:56.081757+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:56.081757+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJz0VfWbqjrFQRTZcSXnLxHQU",
@@ -322,7 +498,18 @@
       "metadata": {
         "search_query": "pest control in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 735-0555",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:57.403860+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:57.403860+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJo2pFGYSjrFQRV0XpYApuIEE",
@@ -341,7 +528,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 733-8667",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:58.793561+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:58.793561+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ_ydi6oKjrFQRmfdQduG72Sk",
@@ -360,7 +558,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 734-3399",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:58.793606+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:58.793606+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJd0ot8WejrFQR8HVp3FGJODU",
@@ -379,7 +588,13 @@
       "metadata": {
         "search_query": "handyman in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:47:00.105463+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:00.105463+00:00",
+      "updated_at": "2026-03-14T17:47:00.105463+00:00"
     },
     {
       "id": "google_places_ChIJq-M47XOnrFQRdzZTOdZzhdc",
@@ -398,7 +613,18 @@
       "metadata": {
         "search_query": "handyman in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (719) 580-0124",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:00.105475+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:00.105475+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJd8xAJDKirFQR2vtAvn2GCRM",
@@ -417,7 +643,18 @@
       "metadata": {
         "search_query": "garage door repair in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 308-7703",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:01.664877+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:01.664877+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJFT9n0Bwm9KoROMDSUebWXsg",
@@ -436,7 +673,18 @@
       "metadata": {
         "search_query": "garage door repair in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 316-2702",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:01.664920+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:01.664920+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJn0zRFwCjrFQRQeMiGorJgpY",
@@ -455,7 +703,18 @@
       "metadata": {
         "search_query": "garage door repair in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 329-7075",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:01.664932+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:01.664932+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJObu8-cujrFQRydXM7c3-CW4",
@@ -474,7 +733,18 @@
       "metadata": {
         "search_query": "garage door repair in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 737-0792",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:01.664941+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:01.664941+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJpyQlIuCjrFQRZfgGSeffH8E",
@@ -493,7 +763,18 @@
       "metadata": {
         "search_query": "appliance repair in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 733-0114",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:03.193512+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:03.193512+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ43OwJQijrFQRmXnZqxoLZYs",
@@ -512,7 +793,18 @@
       "metadata": {
         "search_query": "appliance repair in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 735-2154",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:03.193526+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:03.193526+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJS3YasKmjrFQRnp1wysuI8Os",
@@ -531,7 +823,18 @@
       "metadata": {
         "search_query": "appliance repair in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 316-5362",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:03.193531+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:03.193531+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJA3pONUijrFQRtwTkdPsoUGY",
@@ -550,7 +853,18 @@
       "metadata": {
         "search_query": "tree service in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 212-3690",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:04.631018+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:04.631018+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJSbh0e0CjrFQRpG2bxtVvgTk",
@@ -569,7 +883,18 @@
       "metadata": {
         "search_query": "tree service in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 420-2488",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:04.631061+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:04.631061+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJlcunVoujrFQR74UQd0lbIms",
@@ -588,7 +913,18 @@
       "metadata": {
         "search_query": "tree service in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 734-1326",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:04.631073+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:04.631073+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJM9XsfIG9rFQRTH_0A8rkiig",
@@ -607,7 +943,18 @@
       "metadata": {
         "search_query": "fencing in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 316-7272",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:06.060477+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:06.060477+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ6fpEhuairFQRpey51dj20EI",
@@ -626,7 +973,18 @@
       "metadata": {
         "search_query": "concrete in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 733-5933",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:07.510690+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:07.510690+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJr2F7ehyhrFQRZnoVUk_40ds",
@@ -645,7 +1003,18 @@
       "metadata": {
         "search_query": "concrete in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 421-1077",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:07.510711+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:07.510711+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJq7AKiHWkrFQRIyxZodpKVtU",
@@ -664,7 +1033,18 @@
       "metadata": {
         "search_query": "concrete in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 731-1244",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:07.510717+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:07.510717+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ2wc5XFm7rFQRwkMIVMVRbHY",
@@ -683,7 +1063,18 @@
       "metadata": {
         "search_query": "concrete in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 733-3131",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:07.510722+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:07.510722+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ9xMZK6ejrFQRvBZ-zjORCfs",
@@ -702,8 +1093,19 @@
       "metadata": {
         "search_query": "concrete in Twin Falls, ID",
         "location": "Twin Falls, ID"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (208) 326-5958",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:47:07.510728+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:47:07.510728+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:47:07.511142+00:00"
+  "updated_at": "2026-03-14T18:20:07.935Z"
 }

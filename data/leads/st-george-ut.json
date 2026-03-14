@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "electrical in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 673-1571",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:40.963381+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:40.963381+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ7480MIJByoARYGYbLUpndws",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "electrical in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 656-1223",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:40.963428+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:40.963428+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJZUItBIRRyoARXP42MLZsJsU",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "lawn care in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 619-1210",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:42.493140+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:42.493140+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJrWxYwUZbyoARwnlQbGQuKic",
@@ -75,7 +108,18 @@
       "metadata": {
         "search_query": "lawn care in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 862-0006",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:42.493154+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:42.493154+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJlcC2KWFFyoARstEDvCpI0Yc",
@@ -94,7 +138,18 @@
       "metadata": {
         "search_query": "roofing in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 236-3082",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:45.362326+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:45.362326+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJCfqGGoBbyoARBe7I7zMklV0",
@@ -113,7 +168,18 @@
       "metadata": {
         "search_query": "painting in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 574-9459",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:46.700713+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:46.700713+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJge9flBSdQ28RtbJZsCdIDwg",
@@ -132,7 +198,18 @@
       "metadata": {
         "search_query": "pest control in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 322-0890",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:48.230509+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:48.230509+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJzw3DphhFyoARIgQThjvEBH0",
@@ -151,7 +228,18 @@
       "metadata": {
         "search_query": "carpet cleaning in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 767-1242",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:49.662989+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:49.662989+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJObtkDaaTRIYRqQWPn2iJKU8",
@@ -170,7 +258,18 @@
       "metadata": {
         "search_query": "handyman in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (512) 667-5367",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:50.997327+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:50.997327+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJOZqmXe4OC0YRjQoyOmyhSpU",
@@ -189,7 +288,18 @@
       "metadata": {
         "search_query": "handyman in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 637-3339",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:50.997343+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:50.997343+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJfbeyzmpQyoARzzuYregfeiE",
@@ -208,7 +318,18 @@
       "metadata": {
         "search_query": "concrete in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 634-0232",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:57.932258+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:57.932258+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJGxxP6WpQyoAR31WyCo9KwLU",
@@ -227,7 +348,18 @@
       "metadata": {
         "search_query": "concrete in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 673-4767",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:57.932275+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:57.932275+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJDRvJg4NEyoARv7lOA_rQ5gA",
@@ -246,8 +378,19 @@
       "metadata": {
         "search_query": "concrete in St. George, UT",
         "location": "St. George, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 652-4383",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:57.932281+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:57.932281+00:00",
+      "updated_at": "2026-03-14T18:20:07.923Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:44:57.932548+00:00"
+  "updated_at": "2026-03-14T18:20:07.933Z"
 }
