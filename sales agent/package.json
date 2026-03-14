@@ -1,0 +1,32 @@
+{
+  "name": "podium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "add": "tsx src/index.ts add",
+    "add-batch": "tsx src/index.ts add-batch",
+    "follow-ups": "tsx src/index.ts follow-ups",
+    "list": "tsx src/index.ts list",
+    "serve": "tsx src/index.ts serve",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "better-sqlite3": "^12.8.0",
+    "dotenv": "^17.3.1",
+    "node-cron": "^4.2.1",
+    "resend": "^6.9.3",
+    "twilio": "^5.13.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.5.0",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

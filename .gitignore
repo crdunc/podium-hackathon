@@ -6,3 +6,4 @@ data/reports/
 *.log
 .env
 .env.local
+leads.db
