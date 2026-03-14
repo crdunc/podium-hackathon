@@ -12,11 +12,15 @@ function buildContext(lead: Lead): string {
     ? `They currently have a website, but we can help upgrade or improve it.`
     : `They do NOT have a website yet — this is a strong opportunity.`;
 
+  const siteUrlNote = lead.siteUrl
+    ? `\nDemo site: We already built a free demo site for them: ${lead.siteUrl} — mention this in outreach!`
+    : '';
+
   return `
 Business name: ${lead.businessName}
 Industry: ${lead.industry}
 Location: ${lead.location}
-Website status: ${websiteNote}
+Website status: ${websiteNote}${siteUrlNote}
 `.trim();
 }
 

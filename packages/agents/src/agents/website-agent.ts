@@ -296,6 +296,21 @@ export async function runWebsiteAgent(
   const indexHtml = generateIndexHtml(generatedSites);
   writeFileSync(join(sitesDir, 'index.html'), indexHtml, 'utf-8');
 
+  // Generate manifest.json for outreach system
+  const manifest: Record<string, { company_name: string; url: string; trade: string; city: string; phone: string }> = {};
+  for (const { city, companyName, slug, tradeCategory } of generatedSites) {
+    const lead = allLeads.find(l => l.lead.company_name === companyName);
+    manifest[slug] = {
+      company_name: companyName,
+      url: `${GITHUB_PAGES_BASE}/${slug}/`,
+      trade: tradeCategory,
+      city,
+      phone: lead?.lead.phone || '',
+    };
+  }
+  writeFileSync(join(sitesDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf-8');
+  log('info', AGENT_NAME, `Manifest written: ${Object.keys(manifest).length} entries`);
+
   const durationMs = Date.now() - startTime;
   log('success', AGENT_NAME,
     `Generated ${generatedSites.length} sites, skipped ${skipped} leads in ${(durationMs / 1000).toFixed(1)}s`

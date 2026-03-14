@@ -184,6 +184,9 @@ def generate_sites():
     # Generate index page
     generate_index(all_sites)
 
+    # Generate manifest.json for outreach system
+    generate_manifest(all_sites, lead_files)
+
     print(f"\nGeneration complete!")
     print(f"  Sites generated: {len(all_sites)}")
     print(f"  Leads skipped:   {skipped}")
@@ -193,6 +196,35 @@ def generate_sites():
         dist = ", ".join(f"v{k}={v}" for k, v in sorted(counts.items()))
         print(f"  {section}: {dist}")
     print(f"\nGitHub Pages URL:  {GITHUB_PAGES_BASE}/{{slug}}/")
+
+
+def generate_manifest(all_sites: list, lead_files: list):
+    """Generate manifest.json mapping slug to site metadata."""
+    # Build a lookup from company name to lead data
+    lead_lookup = {}
+    for lead_file in lead_files:
+        collection = LeadCollection.load(lead_file)
+        for lead in collection.leads:
+            lead_lookup[lead.company_name] = {
+                "trade": lead.trade_category,
+                "city": collection.city,
+                "phone": lead.phone or "",
+            }
+
+    manifest = {}
+    for city, company_name, slug, trade_category in all_sites:
+        lead_data = lead_lookup.get(company_name, {})
+        manifest[slug] = {
+            "company_name": company_name,
+            "url": f"{GITHUB_PAGES_BASE}/{slug}/",
+            "trade": trade_category,
+            "city": city,
+            "phone": lead_data.get("phone", ""),
+        }
+
+    manifest_path = SITES_DIR / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest, indent=2), encoding="utf-8")
+    print(f"  Manifest written: {manifest_path} ({len(manifest)} entries)")
 
 
 def generate_index(all_sites: list):
