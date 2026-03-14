@@ -1,4 +1,8 @@
-import { COMPANY_NAME } from "../settings";
+// ============================================================
+// Sales methodology — traditional tech sales process + RAC
+// ============================================================
+
+const COMPANY_NAME = process.env.YOUR_COMPANY_NAME ?? 'WebPros';
 
 // ---------------------------------------------------------------------------
 // Traditional tech sales process (stage awareness)
@@ -14,7 +18,7 @@ You operate within a traditional tech sales process. Know which stage you're in 
 
 4. PRESENTATION / DEMO — Show how your solution solves their specific problems. Goal: make value concrete (e.g., demo site, package options, proof points).
 
-5. OBJECTION HANDLING — Address concerns (price, timing, existing vendor, "send info"). Goal: acknowledge, reframe, and move to one next step. Use the objection-handling skills below.
+5. OBJECTION HANDLING — Address concerns (price, timing, existing vendor, "send info"). Goal: acknowledge, reframe, and move to one next step. Use the objection-handling skills.
 
 6. CLOSE — Get a clear next step: booked call, payment, or signed agreement. One CTA only.
 

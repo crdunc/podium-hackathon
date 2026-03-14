@@ -1,60 +1,17 @@
 // ============================================================
-// Outreach Message Generator — Claude-powered with RAC methodology
-// Migrated from sales agent/src/agent.ts
+// Outreach Message Generator — Claude-powered, traditional sales process
 // ============================================================
 
 import Anthropic from '@anthropic-ai/sdk';
 import type { OutreachLead, OutreachMessage } from './types';
+import { TRADITIONAL_SALES_PROCESS, RAC_METHODOLOGY } from './skills/salesMethodology';
+import { OBJECTION_HANDLING_SKILLS } from './skills/objectionHandling';
 
 
 const COMPANY_NAME = process.env.YOUR_COMPANY_NAME ?? 'WebPros';
 const YOUR_WEBSITE = process.env.YOUR_WEBSITE ?? 'https://webpros.com';
 const YOUR_CALENDLY = process.env.YOUR_CALENDLY ?? 'https://calendly.com/yourname';
-const MAX_DISCOUNT_PERCENT = Number(process.env.MAX_DISCOUNT_PERCENT ?? '15');
 const PAYMENT_LINK = process.env.STRIPE_PAYMENT_LINK ?? '';
-
-const RAC_METHODOLOGY = `
-You follow the Resolve-Ace-Close (RAC) sales methodology in every message:
-
-1. RESOLVE — Lead with empathy. Name a specific pain the prospect likely faces
-   (e.g., losing jobs to competitors with websites, missing calls because there's
-   no online booking). Show you understand their world before pitching anything.
-
-2. ACE — Position the solution with authority. Share a concrete proof point: a
-   relevant stat, a mini case study ("we helped a plumber in Dallas 3x his
-   inbound leads"), or a specific feature that maps to the pain you just named.
-   Make it clear why YOU are the right fit for THEIR business.
-
-3. CLOSE — End with one unambiguous next step. Never give two CTAs. The close
-   should feel like a natural extension of the value you just showed, not a
-   pressure tactic.
-
-Tone rules:
-- Write like a human, not a template. Vary sentence length. No filler phrases
-  like "I hope this email finds you well."
-- Mention the prospect's business name and location naturally.
-- No exclamation marks in subject lines.
-- Sign off as "The ${COMPANY_NAME} Team".
-`.trim();
-
-const NEGOTIATION_SKILLS = `
-You are an expert sales negotiator for ${COMPANY_NAME}. When replying to prospects:
-
-Core principles:
-- Stay calm, empathetic, and respectful — never defensive or pushy.
-- Acknowledge and LABEL their concern before responding.
-- Ask short, sincere QUESTIONS when helpful to uncover the real blocker.
-- Use specific proof points or mini case studies to reduce perceived risk.
-
-Pricing and discounts:
-- You may offer up to ${MAX_DISCOUNT_PERCENT}% off as a limited-time incentive, but ONLY when the prospect is meaningfully engaged.
-- Never undermine the value by apologizing for the price.
-
-Closing behavior:
-- Every reply should move the conversation ONE clear step forward.
-- Avoid long paragraphs; prefer short, skimmable chunks.
-- Mirror the prospect's channel and level of formality.
-`.trim();
 
 // ── Tool definitions ────────────────────────────────────────
 
@@ -167,12 +124,16 @@ async function generateWithTools(
 export async function generateInitialEmail(lead: OutreachLead): Promise<OutreachMessage> {
   const system = `You are a sales rep for ${COMPANY_NAME}, a web design agency that builds websites for local service businesses.
 
+${TRADITIONAL_SALES_PROCESS}
+
 ${RAC_METHODOLOGY}
 
+For this message you are in PROSPECTING: cold outreach. Goal is to get a response or a meeting.
 For this INITIAL outreach email:
 - Keep it under 150 words
 - The CLOSE should be: schedule a free 15-minute call at ${YOUR_CALENDLY}
-- Do NOT include a payment link in the first email — build the relationship first`;
+- Do NOT include a payment link in the first email — build the relationship first
+- If the lead context includes a demo site URL, include that link in the email body so the prospect can click through to see their demo`;
 
   const userPrompt = `Write an initial outreach email for this business:
 
@@ -191,8 +152,11 @@ export async function generateFollowUpEmail(
 
   const system = `You are a sales rep for ${COMPANY_NAME}, a web design agency for local trades businesses.
 
+${TRADITIONAL_SALES_PROCESS}
+
 ${RAC_METHODOLOGY}
 
+For this message you are in PROSPECTING: follow-up. Goal is to get a response or a meeting.
 For this FOLLOW-UP #${followUpNumber} email:
 - Keep it under 120 words
 - Reference that you've reached out before, but do NOT guilt them
@@ -217,8 +181,11 @@ export async function generateSms(
 ): Promise<OutreachMessage> {
   const system = `You are a sales rep for ${COMPANY_NAME}, a web design agency for local trades businesses.
 
+${TRADITIONAL_SALES_PROCESS}
+
 ${RAC_METHODOLOGY}
 
+For this message you are in PROSPECTING. Goal is to get a response or a meeting.
 For this SMS:
 - Under 160 characters (one SMS segment)
 - Casual and personal — mention their business name and location
@@ -233,6 +200,64 @@ ${buildContext(lead)}
 Return ONLY a JSON object with key "body". No markdown, no extra text.`;
 
   return generateWithTools(lead, system, userPrompt, false);
+}
+
+// ── Negotiation reply (objection handling) ───────────────────
+
+export async function generateNegotiationReply(
+  lead: OutreachLead,
+  prospectMessage: string,
+  channel: 'email' | 'sms'
+): Promise<OutreachMessage> {
+  const isEmail = channel === 'email';
+
+  const system = `You are a sales rep for ${COMPANY_NAME}, a web design agency for local service businesses. When replying to prospects, you follow the traditional tech sales process and use objection-handling playbooks.
+
+${TRADITIONAL_SALES_PROCESS}
+
+${RAC_METHODOLOGY}
+
+${OBJECTION_HANDLING_SKILLS}
+
+When replying: identify whether the prospect is asking about price, asking for a call, deflecting ("send info"), saying they have someone, or pushing on timing/trust. Use the matching playbook above. Stay calm and empathetic; one CTA per message.
+
+Channel rules:
+- Channel: ${channel.toUpperCase()}
+- Keep replies appropriate for the channel (shorter and more conversational for SMS; more structured and detailed for email).
+- For SMS: no subject, under 160 characters, no sign-off, no emojis.
+- For email: include a clear subject and a concise, skimmable body.
+- Only suggest or use a payment link if the prospect is showing clear intent to move forward (e.g., asking about next steps, pricing details, or timeline).`;
+
+  const context = buildContext(lead);
+
+  const userPrompt = `You are replying to a prospect who just sent this message:
+
+"${prospectMessage}"
+
+Lead context:
+${context}
+
+Your goal is to:
+- Acknowledge their objection or question.
+- Briefly reframe value in their terms.
+- If appropriate, ask one clarifying question OR propose a concrete next step.
+
+Return ONLY a JSON object with keys:
+${isEmail ? '- "subject" and "body" for email replies' : '- "body" for SMS replies only'}
+No markdown, no extra text.`;
+
+  const reply = await generateWithTools(
+    lead,
+    system,
+    userPrompt,
+    isEmail
+  );
+
+  if (!isEmail) {
+    return { body: reply.body, paymentLink: reply.paymentLink };
+  }
+
+  return reply;
 }
 
 // ── Helpers ─────────────────────────────────────────────────
