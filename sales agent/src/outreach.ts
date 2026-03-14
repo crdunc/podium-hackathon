@@ -59,6 +59,10 @@ async function executeStep(lead: Lead, stepNumber: number): Promise<void> {
 
   for (const channel of step.channels) {
     if (channel === "email") {
+      if (!lead.email) {
+        console.log(`  Skipping email (no address on file)`);
+        continue;
+      }
       const msg =
         stepNumber === 1
           ? await generateInitialEmail(lead)
@@ -70,9 +74,16 @@ async function executeStep(lead: Lead, stepNumber: number): Promise<void> {
         body: msg.body,
       });
       logOutreach(lead.id!, stepNumber, "email", msg.body, msg.subject);
+      if (msg.paymentLink) {
+        console.log(`  [stripe] Payment link included: ${msg.paymentLink}`);
+      }
     }
 
     if (channel === "sms") {
+      if (!lead.phone) {
+        console.log(`  Skipping SMS (no phone on file)`);
+        continue;
+      }
       const msg = await generateSms(lead, stepNumber > 1);
       await sendSms({ to: lead.phone, body: msg.body });
       logOutreach(lead.id!, stepNumber, "sms", msg.body);

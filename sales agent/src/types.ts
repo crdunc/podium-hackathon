@@ -1,4 +1,20 @@
-export type Industry = "hvac" | "electrical" | "plumbing" | "other";
+export type Industry =
+  | "hvac"
+  | "electrical"
+  | "plumbing"
+  | "roofing"
+  | "lawn care"
+  | "pest control"
+  | "carpet cleaning"
+  | "handyman"
+  | "garage door repair"
+  | "appliance repair"
+  | "concrete"
+  | "painting"
+  | "fencing"
+  | "landscaping"
+  | "cleaning"
+  | "other";
 
 export type LeadStatus =
   | "pending"
@@ -25,6 +41,7 @@ export interface Lead {
 export interface OutreachMessage {
   subject?: string; // email only
   body: string;
+  paymentLink?: string; // Stripe payment link, included when agent decides to offer it
 }
 
 export type SequenceStep = {
