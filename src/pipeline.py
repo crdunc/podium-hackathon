@@ -4,7 +4,7 @@ import asyncio
 import logging
 import re
 
-from src.config import DATA_DIR, REQUEST_DELAY, TRADE_CATEGORIES
+from src.config import DATA_DIR, REQUEST_DELAY, SUPABASE_URL, TRADE_CATEGORIES
 from src.models import Lead, LeadCollection
 from src.scrapers.google_places import GooglePlacesScraper
 
@@ -44,4 +44,13 @@ async def scrape_city(
 
     collection.save(filepath)
     logger.info("Saved %d total leads (%d new) to %s", len(collection.leads), total_new, filepath)
+
+    # Also save to Supabase if configured
+    if SUPABASE_URL:
+        try:
+            from src.db import upsert_leads
+            upsert_leads(collection.leads, city)
+        except Exception as e:
+            logger.error("Failed to save to Supabase: %s", e)
+
     return collection
