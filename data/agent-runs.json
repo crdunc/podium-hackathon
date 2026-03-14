@@ -1,0 +1,405 @@
+{
+  "runs": [
+    {
+      "runId": "1773521153537-2liiv5",
+      "task": "Find 1 company in some city and then build a website and do outreach",
+      "model": "claude-sonnet-4-20250514",
+      "status": "running",
+      "startedAt": "2026-03-14T20:45:53.537Z",
+      "currentStep": 1,
+      "maxSteps": 15,
+      "events": [
+        {
+          "id": "1773521153537-dxkzp0",
+          "type": "run_started",
+          "timestamp": "2026-03-14T20:45:53.537Z",
+          "runId": "1773521153537-2liiv5",
+          "message": "Starting pipeline: Find 1 company in some city and then build a website and do outreach",
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521153538-9ej6a6",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:45:53.538Z",
+          "runId": "1773521153537-2liiv5",
+          "message": "Step 1 of 15",
+          "step": 1,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        }
+      ]
+    },
+    {
+      "runId": "1773521253074-i343ax",
+      "task": "Find 2 roofers in Phoenix, AZ",
+      "model": "claude-sonnet-4-20250514",
+      "status": "running",
+      "startedAt": "2026-03-14T20:47:33.074Z",
+      "currentStep": 1,
+      "maxSteps": 15,
+      "events": [
+        {
+          "id": "1773521253074-3m77q3",
+          "type": "run_started",
+          "timestamp": "2026-03-14T20:47:33.074Z",
+          "runId": "1773521253074-i343ax",
+          "message": "Starting pipeline: Find 2 roofers in Phoenix, AZ",
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521253074-by7y85",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:47:33.074Z",
+          "runId": "1773521253074-i343ax",
+          "message": "Step 1 of 15",
+          "step": 1,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        }
+      ]
+    },
+    {
+      "runId": "1773521339256-o4cj9x",
+      "task": "Find 2 roofers in Phoenix, AZ",
+      "model": "claude-sonnet-4-20250514",
+      "status": "running",
+      "startedAt": "2026-03-14T20:48:59.256Z",
+      "currentStep": 1,
+      "maxSteps": 15,
+      "events": [
+        {
+          "id": "1773521339257-jhl6xk",
+          "type": "run_started",
+          "timestamp": "2026-03-14T20:48:59.257Z",
+          "runId": "1773521339256-o4cj9x",
+          "message": "Starting pipeline: Find 2 roofers in Phoenix, AZ",
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521339257-e7v198",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:48:59.257Z",
+          "runId": "1773521339256-o4cj9x",
+          "message": "Step 1 of 15",
+          "step": 1,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        }
+      ]
+    },
+    {
+      "runId": "1773521356796-ky3lbv",
+      "task": "Find 2 roofers in Phoenix, AZ",
+      "model": "claude-sonnet-4-20250514",
+      "status": "running",
+      "startedAt": "2026-03-14T20:49:16.796Z",
+      "currentStep": 1,
+      "maxSteps": 15,
+      "events": [
+        {
+          "id": "1773521356797-m97a1f",
+          "type": "run_started",
+          "timestamp": "2026-03-14T20:49:16.797Z",
+          "runId": "1773521356796-ky3lbv",
+          "message": "Starting pipeline: Find 2 roofers in Phoenix, AZ",
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521356797-95soxk",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:49:16.797Z",
+          "runId": "1773521356796-ky3lbv",
+          "message": "Step 1 of 15",
+          "step": 1,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        }
+      ]
+    },
+    {
+      "runId": "1773521426751-qqc01c",
+      "task": "Find 2 roofers in Phoenix, AZ",
+      "model": "claude-sonnet-4-20250514",
+      "status": "completed",
+      "startedAt": "2026-03-14T20:50:26.751Z",
+      "currentStep": 7,
+      "maxSteps": 15,
+      "events": [
+        {
+          "id": "1773521426751-r91ld7",
+          "type": "run_started",
+          "timestamp": "2026-03-14T20:50:26.751Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Starting pipeline: Find 2 roofers in Phoenix, AZ",
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521426751-7itrj7",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:50:26.751Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Step 1 of 15",
+          "step": 1,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521428364-lhk36y",
+          "type": "tool_called",
+          "timestamp": "2026-03-14T20:50:28.364Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Invoking get_database_stats",
+          "step": 1,
+          "tool": "get_database_stats",
+          "agent": "Orchestrator",
+          "detail": "{}"
+        },
+        {
+          "id": "1773521428364-yzr044",
+          "type": "thinking",
+          "timestamp": "2026-03-14T20:50:28.364Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "I'll help you find 2 roofers in Phoenix, AZ. Let me start by checking what's currently in the database, then search for roofing businesses.",
+          "step": 1,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521428371-qhb2g5",
+          "type": "tool_completed",
+          "timestamp": "2026-03-14T20:50:28.371Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "get_database_stats completed",
+          "step": 1,
+          "tool": "get_database_stats",
+          "agent": "Orchestrator",
+          "detail": "{\"total_leads\":258,\"by_trade\":[{\"trade\":\"hvac\",\"count\":11,\"avg_score\":69.0909090909091,\"with_email\":0,\"with_phone\":10},{\"trade\":\"electrical\",\"count\":30,\"avg_score\":54,\"with_email\":0,\"with_phone\":27},{\"trade\":\"lawn care\",\"count\":21,\"avg_score\":57.142857142857146,\"with_email\":0,\"with_phone\":20},{\"trade\":\"roofing\",\"count\":22,\"avg_score\":54.54545454545455,\"with_email\":0,\"with_phone\":20},{\"trade\":\"pest control\",\"count\":10,\"avg_score\":60,\"with_email\":0,\"with_phone\":10},{\"trade\":\"carpet cleaning\",\"coun"
+        },
+        {
+          "id": "1773521428372-p51uxk",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:50:28.372Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Step 2 of 15",
+          "step": 2,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521431124-q9w2bd",
+          "type": "tool_called",
+          "timestamp": "2026-03-14T20:50:31.124Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Invoking search_leads",
+          "step": 2,
+          "tool": "search_leads",
+          "agent": "Orchestrator",
+          "detail": "{\"trades\":[\"roofing\"],\"locations\":[\"Phoenix, AZ\"],\"max_results_per_query\":2}"
+        },
+        {
+          "id": "1773521431124-epyrm2",
+          "type": "thinking",
+          "timestamp": "2026-03-14T20:50:31.124Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "I can see there are currently 22 roofing leads in the database, but none are from Phoenix, AZ. Let me search for roofing businesses specifically in Phoenix.",
+          "step": 2,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521439717-fuc9v9",
+          "type": "tool_completed",
+          "timestamp": "2026-03-14T20:50:39.717Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "search_leads completed",
+          "step": 2,
+          "tool": "search_leads",
+          "agent": "Orchestrator",
+          "detail": "{\"success\":true,\"leads_found\":2,\"duration_ms\":8592,\"errors\":[],\"sample\":[{\"name\":\"Scott Roofing Company\",\"trade\":\"roofing\",\"phone\":\"(602) 442-7663\",\"location\":\"Phoenix, AZ\"},{\"name\":\"Canyon State Roofing & Consulting\",\"trade\":\"roofing\",\"phone\":\"(602) 400-1635\",\"location\":\"Phoenix, AZ\"}]}"
+        },
+        {
+          "id": "1773521439718-s53bsr",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:50:39.718Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Step 3 of 15",
+          "step": 3,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521441465-s55c7x",
+          "type": "tool_called",
+          "timestamp": "2026-03-14T20:50:41.465Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Invoking qualify_leads",
+          "step": 3,
+          "tool": "qualify_leads",
+          "agent": "Orchestrator",
+          "detail": "{\"min_score\":30}"
+        },
+        {
+          "id": "1773521441465-it08m2",
+          "type": "thinking",
+          "timestamp": "2026-03-14T20:50:41.465Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Great! I found 2 roofing companies in Phoenix. Now let me qualify these leads to assess their data quality.",
+          "step": 3,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521446785-t9krjk",
+          "type": "tool_completed",
+          "timestamp": "2026-03-14T20:50:46.785Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "qualify_leads completed",
+          "step": 3,
+          "tool": "qualify_leads",
+          "agent": "Orchestrator",
+          "detail": "{\"success\":true,\"input_count\":2,\"qualified_count\":2,\"filtered_out\":0,\"duration_ms\":5318,\"score_distribution\":{\"above_80\":2,\"above_60\":2,\"above_40\":2,\"below_40\":0},\"top_leads\":[{\"name\":\"Canyon State Roofing & Consulting\",\"score\":87,\"reasons\":[\"Has phone number for outreach\",\"Has professional website\",\"Has physical address in correct city\",\"Operational status confirmed\",\"Company name suggests specialized independent business with consulting services\"]},{\"name\":\"Scott Roofing Company\",\"score\":85,\"r"
+        },
+        {
+          "id": "1773521446786-nieh4x",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:50:46.786Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Step 4 of 15",
+          "step": 4,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521449859-ywslje",
+          "type": "tool_called",
+          "timestamp": "2026-03-14T20:50:49.859Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Invoking enrich_leads",
+          "step": 4,
+          "tool": "enrich_leads",
+          "agent": "Orchestrator",
+          "detail": "{}"
+        },
+        {
+          "id": "1773521449860-o5bpr7",
+          "type": "thinking",
+          "timestamp": "2026-03-14T20:50:49.860Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Excellent! Both leads scored high (85 and 87 out of 100). Now let me enrich them to gather additional information like emails and services offered.",
+          "step": 4,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521457533-mbvmhb",
+          "type": "tool_completed",
+          "timestamp": "2026-03-14T20:50:57.533Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "enrich_leads completed",
+          "step": 4,
+          "tool": "enrich_leads",
+          "agent": "Orchestrator",
+          "detail": "{\"success\":true,\"enriched_count\":2,\"duration_ms\":7671,\"enrichment_stats\":{\"with_email\":0,\"with_social_profiles\":0,\"with_owner_name\":1,\"with_services\":1},\"errors\":[]}"
+        },
+        {
+          "id": "1773521457534-5nn1xc",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:50:57.534Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Step 5 of 15",
+          "step": 5,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521459585-i7all3",
+          "type": "tool_called",
+          "timestamp": "2026-03-14T20:50:59.585Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Invoking store_leads",
+          "step": 5,
+          "tool": "store_leads",
+          "agent": "Orchestrator",
+          "detail": "{}"
+        },
+        {
+          "id": "1773521459587-lzrl6h",
+          "type": "thinking",
+          "timestamp": "2026-03-14T20:50:59.587Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Now let me store these qualified and enriched leads to the database.",
+          "step": 5,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521459599-49gq4j",
+          "type": "tool_completed",
+          "timestamp": "2026-03-14T20:50:59.599Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "store_leads completed",
+          "step": 5,
+          "tool": "store_leads",
+          "agent": "Orchestrator",
+          "detail": "{\"success\":true,\"new_stored\":2,\"duplicates_updated\":0,\"total_in_database\":260,\"duration_ms\":11}"
+        },
+        {
+          "id": "1773521459600-ncs783",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:50:59.600Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Step 6 of 15",
+          "step": 6,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521461568-3tutlx",
+          "type": "tool_called",
+          "timestamp": "2026-03-14T20:51:01.568Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Invoking generate_report",
+          "step": 6,
+          "tool": "generate_report",
+          "agent": "Orchestrator",
+          "detail": "{}"
+        },
+        {
+          "id": "1773521461569-x61qj8",
+          "type": "thinking",
+          "timestamp": "2026-03-14T20:51:01.569Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Finally, let me generate a report to show you the results.",
+          "step": 6,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521483611-3623nj",
+          "type": "tool_completed",
+          "timestamp": "2026-03-14T20:51:23.611Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "generate_report completed",
+          "step": 6,
+          "tool": "generate_report",
+          "agent": "Orchestrator",
+          "detail": "{\"success\":true,\"leads_in_report\":260,\"report_path\":\"./data/reports/report-2026-03-14-20-51-23.md\",\"json_path\":\"./data/reports/leads-2026-03-14-20-51-23.json\"}"
+        },
+        {
+          "id": "1773521483612-xfwqbo",
+          "type": "step_started",
+          "timestamp": "2026-03-14T20:51:23.612Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Step 7 of 15",
+          "step": 7,
+          "maxSteps": 15,
+          "agent": "Orchestrator"
+        },
+        {
+          "id": "1773521488170-9gd8zl",
+          "type": "run_completed",
+          "timestamp": "2026-03-14T20:51:28.170Z",
+          "runId": "1773521426751-qqc01c",
+          "message": "Perfect! I successfully found 2 roofers in Phoenix, AZ. Here's what I discovered:\n\n## Found Roofers in Phoenix, AZ:\n\n1. **Canyon State Roofing & Consulting** (Score: 87/100)\n   - Phone: (602) 400-1635\n   - Location: Phoenix, AZ\n   - High-quality lead with professional website and confirmed operational status\n\n2. **Scott Roofing Company** (Score: 85/100)  \n   - Phone: (602) 442-7663\n   - Location: Phoenix, AZ\n   - Established business with professional website and confirmed operational status\n\nBoth leads scored very well (85+ out of 100), indicating they have:\n- Valid phone numbers for outreach\n- Professional websites\n- Physical addresses in Phoenix\n- Confirmed operational status\n- Professional business names\n\nThe leads have been stored in the database and are ready for outreach. During enrichment, I was able to gather additional details for one of the businesses including owner information and services offered.",
+          "step": 7,
+          "agent": "Orchestrator"
+        }
+      ],
+      "completedAt": "2026-03-14T20:51:28.170Z"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "city": "Phoenix, AZ",
+  "leads": [
+    {
+      "id": "claude_search_canyon-state-roofing---consulting_1773521439717_1",
+      "company_name": "Canyon State Roofing & Consulting",
+      "trade_category": "roofing",
+      "description": "A family-owned Arizona roofing company with over 20 years in business, holding an A+ BBB rating and 100% five-star reviews on Yelp. Provides commercial and residential roofing services across the Phoenix Valley, working with tile, shingle, metal, and foam roofing systems.",
+      "address": "4809 E. Thistle Landing Dr, #100, Phoenix, AZ 85044",
+      "phone": "(602) 400-1635",
+      "email": null,
+      "website": "https://canyonstateroofs.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T20:50:39.717Z",
+      "metadata": {
+        "search_query": "roofing in Phoenix, AZ",
+        "location": "Phoenix, AZ",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 87,
+      "qualification_reasons": [
+        "Has phone number for outreach",
+        "Has professional website",
+        "Has physical address in correct city",
+        "Operational status confirmed",
+        "Company name suggests specialized independent business with consulting services"
+      ],
+      "enriched_at": "2026-03-14T20:50:49.861Z",
+      "owner_name": "Jim McLain",
+      "services": [
+        "tile roofing",
+        "metal roofing",
+        "foam roofing",
+        "flat roofing",
+        "shingle roofing",
+        "duro-last",
+        "hail damage",
+        "storm damage",
+        "maintenance programs"
+      ],
+      "years_in_business": 20,
+      "status": "new",
+      "created_at": "2026-03-14T20:50:59.598Z",
+      "updated_at": "2026-03-14T20:50:59.598Z"
+    },
+    {
+      "id": "claude_search_scott-roofing-company_1773521439717_0",
+      "company_name": "Scott Roofing Company",
+      "trade_category": "roofing",
+      "description": "A family-owned and operated roofing company serving Arizona since 1982, with over 40,000 customers served. Offers a full range of residential and commercial roofing services including free inspections, leak repairs, and expert installations. Holds an A+ BBB rating and has been voted Arizona's #1 roofing contractor by Ranking Arizona Business Magazine for 13 years.",
+      "address": "24777 N. 15th Ave, Phoenix, AZ 85085",
+      "phone": "(602) 442-7663",
+      "email": null,
+      "website": "https://scottroofingco.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T20:50:39.717Z",
+      "metadata": {
+        "search_query": "roofing in Phoenix, AZ",
+        "location": "Phoenix, AZ",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 85,
+      "qualification_reasons": [
+        "Has phone number for outreach",
+        "Has professional website",
+        "Has physical address in correct city",
+        "Operational status confirmed",
+        "Company name suggests established independent business"
+      ],
+      "enriched_at": "2026-03-14T20:50:49.861Z",
+      "status": "new",
+      "created_at": "2026-03-14T20:50:59.599Z",
+      "updated_at": "2026-03-14T20:50:59.599Z"
+    }
+  ],
+  "updated_at": "2026-03-14T20:50:59.599Z"
+}

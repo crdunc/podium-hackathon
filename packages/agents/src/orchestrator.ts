@@ -15,6 +15,7 @@ import {
   type PipelineState,
 } from './tools/registry';
 import { log, logDivider } from './utils/logger';
+import { createRun, emitEvent } from './utils/events';
 import type { ScraperSource } from './scrapers';
 
 const AGENT_NAME = 'Orchestrator';
@@ -91,6 +92,10 @@ export async function runOrchestrator(options: OrchestratorOptions) {
   log('pipeline', AGENT_NAME, `Storage: Supabase`);
   log('pipeline', AGENT_NAME, `Google API: ${googleApiKey ? 'YES' : 'NO'}`);
 
+  // Create a tracked run for the dashboard
+  const runId = createRun(task, model, MAX_ITERATIONS);
+  emitEvent(runId, 'run_started', `Starting pipeline: ${task}`, { agent: AGENT_NAME });
+
   // Initialize conversation with the user's task
   const messages: Anthropic.Messages.MessageParam[] = [
     { role: 'user', content: task },
@@ -99,6 +104,11 @@ export async function runOrchestrator(options: OrchestratorOptions) {
   // ── ReAct Loop ──────────────────────────────────────────────
   for (let i = 0; i < MAX_ITERATIONS; i++) {
     log('info', AGENT_NAME, `Step ${i + 1}/${MAX_ITERATIONS}`);
+    emitEvent(runId, 'step_started', `Step ${i + 1} of ${MAX_ITERATIONS}`, {
+      step: i + 1,
+      maxSteps: MAX_ITERATIONS,
+      agent: AGENT_NAME,
+    });
 
     // Ask Claude what to do next
     const response = await withTimeout(
@@ -127,6 +137,10 @@ export async function runOrchestrator(options: OrchestratorOptions) {
 
       logDivider('ORCHESTRATOR COMPLETE');
       console.log('\n' + finalMessage + '\n');
+      emitEvent(runId, 'run_completed', finalMessage, {
+        step: i + 1,
+        agent: AGENT_NAME,
+      });
       return { message: finalMessage, steps: i + 1 };
     }
 
@@ -144,16 +158,26 @@ export async function runOrchestrator(options: OrchestratorOptions) {
 
     for (const toolUse of toolUseBlocks) {
       log('agent', AGENT_NAME, `Calling: ${toolUse.name}`);
+      emitEvent(runId, 'tool_called', `Invoking ${toolUse.name}`, {
+        step: i + 1,
+        tool: toolUse.name,
+        agent: AGENT_NAME,
+        detail: JSON.stringify(toolUse.input).slice(0, 500),
+      });
 
       // Print Claude's reasoning if it came before the tool call
       const textBefore = assistantContent.filter(
         (block): block is Anthropic.Messages.TextBlock => block.type === 'text'
       );
-      if (textBefore.length > 0 && i === 0) {
-        // Only print reasoning on first step to avoid noise
-        for (const t of textBefore) {
-          log('info', AGENT_NAME, `Thinking: ${t.text.slice(0, 200)}...`);
+      if (textBefore.length > 0) {
+        const reasoning = textBefore.map(t => t.text).join('\n').slice(0, 500);
+        if (i === 0) {
+          log('info', AGENT_NAME, `Thinking: ${reasoning.slice(0, 200)}...`);
         }
+        emitEvent(runId, 'thinking', reasoning, {
+          step: i + 1,
+          agent: AGENT_NAME,
+        });
       }
 
       try {
@@ -168,6 +192,12 @@ export async function runOrchestrator(options: OrchestratorOptions) {
         );
 
         log('success', AGENT_NAME, `${toolUse.name} complete`);
+        emitEvent(runId, 'tool_completed', `${toolUse.name} completed`, {
+          step: i + 1,
+          tool: toolUse.name,
+          agent: AGENT_NAME,
+          detail: typeof result === 'string' ? result.slice(0, 500) : undefined,
+        });
 
         toolResults.push({
           type: 'tool_result',
@@ -177,6 +207,11 @@ export async function runOrchestrator(options: OrchestratorOptions) {
       } catch (err) {
         const errorMsg = `Tool ${toolUse.name} failed: ${(err as Error).message}`;
         log('error', AGENT_NAME, errorMsg);
+        emitEvent(runId, 'tool_error', errorMsg, {
+          step: i + 1,
+          tool: toolUse.name,
+          agent: AGENT_NAME,
+        });
 
         toolResults.push({
           type: 'tool_result',
@@ -192,5 +227,9 @@ export async function runOrchestrator(options: OrchestratorOptions) {
   }
 
   log('warn', AGENT_NAME, `Hit max iterations (${MAX_ITERATIONS})`);
+  emitEvent(runId, 'run_completed', `Reached maximum iterations (${MAX_ITERATIONS})`, {
+    step: MAX_ITERATIONS,
+    agent: AGENT_NAME,
+  });
   return { message: 'Reached maximum iterations', steps: MAX_ITERATIONS };
 }

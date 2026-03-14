@@ -21,6 +21,11 @@ import { resolve } from 'path';
 dotenv.config({ path: resolve(process.cwd(), '../../.env') });
 // Also try cwd in case we're already at root
 dotenv.config();
+
+// dotenv v17 can corrupt long values with whitespace — strip it
+if (process.env.ANTHROPIC_API_KEY) {
+  process.env.ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY.replace(/\s/g, '');
+}
 import { Command } from 'commander';
 import { runOrchestrator } from './orchestrator';
 import { getLeadStats } from './utils/supabase';
