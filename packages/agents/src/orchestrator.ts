@@ -20,6 +20,17 @@ import type { ScraperSource } from './scrapers';
 
 const AGENT_NAME = 'Orchestrator';
 const MAX_ITERATIONS = 15;
+const CLAUDE_API_TIMEOUT_MS = 60_000; // 60s per Claude call
+const TOOL_TIMEOUT_MS = 120_000; // 120s per tool execution
+
+function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise<T> {
+  return Promise.race([
+    promise,
+    new Promise<never>((_, reject) =>
+      setTimeout(() => reject(new Error(`${label} timed out after ${ms / 1000}s`)), ms)
+    ),
+  ]);
+}
 
 export interface OrchestratorOptions {
   task: string;
@@ -57,7 +68,7 @@ export async function runOrchestrator(options: OrchestratorOptions) {
     reportDir,
     googleApiKey = process.env.GOOGLE_PLACES_API_KEY,
     sources,
-    model = 'claude-sonnet-4-20250514',
+    model = 'claude-sonnet-4-6',
   } = options;
 
   const client = new Anthropic();
@@ -92,13 +103,17 @@ export async function runOrchestrator(options: OrchestratorOptions) {
     log('info', AGENT_NAME, `Step ${i + 1}/${MAX_ITERATIONS}`);
 
     // Ask Claude what to do next
-    const response = await client.messages.create({
-      model,
-      max_tokens: 4096,
-      system: SYSTEM_PROMPT,
-      tools: TOOL_DEFINITIONS,
-      messages,
-    });
+    const response = await withTimeout(
+      client.messages.create({
+        model,
+        max_tokens: 4096,
+        system: SYSTEM_PROMPT,
+        tools: TOOL_DEFINITIONS,
+        messages,
+      }),
+      CLAUDE_API_TIMEOUT_MS,
+      'Claude API call'
+    );
 
     // Process Claude's response
     const assistantContent = response.content;
@@ -144,10 +159,14 @@ export async function runOrchestrator(options: OrchestratorOptions) {
       }
 
       try {
-        const result = await executeTool(
-          toolUse.name,
-          toolUse.input as Record<string, unknown>,
-          context
+        const result = await withTimeout(
+          executeTool(
+            toolUse.name,
+            toolUse.input as Record<string, unknown>,
+            context
+          ),
+          TOOL_TIMEOUT_MS,
+          `Tool ${toolUse.name}`
         );
 
         log('success', AGENT_NAME, `${toolUse.name} complete`);

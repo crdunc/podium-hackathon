@@ -263,7 +263,7 @@
     },
     {
       "id": "google_places_ChIJ_QORuM5_TYcR7WEWbAD0no4",
-      "company_name": "Hutchings handyman service’s",
+      "company_name": "Hutchings handyman service\u2019s",
       "trade_category": "handyman",
       "description": null,
       "address": "2449n N 840 W, Lehi, UT 84043, USA",
@@ -555,7 +555,104 @@
       "created_at": "2026-03-14T17:46:02.832394+00:00",
       "updated_at": "2026-03-14T18:20:07.921Z",
       "social_profiles": {}
+    },
+    {
+      "id": "claude_search_yes--air-conditioning--heating--plumbing_1773515567853_2",
+      "company_name": "YES! Air Conditioning, Heating, Plumbing and Electric",
+      "trade_category": "hvac",
+      "description": "A full-service home comfort company in Lehi offering HVAC, plumbing, and electrical services including AC repair, furnace repair, maintenance plans, and indoor air quality solutions.",
+      "address": "2940 Maple Loop Dr., Ste 201, Office F, Lehi, UT 84043",
+      "phone": "(801) 237-0701",
+      "email": null,
+      "website": "https://www.theyesmancan.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:12:47.853Z",
+      "metadata": {
+        "search_query": "hvac in Lehi, UT",
+        "location": "Lehi, UT",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 90,
+      "qualification_reasons": [
+        "Has phone and professional website",
+        "Complete detailed address with suite number",
+        "Multi-trade business suggests established operation",
+        "Operational status confirmed",
+        "Strong branding with 'YES!' name recognition",
+        "Address matches target location"
+      ],
+      "enriched_at": "2026-03-14T19:12:58.516Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:12:58.517Z",
+      "updated_at": "2026-03-14T19:12:58.517Z"
+    },
+    {
+      "id": "claude_search_holmes-heating---cooling_1773515567853_0",
+      "company_name": "Holmes Heating & Cooling",
+      "trade_category": "hvac",
+      "description": "A long-established HVAC company in Lehi offering installation and service of residential and commercial HVAC systems. In business since 1981.",
+      "address": "701 E State St, Lehi, UT 84043",
+      "phone": "(801) 768-4151",
+      "email": null,
+      "website": "https://holmesheatingandcooling.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:12:47.853Z",
+      "metadata": {
+        "search_query": "hvac in Lehi, UT",
+        "location": "Lehi, UT",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 85,
+      "qualification_reasons": [
+        "Has phone and website",
+        "Complete physical address with street number",
+        "Name suggests independent local business",
+        "Operational status confirmed",
+        "Address matches target location"
+      ],
+      "enriched_at": "2026-03-14T19:12:58.516Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:12:58.518Z",
+      "updated_at": "2026-03-14T19:12:58.518Z"
+    },
+    {
+      "id": "claude_search_srv-heating-and-air_1773515567853_1",
+      "company_name": "SRV Heating and Air",
+      "trade_category": "hvac",
+      "description": "A family-owned HVAC company based in Lehi, UT, serving the area since 2017. Offers 24/7 residential and commercial heating, cooling, repairs, installations, maintenance, and new construction HVAC services.",
+      "address": "Lehi, UT",
+      "phone": "(801) 923-6092",
+      "email": null,
+      "website": "https://www.srvheatingandair.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:12:47.853Z",
+      "metadata": {
+        "search_query": "hvac in Lehi, UT",
+        "location": "Lehi, UT",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 75,
+      "qualification_reasons": [
+        "Has phone and website",
+        "Name suggests independent business",
+        "Operational status confirmed",
+        "Address only shows city/state - missing street address",
+        "Location matches target area"
+      ],
+      "enriched_at": "2026-03-14T19:12:58.516Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:12:58.518Z",
+      "updated_at": "2026-03-14T19:12:58.518Z"
     }
   ],
-  "updated_at": "2026-03-14T18:20:07.928Z"
+  "updated_at": "2026-03-14T19:12:58.519Z"
 }

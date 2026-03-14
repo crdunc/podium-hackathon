@@ -1,0 +1,102 @@
+{
+  "city": "Raleigh, NC",
+  "leads": [
+    {
+      "id": "claude_search_comfort-monster-heating---air_1773516322367_0",
+      "company_name": "Comfort Monster Heating & Air",
+      "trade_category": "hvac",
+      "description": "A locally owned HVAC contractor serving Raleigh and the surrounding area, offering residential and commercial heating, cooling, installation, repair, and maintenance. A Carrier Factory Authorized Dealer and recipient of the Carrier President's Award, with technicians averaging over 10 years of experience. Open 24/7.",
+      "address": "3216 Wellington Ct, Ste 111, Raleigh, NC 27615",
+      "phone": "(919) 666-7837",
+      "email": null,
+      "website": "https://comfortmonster.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:25:22.367Z",
+      "metadata": {
+        "search_query": "hvac in Raleigh, NC",
+        "location": "Raleigh, NC",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 95,
+      "qualification_reasons": [
+        "Has phone, website, and physical address",
+        "Operational business status",
+        "Unique branded name suggests independent business",
+        "Address matches Raleigh, NC area",
+        "Professional website domain matches company name"
+      ],
+      "enriched_at": "2026-03-14T19:25:31.212Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:25:31.223Z",
+      "updated_at": "2026-03-14T19:25:31.223Z"
+    },
+    {
+      "id": "claude_search_carolina-comfort-air_1773516322367_2",
+      "company_name": "Carolina Comfort Air",
+      "trade_category": "hvac",
+      "description": "A Trane-certified HVAC dealer serving Raleigh and surrounding areas, specializing in residential HVAC repair, installation, and maintenance. Has been providing heating and cooling services to Raleigh homeowners since 2007, offering financing options and free in-home consultations.",
+      "address": "5212 US-70 Bus Hwy W, Clayton, NC 27520",
+      "phone": "(919) 367-3818",
+      "email": null,
+      "website": "https://www.carolinacomfortair.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:25:22.367Z",
+      "metadata": {
+        "search_query": "hvac in Raleigh, NC",
+        "location": "Raleigh, NC",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 90,
+      "qualification_reasons": [
+        "Has phone, website, and physical address",
+        "Operational business status",
+        "Regional branded name suggests independent business",
+        "Address in Clayton is near Raleigh metro area",
+        "Professional website domain"
+      ],
+      "enriched_at": "2026-03-14T19:25:31.212Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:25:31.223Z",
+      "updated_at": "2026-03-14T19:25:31.223Z"
+    },
+    {
+      "id": "claude_search_all-american-heating--air---plumbing_1773516322367_1",
+      "company_name": "All American Heating, Air & Plumbing",
+      "trade_category": "hvac",
+      "description": "A family-owned and operated HVAC and plumbing company serving Raleigh and the Triangle area since 2001. Specializes in heating and cooling repair, installation, and maintenance for residential and commercial clients, with same-day and emergency service available 24/7. A Trane Comfort Specialist partner.",
+      "address": "7216 ACC Blvd, Ste 100, Raleigh, NC 27617",
+      "phone": "(919) 782-6242",
+      "email": null,
+      "website": "https://www.allamerican-nc.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:25:22.367Z",
+      "metadata": {
+        "search_query": "hvac in Raleigh, NC",
+        "location": "Raleigh, NC",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 85,
+      "qualification_reasons": [
+        "Has phone, website, and physical address",
+        "Operational business status",
+        "Address matches Raleigh, NC area",
+        "Name pattern suggests possible franchise but still valuable",
+        "Multi-trade services indicate established business"
+      ],
+      "enriched_at": "2026-03-14T19:25:31.212Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:25:31.223Z",
+      "updated_at": "2026-03-14T19:25:31.223Z"
+    }
+  ],
+  "updated_at": "2026-03-14T19:25:31.223Z"
+}

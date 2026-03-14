@@ -14,7 +14,13 @@
 //   GOOGLE_PLACES_API_KEY=AIza...         # Optional
 // ============================================================
 
-import 'dotenv/config';
+import dotenv from 'dotenv';
+import { resolve } from 'path';
+
+// Load .env from monorepo root (two levels up from packages/agents/)
+dotenv.config({ path: resolve(process.cwd(), '../../.env') });
+// Also try cwd in case we're already at root
+dotenv.config();
 import { Command } from 'commander';
 import { runOrchestrator } from './orchestrator';
 import { getLeadStats } from './agents/storage-agent';

@@ -1,18 +1,19 @@
 // ============================================================
 // Scraper Registry
 // Routes scraping requests to the right source based on config.
-// Priority: Google Places API (if key available) → Yelp → Yellow Pages
+// Priority: Google Places → Claude Web Search → Yelp → Yellow Pages
 // ============================================================
 
 import type { Lead, TradeCategory } from '@podium/shared';
 import { searchGooglePlaces } from './google-places';
+import { searchWithClaude } from './claude-search';
 import { scrapeYelp } from './yelp';
 import { scrapeYellowPages } from './yellowpages';
 import { log } from '../utils/logger';
 
 const AGENT_NAME = 'Scraper';
 
-export type ScraperSource = 'google_places' | 'yelp' | 'yellowpages';
+export type ScraperSource = 'google_places' | 'claude_search' | 'yelp' | 'yellowpages';
 
 export interface ScrapeOptions {
   trade: TradeCategory;
@@ -28,6 +29,7 @@ export interface ScrapeOptions {
  * Scrape for leads using available sources.
  * Tries sources in order until one returns results.
  * If a Google API key is set, uses that first (most reliable).
+ * Claude web search is the primary fallback — no scraping, no 403s.
  */
 export async function scrapeLeads(options: ScrapeOptions): Promise<Lead[]> {
   const {
@@ -37,8 +39,8 @@ export async function scrapeLeads(options: ScrapeOptions): Promise<Lead[]> {
     maxResults = 10,
     googleApiKey,
     sources = googleApiKey
-      ? ['google_places', 'yelp', 'yellowpages']
-      : ['yelp', 'yellowpages'],
+      ? ['google_places', 'claude_search', 'yelp', 'yellowpages']
+      : ['claude_search', 'yelp', 'yellowpages'],
   } = options;
 
   for (const source of sources) {
@@ -52,6 +54,10 @@ export async function scrapeLeads(options: ScrapeOptions): Promise<Lead[]> {
             continue;
           }
           leads = await searchGooglePlaces(query, trade, location, googleApiKey, maxResults);
+          break;
+
+        case 'claude_search':
+          leads = await searchWithClaude(trade, location, maxResults);
           break;
 
         case 'yelp':
@@ -79,5 +85,6 @@ export async function scrapeLeads(options: ScrapeOptions): Promise<Lead[]> {
 }
 
 export { searchGooglePlaces } from './google-places';
+export { searchWithClaude } from './claude-search';
 export { scrapeYelp } from './yelp';
 export { scrapeYellowPages } from './yellowpages';
