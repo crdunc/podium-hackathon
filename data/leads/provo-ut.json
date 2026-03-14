@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "hvac in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 625-6078",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:55.081860+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:55.081860+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ3TXM7WGzwoAR1KhdKyRBXBY",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "plumbing in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 877-5175",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:56.516422+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:56.516422+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJE5r39gTfyYsROwJzERmauPo",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "plumbing in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 412-8168",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:56.516663+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:56.516663+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJZ8k7v5iXTYcRprqsLLKJEvQ",
@@ -75,7 +108,18 @@
       "metadata": {
         "search_query": "plumbing in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 381-6756",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:56.516678+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:56.516678+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJP7WLEU-bTYcR9EG4VVaHcsY",
@@ -94,7 +138,18 @@
       "metadata": {
         "search_query": "plumbing in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 334-4881",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:56.516687+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:56.516687+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJi8PTQIGbTYcR--9mHsusago",
@@ -113,7 +168,18 @@
       "metadata": {
         "search_query": "electrical in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 200-4996",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:57.917053+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:57.917053+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJNWy69v-ZTYcR920NSyzZCsc",
@@ -132,7 +198,18 @@
       "metadata": {
         "search_query": "electrical in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 377-3197",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:57.917071+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:57.917071+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ-xxi0uSRTYcRO6RQzf_05Ow",
@@ -151,7 +228,18 @@
       "metadata": {
         "search_query": "lawn care in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 427-3479",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:43:59.487505+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:43:59.487505+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ_5-VQrCbTYcRvThOBVkRRjY",
@@ -170,7 +258,18 @@
       "metadata": {
         "search_query": "roofing in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (435) 244-0218",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:02.389109+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:02.389109+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJATVe4QGRTYcRLGhuyMKxCHM",
@@ -189,7 +288,18 @@
       "metadata": {
         "search_query": "roofing in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 336-5021",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:02.389123+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:02.389123+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJB3pHrYq7TYcRSH5pERiNUkU",
@@ -208,7 +318,18 @@
       "metadata": {
         "search_query": "painting in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 376-6343",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:03.743083+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:03.743083+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ62lcRsWbTYcRglAwDPVAjlw",
@@ -227,7 +348,18 @@
       "metadata": {
         "search_query": "painting in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 995-3106",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:03.743125+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:03.743125+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJnS9NtfiATYcRjoFQe2K7spw",
@@ -246,7 +378,18 @@
       "metadata": {
         "search_query": "carpet cleaning in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 709-7377",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:06.656943+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:06.656943+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJmxeeYMGZTYcR64UqzryJMp8",
@@ -265,7 +408,18 @@
       "metadata": {
         "search_query": "appliance repair in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 438-4144",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:11.263948+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:11.263948+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJL4uKlQibTYcRb42JnEAE-4c",
@@ -284,7 +438,18 @@
       "metadata": {
         "search_query": "appliance repair in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 449-1127",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:11.263954+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:11.263954+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJc1nPtYObTYcRuz__VrRNDMk",
@@ -303,7 +468,18 @@
       "metadata": {
         "search_query": "tree service in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 687-9977",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:12.759123+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:12.759123+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJKbqPvh99TYcRqi4jYHeGjcc",
@@ -322,7 +498,13 @@
       "metadata": {
         "search_query": "fencing in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:44:14.163658+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:14.163658+00:00",
+      "updated_at": "2026-03-14T17:44:14.163658+00:00"
     },
     {
       "id": "google_places_ChIJJxDtxsKbTYcR865n_4iMlLE",
@@ -341,7 +523,18 @@
       "metadata": {
         "search_query": "concrete in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 885-5794",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:15.499546+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:15.499546+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ-YO1b3WaTYcRdDbjBdm_P9Y",
@@ -360,8 +553,19 @@
       "metadata": {
         "search_query": "concrete in Provo, UT",
         "location": "Provo, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 373-9685",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:44:15.499560+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:44:15.499560+00:00",
+      "updated_at": "2026-03-14T18:20:07.922Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:44:15.499782+00:00"
+  "updated_at": "2026-03-14T18:20:07.933Z"
 }

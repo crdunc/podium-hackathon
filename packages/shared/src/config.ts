@@ -95,6 +95,17 @@ export const RATE_LIMITS = {
   maxRetriesPerRequest: 2,
 };
 
-/** Paths */
-export const LEADS_DIR = './data/leads';
-export const DB_PATH = './data/leads.json';
+/** Paths — resolve from monorepo root */
+import { resolve } from 'path';
+import { existsSync } from 'fs';
+
+function findMonorepoRoot(): string {
+  let dir = process.cwd();
+  for (let i = 0; i < 5; i++) {
+    if (existsSync(resolve(dir, 'pnpm-workspace.yaml'))) return dir;
+    dir = resolve(dir, '..');
+  }
+  return process.cwd();
+}
+
+export const LEADS_DIR = resolve(findMonorepoRoot(), 'data', 'leads');

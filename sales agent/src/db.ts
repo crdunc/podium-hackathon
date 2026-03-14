@@ -25,6 +25,7 @@ function migrate(db: Database.Database): void {
       hasWebsite INTEGER NOT NULL DEFAULT 0,
       email TEXT NOT NULL,
       phone TEXT NOT NULL,
+      siteUrl TEXT,
       status TEXT NOT NULL DEFAULT 'pending',
       sequenceStep INTEGER NOT NULL DEFAULT 0,
       nextFollowUpAt TEXT,
@@ -48,12 +49,13 @@ function migrate(db: Database.Database): void {
 export function insertLead(lead: Omit<Lead, "id" | "createdAt" | "updatedAt">): Lead {
   const db = getDb();
   const stmt = db.prepare(`
-    INSERT INTO leads (businessName, industry, location, hasWebsite, email, phone, status, sequenceStep, nextFollowUpAt)
-    VALUES (@businessName, @industry, @location, @hasWebsite, @email, @phone, @status, @sequenceStep, @nextFollowUpAt)
+    INSERT INTO leads (businessName, industry, location, hasWebsite, email, phone, siteUrl, status, sequenceStep, nextFollowUpAt)
+    VALUES (@businessName, @industry, @location, @hasWebsite, @email, @phone, @siteUrl, @status, @sequenceStep, @nextFollowUpAt)
   `);
   const result = stmt.run({
     ...lead,
     hasWebsite: lead.hasWebsite ? 1 : 0,
+    siteUrl: lead.siteUrl ?? null,
   });
   return getLeadById(result.lastInsertRowid as number)!;
 }
@@ -127,6 +129,7 @@ function rowToLead(row: any): Lead {
     hasWebsite: row.hasWebsite === 1,
     email: row.email,
     phone: row.phone,
+    siteUrl: row.siteUrl ?? undefined,
     status: row.status,
     sequenceStep: row.sequenceStep,
     nextFollowUpAt: row.nextFollowUpAt,

@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "hvac in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 697-9135",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:42.509740+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:42.509740+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ9cLSl3cTq4kRlqBT0fQe3KI",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "plumbing in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 753-9152",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:43.984180+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:43.984180+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJbYwuJAd_TYcRpQGIRtiXt34",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "plumbing in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 426-3134",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:43.984203+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:43.984203+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJNaA-2Xx_TYcRyQzRgiclopY",
@@ -75,7 +108,13 @@
       "metadata": {
         "search_query": "lawn care in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:46.802847+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:46.802847+00:00",
+      "updated_at": "2026-03-14T17:45:46.802847+00:00"
     },
     {
       "id": "google_places_ChIJA8SvChESAkYRrf-DK4sSlhM",
@@ -94,7 +133,18 @@
       "metadata": {
         "search_query": "landscaping in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 690-4018",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:48.242960+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:48.242960+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJcxjJGrV_TYcRbQVX3r2y9-4",
@@ -113,7 +163,13 @@
       "metadata": {
         "search_query": "roofing in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:49.596883+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:49.596883+00:00",
+      "updated_at": "2026-03-14T17:45:49.596883+00:00"
     },
     {
       "id": "google_places_ChIJVxGP8_ft5C8RYUaJjwX-ihk",
@@ -132,7 +188,18 @@
       "metadata": {
         "search_query": "roofing in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 804-9036",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:49.596914+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:49.596914+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJzV9O79GBTYcRIJ0Yszv6vg4",
@@ -151,7 +218,18 @@
       "metadata": {
         "search_query": "pest control in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 206-5684",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:52.714658+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:52.714658+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJAYHJtVyBUocR01gXwJ0hzfo",
@@ -170,11 +248,22 @@
       "metadata": {
         "search_query": "carpet cleaning in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 979-8772",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:54.284276+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:54.284276+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ_QORuM5_TYcR7WEWbAD0no4",
-      "company_name": "Hutchings handyman service’s",
+      "company_name": "Hutchings handyman service\u2019s",
       "trade_category": "handyman",
       "description": null,
       "address": "2449n N 840 W, Lehi, UT 84043, USA",
@@ -189,7 +278,18 @@
       "metadata": {
         "search_query": "handyman in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 602-4989",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:55.606338+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:55.606338+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJgx-1ejiBTYcR-1yHjY-TnZg",
@@ -208,7 +308,18 @@
       "metadata": {
         "search_query": "handyman in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (808) 282-2863",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:55.606369+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:55.606369+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJG1vuqvB_TYcR-1zx7iCuNGg",
@@ -227,7 +338,18 @@
       "metadata": {
         "search_query": "handyman in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 687-5189",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:55.606375+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:55.606375+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJyweSMqB_TYcRXV7wHdzq3Mw",
@@ -246,7 +368,18 @@
       "metadata": {
         "search_query": "handyman in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 806-0504",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:55.606381+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:55.606381+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJSZHCRJd_TYcRNvFhCkiSd5I",
@@ -265,7 +398,18 @@
       "metadata": {
         "search_query": "garage door repair in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 796-7000",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:57.148260+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:57.148260+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ6WT__9N-TYcRMRF8MDnF13o",
@@ -284,7 +428,18 @@
       "metadata": {
         "search_query": "garage door repair in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 636-2576",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:57.148302+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:57.148302+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJTfkudLuaTYcRwRqwXo0_QxA",
@@ -303,7 +458,18 @@
       "metadata": {
         "search_query": "tree service in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 734-0186",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:00.036474+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:00.036474+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJKbqPvh99TYcRqi4jYHeGjcc",
@@ -322,7 +488,13 @@
       "metadata": {
         "search_query": "fencing in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:46:01.450016+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:01.450016+00:00",
+      "updated_at": "2026-03-14T17:46:01.450016+00:00"
     },
     {
       "id": "google_places_ChIJty-6X9OBTYcRAi8sbT-n0dg",
@@ -341,7 +513,18 @@
       "metadata": {
         "search_query": "fencing in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 548-0383",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:01.450057+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:01.450057+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJsWOsCcB_TYcRr4zYOPczV2Y",
@@ -360,8 +543,116 @@
       "metadata": {
         "search_query": "concrete in Lehi, UT",
         "location": "Lehi, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 768-4008",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:46:02.832394+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:46:02.832394+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
+    },
+    {
+      "id": "claude_search_yes--air-conditioning--heating--plumbing_1773515567853_2",
+      "company_name": "YES! Air Conditioning, Heating, Plumbing and Electric",
+      "trade_category": "hvac",
+      "description": "A full-service home comfort company in Lehi offering HVAC, plumbing, and electrical services including AC repair, furnace repair, maintenance plans, and indoor air quality solutions.",
+      "address": "2940 Maple Loop Dr., Ste 201, Office F, Lehi, UT 84043",
+      "phone": "(801) 237-0701",
+      "email": null,
+      "website": "https://www.theyesmancan.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:12:47.853Z",
+      "metadata": {
+        "search_query": "hvac in Lehi, UT",
+        "location": "Lehi, UT",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 90,
+      "qualification_reasons": [
+        "Has phone and professional website",
+        "Complete detailed address with suite number",
+        "Multi-trade business suggests established operation",
+        "Operational status confirmed",
+        "Strong branding with 'YES!' name recognition",
+        "Address matches target location"
+      ],
+      "enriched_at": "2026-03-14T19:12:58.516Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:12:58.517Z",
+      "updated_at": "2026-03-14T19:12:58.517Z"
+    },
+    {
+      "id": "claude_search_holmes-heating---cooling_1773515567853_0",
+      "company_name": "Holmes Heating & Cooling",
+      "trade_category": "hvac",
+      "description": "A long-established HVAC company in Lehi offering installation and service of residential and commercial HVAC systems. In business since 1981.",
+      "address": "701 E State St, Lehi, UT 84043",
+      "phone": "(801) 768-4151",
+      "email": null,
+      "website": "https://holmesheatingandcooling.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:12:47.853Z",
+      "metadata": {
+        "search_query": "hvac in Lehi, UT",
+        "location": "Lehi, UT",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 85,
+      "qualification_reasons": [
+        "Has phone and website",
+        "Complete physical address with street number",
+        "Name suggests independent local business",
+        "Operational status confirmed",
+        "Address matches target location"
+      ],
+      "enriched_at": "2026-03-14T19:12:58.516Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:12:58.518Z",
+      "updated_at": "2026-03-14T19:12:58.518Z"
+    },
+    {
+      "id": "claude_search_srv-heating-and-air_1773515567853_1",
+      "company_name": "SRV Heating and Air",
+      "trade_category": "hvac",
+      "description": "A family-owned HVAC company based in Lehi, UT, serving the area since 2017. Offers 24/7 residential and commercial heating, cooling, repairs, installations, maintenance, and new construction HVAC services.",
+      "address": "Lehi, UT",
+      "phone": "(801) 923-6092",
+      "email": null,
+      "website": "https://www.srvheatingandair.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:12:47.853Z",
+      "metadata": {
+        "search_query": "hvac in Lehi, UT",
+        "location": "Lehi, UT",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 75,
+      "qualification_reasons": [
+        "Has phone and website",
+        "Name suggests independent business",
+        "Operational status confirmed",
+        "Address only shows city/state - missing street address",
+        "Location matches target area"
+      ],
+      "enriched_at": "2026-03-14T19:12:58.516Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:12:58.518Z",
+      "updated_at": "2026-03-14T19:12:58.518Z"
     }
   ],
-  "updated_at": "2026-03-14T17:46:02.832633+00:00"
+  "updated_at": "2026-03-14T19:12:58.519Z"
 }

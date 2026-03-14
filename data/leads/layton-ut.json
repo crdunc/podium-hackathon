@@ -18,7 +18,18 @@
       "metadata": {
         "search_query": "plumbing in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 640-4642",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:22.511951+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:22.511951+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJlVT5xcMDU4cR-GiLl17JPx4",
@@ -37,7 +48,18 @@
       "metadata": {
         "search_query": "plumbing in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 217-7869",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:22.511972+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:22.511972+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJCZdqHuMBU4cRl6GWRh6CQ-k",
@@ -56,7 +78,18 @@
       "metadata": {
         "search_query": "plumbing in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 628-6209",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:22.511978+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:22.511978+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJm0CntYABU4cRRIu7M-UbgUE",
@@ -75,7 +108,13 @@
       "metadata": {
         "search_query": "electrical in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:23.845139+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:23.845139+00:00",
+      "updated_at": "2026-03-14T17:45:23.845139+00:00"
     },
     {
       "id": "google_places_ChIJobtcLeQDU4cRTWsn7iyFzFU",
@@ -94,7 +133,18 @@
       "metadata": {
         "search_query": "electrical in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 825-7800",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:23.845155+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:23.845155+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJgfetaK8DU4cR-W2UGgSnXbU",
@@ -113,7 +163,18 @@
       "metadata": {
         "search_query": "electrical in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 544-7666",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:23.845161+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:23.845161+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJI9731KQDU4cRuJ7P61oRdIk",
@@ -132,7 +193,13 @@
       "metadata": {
         "search_query": "electrical in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:23.845166+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:23.845166+00:00",
+      "updated_at": "2026-03-14T17:45:23.845166+00:00"
     },
     {
       "id": "google_places_ChIJVVXRbPADU4cRPmMNlk0JMCA",
@@ -151,7 +218,18 @@
       "metadata": {
         "search_query": "electrical in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 513-0040",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:23.845169+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:23.845169+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJVVVlZKYDU4cRIyG4puA0AdE",
@@ -170,7 +248,18 @@
       "metadata": {
         "search_query": "electrical in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 544-8000",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:23.845174+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:23.845174+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ-1b2QY8DU4cRCtsnMBqcHMA",
@@ -189,7 +278,18 @@
       "metadata": {
         "search_query": "lawn care in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 405-0729",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:25.303250+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:25.303250+00:00",
+      "updated_at": "2026-03-14T18:20:07.920Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJrVdoEmEBU4cRTVqYOsGeqvA",
@@ -208,7 +308,18 @@
       "metadata": {
         "search_query": "lawn care in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 458-8273",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:25.303295+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:25.303295+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJCZdqHuMBU4cRFvBE8hjWgog",
@@ -227,7 +338,18 @@
       "metadata": {
         "search_query": "landscaping in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 663-3989",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:26.766836+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:26.766836+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJIaykGySBUocRimsXA4D2b-M",
@@ -246,7 +368,18 @@
       "metadata": {
         "search_query": "roofing in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 495-3939",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:28.370515+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:28.370515+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJixxjc1cFU4cRosQ64HmIlVw",
@@ -265,7 +398,18 @@
       "metadata": {
         "search_query": "roofing in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (866) 767-4481",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:28.370540+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:28.370540+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJwRvaI20DU4cROLFtWLwArkI",
@@ -284,7 +428,13 @@
       "metadata": {
         "search_query": "painting in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:29.823575+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:29.823575+00:00",
+      "updated_at": "2026-03-14T17:45:29.823575+00:00"
     },
     {
       "id": "google_places_ChIJhU-n0rcDU4cRRh6BdLAj8Fg",
@@ -303,7 +453,18 @@
       "metadata": {
         "search_query": "painting in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 444-1001",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:29.823593+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:29.823593+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJjwLeELsDU4cRFiX1GksB3ls",
@@ -322,7 +483,13 @@
       "metadata": {
         "search_query": "carpet cleaning in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:32.569582+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:32.569582+00:00",
+      "updated_at": "2026-03-14T17:45:32.569582+00:00"
     },
     {
       "id": "google_places_ChIJr0yCJHIDU4cRSnh9rx4K3rI",
@@ -341,7 +508,18 @@
       "metadata": {
         "search_query": "handyman in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 439-5759",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:33.898971+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:33.898971+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJOxeD81UOmIcRUxbIObSLNSU",
@@ -360,7 +538,18 @@
       "metadata": {
         "search_query": "handyman in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (385) 200-5500",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:33.898986+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:33.898986+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJZShtOGoBU4cRkLwqIbZNNEc",
@@ -379,7 +568,13 @@
       "metadata": {
         "search_query": "garage door repair in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:35.343340+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:35.343340+00:00",
+      "updated_at": "2026-03-14T17:45:35.343340+00:00"
     },
     {
       "id": "google_places_ChIJ3eGYn0EFU4cRar0QDevjbnw",
@@ -398,7 +593,13 @@
       "metadata": {
         "search_query": "appliance repair in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 0,
+      "qualification_reasons": [],
+      "enriched_at": "2026-03-14T17:45:36.817005+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:36.817005+00:00",
+      "updated_at": "2026-03-14T17:45:36.817005+00:00"
     },
     {
       "id": "google_places_ChIJS_u7ZBEBU4cRvmblCan9MPA",
@@ -417,7 +618,18 @@
       "metadata": {
         "search_query": "appliance repair in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 989-1455",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:36.817019+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:36.817019+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJLV9JqnoFU4cRsDBka4g4MXg",
@@ -436,7 +648,18 @@
       "metadata": {
         "search_query": "appliance repair in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 792-3054",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:36.817023+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:36.817023+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJOxKlgCsbU4cR3XELLrO_FHI",
@@ -455,7 +678,18 @@
       "metadata": {
         "search_query": "tree service in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 513-0989",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:38.304097+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:38.304097+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJYWEq5WABU4cR1l87pFf1Z1c",
@@ -474,7 +708,18 @@
       "metadata": {
         "search_query": "concrete in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 721-7110",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:41.051274+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:41.051274+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJXTRoTVYBU4cRNLg_CN7WbdU",
@@ -493,7 +738,18 @@
       "metadata": {
         "search_query": "concrete in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 771-3881",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:41.051294+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:41.051294+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJDQsIs3UEU4cRVNfvT8Ybk7A",
@@ -512,7 +768,18 @@
       "metadata": {
         "search_query": "concrete in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 479-6550",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:41.051300+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:41.051300+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     },
     {
       "id": "google_places_ChIJ5au6UHgDU4cR3yKzvOPAvgM",
@@ -531,8 +798,19 @@
       "metadata": {
         "search_query": "concrete in Layton, UT",
         "location": "Layton, UT"
-      }
+      },
+      "qualification_score": 60,
+      "qualification_reasons": [
+        "Has phone: (801) 928-9070",
+        "Has physical address",
+        "Business is operational"
+      ],
+      "enriched_at": "2026-03-14T17:45:41.051305+00:00",
+      "status": "new",
+      "created_at": "2026-03-14T17:45:41.051305+00:00",
+      "updated_at": "2026-03-14T18:20:07.921Z",
+      "social_profiles": {}
     }
   ],
-  "updated_at": "2026-03-14T17:45:41.051635+00:00"
+  "updated_at": "2026-03-14T18:20:07.925Z"
 }

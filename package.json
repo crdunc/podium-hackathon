@@ -1,0 +1,13 @@
+{
+  "name": "podium-hackathon",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Autonomous lead generation platform for local trade businesses",
+  "scripts": {
+    "hunt": "pnpm --filter @podium/agents hunt",
+    "report": "pnpm --filter @podium/agents report",
+    "stats": "pnpm --filter @podium/agents stats",
+    "dev": "pnpm --filter @podium/web dev",
+    "build": "pnpm --filter @podium/web build"
+  }
+}

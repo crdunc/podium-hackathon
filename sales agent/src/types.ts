@@ -31,6 +31,7 @@ export interface Lead {
   hasWebsite: boolean;
   email: string;
   phone: string; // E.164 format: +1XXXXXXXXXX
+  siteUrl?: string; // Generated demo site URL on GitHub Pages
   status: LeadStatus;
   sequenceStep: number; // 0 = not started, 1 = initial sent, 2 = day-3 sent, 3 = day-7 sent
   nextFollowUpAt: string | null; // ISO timestamp
