@@ -1,0 +1,709 @@
+{
+  "city": "Twin Falls, ID",
+  "leads": [
+    {
+      "id": "google_places_ChIJw74vlpujrFQRuaL7iMdN6fI",
+      "company_name": "Twin Falls Heating & Air Conditioning",
+      "trade_category": "hvac",
+      "description": null,
+      "address": "121 3rd Ave E, Twin Falls, ID 83301, USA",
+      "phone": "(208) 730-8366",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJw74vlpujrFQRuaL7iMdN6fI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:47.427103+00:00",
+      "metadata": {
+        "search_query": "hvac in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJl3LS_aOjrFQRpoanymDV--E",
+      "company_name": "Waite Electric Co",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "255 2nd Ave E, Twin Falls, ID 83301, USA",
+      "phone": "(208) 733-1901",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJl3LS_aOjrFQRpoanymDV--E",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:50.292435+00:00",
+      "metadata": {
+        "search_query": "electrical in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJkbCEhJejrFQRwYLGoro8ZaE",
+      "company_name": "Steve's Quality Electric Llc",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "289 Locust St, Twin Falls, ID 83301, USA",
+      "phone": "(208) 734-7664",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJkbCEhJejrFQRwYLGoro8ZaE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:50.292452+00:00",
+      "metadata": {
+        "search_query": "electrical in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ1YsE_AijrFQR2OEIO3iFRVk",
+      "company_name": "Metco Electrical Co",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "408 6th Ave W, Twin Falls, ID 83301, USA",
+      "phone": "(208) 733-0251",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ1YsE_AijrFQR2OEIO3iFRVk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:50.292457+00:00",
+      "metadata": {
+        "search_query": "electrical in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJLf_6SOOdrFQRzv5QF_Eq7D0",
+      "company_name": "Lupes Lawn Care",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "855 Morningside Dr, Twin Falls, ID 83301, USA",
+      "phone": "(208) 308-5264",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJLf_6SOOdrFQRzv5QF_Eq7D0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:51.834300+00:00",
+      "metadata": {
+        "search_query": "lawn care in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJLVCTtEy9rFQRr7Ys2bvmx_A",
+      "company_name": "Valley Landscaping",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "2498 Whirlaway Ln, Twin Falls, ID 83301, USA",
+      "phone": "(208) 731-6200",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJLVCTtEy9rFQRr7Ys2bvmx_A",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:51.834353+00:00",
+      "metadata": {
+        "search_query": "lawn care in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJMXviZwOjrFQRwFX9FKIjzVM",
+      "company_name": "Sanchez and son landscaping",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "120 Sidney St, Twin Falls, ID 83301, USA",
+      "phone": "(208) 613-5232",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJMXviZwOjrFQRwFX9FKIjzVM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:51.834365+00:00",
+      "metadata": {
+        "search_query": "lawn care in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ_VFSYoOjrFQRX7o0tQg2fmM",
+      "company_name": "Burton Webb & Sons Quality Roofers, Inc.",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "409 Locust St S, Twin Falls, ID 83301, USA",
+      "phone": "(208) 733-8302",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ_VFSYoOjrFQRX7o0tQg2fmM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:54.702037+00:00",
+      "metadata": {
+        "search_query": "roofing in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJW5ChjR2iiw4RMBWH57Zh4KQ",
+      "company_name": "KW Roofing, LLC",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "287 Noble St, Twin Falls, ID 83301, USA",
+      "phone": "(208) 421-2458",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJW5ChjR2iiw4RMBWH57Zh4KQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:54.702078+00:00",
+      "metadata": {
+        "search_query": "roofing in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ5SXrVeujrFQRWFxa1zIlO6o",
+      "company_name": "Legion Roofing LLC",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "624 4th Ave W, Twin Falls, ID 83301, USA",
+      "phone": "(208) 731-7854",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ5SXrVeujrFQRWFxa1zIlO6o",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:54.702087+00:00",
+      "metadata": {
+        "search_query": "roofing in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJG9gYg9ujrFQR0dmNIMaHvMQ",
+      "company_name": "Pillar Falls Painting LLC",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1162 Lavina Ave, Twin Falls, ID 83301, USA",
+      "phone": "(208) 543-1018",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJG9gYg9ujrFQR0dmNIMaHvMQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:56.081726+00:00",
+      "metadata": {
+        "search_query": "painting in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ10RxqYyjrFQRxoLhldVgm5o",
+      "company_name": "IdaPaint",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1445 Fillmore St #1105, Twin Falls, ID 83301, USA",
+      "phone": "(208) 948-3249",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ10RxqYyjrFQRxoLhldVgm5o",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:56.081742+00:00",
+      "metadata": {
+        "search_query": "painting in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJE8LmV0-jrFQRPbIb1LCDurM",
+      "company_name": "A-P Painting",
+      "trade_category": "painting",
+      "description": null,
+      "address": "170 S Park Ave, Twin Falls, ID 83301, USA",
+      "phone": "(208) 720-2068",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJE8LmV0-jrFQRPbIb1LCDurM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:56.081746+00:00",
+      "metadata": {
+        "search_query": "painting in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ8fJzdXujrFQR23GcMLlMqZM",
+      "company_name": "Safari painting",
+      "trade_category": "painting",
+      "description": null,
+      "address": "350 Grandview Dr, Twin Falls, ID 83301, USA",
+      "phone": "(208) 613-7810",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ8fJzdXujrFQR23GcMLlMqZM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:56.081750+00:00",
+      "metadata": {
+        "search_query": "painting in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJdyqSCuajrFQR29xe6Uf74IM",
+      "company_name": "Collins Painting LLC",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1415 Spruce Ave, Twin Falls, ID 83301, USA",
+      "phone": "(208) 490-4161",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJdyqSCuajrFQR29xe6Uf74IM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:56.081754+00:00",
+      "metadata": {
+        "search_query": "painting in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJM1_v_2GYsgMR_g1AI86235E",
+      "company_name": "Hearth and Home Painting",
+      "trade_category": "painting",
+      "description": null,
+      "address": "441 Harrison St, Twin Falls, ID 83301, USA",
+      "phone": "(208) 226-0400",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJM1_v_2GYsgMR_g1AI86235E",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:56.081757+00:00",
+      "metadata": {
+        "search_query": "painting in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJz0VfWbqjrFQRTZcSXnLxHQU",
+      "company_name": "Local Lawn & Tree Spraying Services",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "2443 Paintbrush Dr, Twin Falls, ID 83301, USA",
+      "phone": "(208) 735-0555",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJz0VfWbqjrFQRTZcSXnLxHQU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:57.403860+00:00",
+      "metadata": {
+        "search_query": "pest control in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJo2pFGYSjrFQRV0XpYApuIEE",
+      "company_name": "Pro-Masters of Magic Valley",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "1732 Eldridge Ave, Twin Falls, ID 83301, USA",
+      "phone": "(208) 733-8667",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJo2pFGYSjrFQRV0XpYApuIEE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:58.793561+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ_ydi6oKjrFQRmfdQduG72Sk",
+      "company_name": "Terry's Carpet & Upholstery",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "457 Blue Lakes Blvd S, Twin Falls, ID 83301, USA",
+      "phone": "(208) 734-3399",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ_ydi6oKjrFQRmfdQduG72Sk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:58.793606+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJd0ot8WejrFQR8HVp3FGJODU",
+      "company_name": "Home Services Of Idaho",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "396 Meadowview Ln, Twin Falls, ID 83301, USA",
+      "phone": "(208) 420-1150",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJd0ot8WejrFQR8HVp3FGJODU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:00.105463+00:00",
+      "metadata": {
+        "search_query": "handyman in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJq-M47XOnrFQRdzZTOdZzhdc",
+      "company_name": "Schmidty On Call LLC",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "340 Red Rock Trl, Kimberly, ID 83341, USA",
+      "phone": "(719) 580-0124",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJq-M47XOnrFQRdzZTOdZzhdc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:00.105475+00:00",
+      "metadata": {
+        "search_query": "handyman in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJd8xAJDKirFQR2vtAvn2GCRM",
+      "company_name": "Q.T. Garage Doors",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "21378 US-30, Twin Falls, ID 83301, USA",
+      "phone": "(208) 308-7703",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJd8xAJDKirFQR2vtAvn2GCRM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:01.664877+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJFT9n0Bwm9KoROMDSUebWXsg",
+      "company_name": "Arellano’s Garage Door Company LLC",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "48 S 100 W, Jerome, ID 83338, USA",
+      "phone": "(208) 316-2702",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJFT9n0Bwm9KoROMDSUebWXsg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:01.664920+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJn0zRFwCjrFQRQeMiGorJgpY",
+      "company_name": "Darius Garage Door's Specialist.",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "257 Blue Lakes Blvd N, Twin Falls, ID 83301, USA",
+      "phone": "(208) 329-7075",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJn0zRFwCjrFQRQeMiGorJgpY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:01.664932+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJObu8-cujrFQRydXM7c3-CW4",
+      "company_name": "Door Hangers of Idaho",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "1790 Maplewood Dr, Twin Falls, ID 83301, USA",
+      "phone": "(208) 737-0792",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJObu8-cujrFQRydXM7c3-CW4",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:01.664941+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJpyQlIuCjrFQRZfgGSeffH8E",
+      "company_name": "Hartman's Appliance Repair",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "305 Hankins Rd S, Twin Falls, ID 83301, USA",
+      "phone": "(208) 733-0114",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJpyQlIuCjrFQRZfgGSeffH8E",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:03.193512+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ43OwJQijrFQRmXnZqxoLZYs",
+      "company_name": "Wilder Appliance",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "336 4th Ave W, Twin Falls, ID 83301, USA",
+      "phone": "(208) 735-2154",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ43OwJQijrFQRmXnZqxoLZYs",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:03.193526+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJS3YasKmjrFQRnp1wysuI8Os",
+      "company_name": "Snake River Furniture & Appliance, LLC.",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "618 Main Ave W, Twin Falls, ID 83301, USA",
+      "phone": "(208) 316-5362",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJS3YasKmjrFQRnp1wysuI8Os",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:03.193531+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJA3pONUijrFQRtwTkdPsoUGY",
+      "company_name": "Forrest's Tree Service",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "3967n 2700 E, Twin Falls, ID 83301, USA",
+      "phone": "(208) 212-3690",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJA3pONUijrFQRtwTkdPsoUGY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:04.631018+00:00",
+      "metadata": {
+        "search_query": "tree service in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJSbh0e0CjrFQRpG2bxtVvgTk",
+      "company_name": "American Technical Tree Service L.L.C.",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "1961 Tamarack Loop, Twin Falls, ID 83301, USA",
+      "phone": "(208) 420-2488",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJSbh0e0CjrFQRpG2bxtVvgTk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:04.631061+00:00",
+      "metadata": {
+        "search_query": "tree service in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJlcunVoujrFQR74UQd0lbIms",
+      "company_name": "Mark's Tree & Yard Care",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "1875 Sigrid Ave, Twin Falls, ID 83301, USA",
+      "phone": "(208) 734-1326",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJlcunVoujrFQR74UQd0lbIms",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:04.631073+00:00",
+      "metadata": {
+        "search_query": "tree service in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJM9XsfIG9rFQRTH_0A8rkiig",
+      "company_name": "Phoenix Fence",
+      "trade_category": "fencing",
+      "description": null,
+      "address": "140 Stevens Ave, Filer, ID 83328, USA",
+      "phone": "(208) 316-7272",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJM9XsfIG9rFQRTH_0A8rkiig",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:06.060477+00:00",
+      "metadata": {
+        "search_query": "fencing in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ6fpEhuairFQRpey51dj20EI",
+      "company_name": "Idaho Concrete Co",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1294 Addison Ave W, Twin Falls, ID 83301, USA",
+      "phone": "(208) 733-5933",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ6fpEhuairFQRpey51dj20EI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:07.510690+00:00",
+      "metadata": {
+        "search_query": "concrete in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJr2F7ehyhrFQRZnoVUk_40ds",
+      "company_name": "Ramstone Construction LLC",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "3990 N 3400 E, Kimberly, ID 83341, USA",
+      "phone": "(208) 421-1077",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJr2F7ehyhrFQRZnoVUk_40ds",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:07.510711+00:00",
+      "metadata": {
+        "search_query": "concrete in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJq7AKiHWkrFQRIyxZodpKVtU",
+      "company_name": "Magic Valley Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "2433 Rostron Cir, Twin Falls, ID 83301, USA",
+      "phone": "(208) 731-1244",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJq7AKiHWkrFQRIyxZodpKVtU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:07.510717+00:00",
+      "metadata": {
+        "search_query": "concrete in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ2wc5XFm7rFQRwkMIVMVRbHY",
+      "company_name": "Del Milam & Sons Inc",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "3573 2700 E, Twin Falls, ID 83301, USA",
+      "phone": "(208) 733-3131",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ2wc5XFm7rFQRwkMIVMVRbHY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:07.510722+00:00",
+      "metadata": {
+        "search_query": "concrete in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ9xMZK6ejrFQRvBZ-zjORCfs",
+      "company_name": "Cool Concrete LLC",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "138 2nd Ave S, Twin Falls, ID 83301, USA",
+      "phone": "(208) 326-5958",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ9xMZK6ejrFQRvBZ-zjORCfs",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:47:07.510728+00:00",
+      "metadata": {
+        "search_query": "concrete in Twin Falls, ID",
+        "location": "Twin Falls, ID"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:47:07.511142+00:00"
+}

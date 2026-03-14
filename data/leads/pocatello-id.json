@@ -1,0 +1,994 @@
+{
+  "city": "Pocatello, ID",
+  "leads": [
+    {
+      "id": "google_places_ChIJq_nm9AJPVVMRmPKG9G-b2GQ",
+      "company_name": "Pocatello Heating & Air Conditioning",
+      "trade_category": "hvac",
+      "description": null,
+      "address": "427 N Main St, Pocatello, ID 83204, USA",
+      "phone": "(208) 900-4151",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJq_nm9AJPVVMRmPKG9G-b2GQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:26.842342+00:00",
+      "metadata": {
+        "search_query": "hvac in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ9_a2OBJPVVMRvfDaWYmJCsU",
+      "company_name": "Heating and Cooling",
+      "trade_category": "hvac",
+      "description": null,
+      "address": "1006 N Harrison Ave, Pocatello, ID 83204, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ9_a2OBJPVVMRvfDaWYmJCsU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:26.842356+00:00",
+      "metadata": {
+        "search_query": "hvac in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJNWfwQyFPVVMRLqTa8REip2U",
+      "company_name": "Next Plumbing & Heating",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "845 W Center St #115, Pocatello, ID 83204, USA",
+      "phone": "(208) 494-9970",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJNWfwQyFPVVMRLqTa8REip2U",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:28.133231+00:00",
+      "metadata": {
+        "search_query": "plumbing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJGZyGvatIVVMRQgy4SUAGP1s",
+      "company_name": "Triple-A-Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "845 Barton Rd, Pocatello, ID 83201, USA",
+      "phone": "(208) 915-4636",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJGZyGvatIVVMRQgy4SUAGP1s",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:28.133247+00:00",
+      "metadata": {
+        "search_query": "plumbing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ7WzKDvBHVVMR2_DYpScLXK0",
+      "company_name": "Anchor Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "425 Hampton Ave S, Pocatello, ID 83202, USA",
+      "phone": "(208) 241-4468",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ7WzKDvBHVVMR2_DYpScLXK0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:28.133251+00:00",
+      "metadata": {
+        "search_query": "plumbing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJo0YlgbBOVVMRorm1FR1hJaE",
+      "company_name": "Gary's Sewer & Drain",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "3935 Nora Ave, Pocatello, ID 83204, USA",
+      "phone": "(208) 232-7464",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJo0YlgbBOVVMRorm1FR1hJaE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:28.133255+00:00",
+      "metadata": {
+        "search_query": "plumbing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJAefBwaVIVVMR19MyL0xOCNs",
+      "company_name": "Pierce Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "1022 Booth Dr, Pocatello, ID 83201, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJAefBwaVIVVMR19MyL0xOCNs",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:28.133258+00:00",
+      "metadata": {
+        "search_query": "plumbing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJAQY-_v5FVVMRx5IDA81oOPM",
+      "company_name": "Tal's Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "1236 Wall St, Pocatello, ID 83201, USA",
+      "phone": "(208) 237-6001",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJAQY-_v5FVVMRx5IDA81oOPM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:28.133262+00:00",
+      "metadata": {
+        "search_query": "plumbing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJJbj6SBZPVVMRy0dyj3VzkuU",
+      "company_name": "Electric Service Co",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "429 N 5th Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 233-1335",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJJbj6SBZPVVMRy0dyj3VzkuU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:29.471195+00:00",
+      "metadata": {
+        "search_query": "electrical in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJPYbF4txHVVMRrAUqPJJBADg",
+      "company_name": "Frontline Electrical, LLC",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "5913 Eve St, Pocatello, ID 83202, USA",
+      "phone": "(208) 201-8614",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJPYbF4txHVVMRrAUqPJJBADg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:29.471259+00:00",
+      "metadata": {
+        "search_query": "electrical in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ26Reqx9PVVMRjmP4iVT-Rok",
+      "company_name": "Electric Construction & Sales",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "856 S 2nd Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 234-9999",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ26Reqx9PVVMRjmP4iVT-Rok",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:29.471273+00:00",
+      "metadata": {
+        "search_query": "electrical in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJDz6dlB5PVVMRrrNLEUjEWqI",
+      "company_name": "C & K Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "522 S 1st Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 232-2919",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJDz6dlB5PVVMRrrNLEUjEWqI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:29.471288+00:00",
+      "metadata": {
+        "search_query": "electrical in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJGU4rqJdFVVMRwo-_F_l6T3k",
+      "company_name": "Oneida Electric Inc",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "1525 Kinghorn Rd, Pocatello, ID 83201, USA",
+      "phone": "(208) 716-5847",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJGU4rqJdFVVMRwo-_F_l6T3k",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:29.471302+00:00",
+      "metadata": {
+        "search_query": "electrical in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJE4c17KRFVVMRfkjVbLoWXqU",
+      "company_name": "Powertech Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "4200 Philbin Rd, Pocatello, ID 83202, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJE4c17KRFVVMRfkjVbLoWXqU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:29.471315+00:00",
+      "metadata": {
+        "search_query": "electrical in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJp9NqlBpPVVMRXmvR2UM1rn0",
+      "company_name": "Fischer Maintenance LLC",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "266 Washington Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 589-3034",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJp9NqlBpPVVMRXmvR2UM1rn0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:30.816466+00:00",
+      "metadata": {
+        "search_query": "lawn care in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJkZLf3wxJVVMR0L-__jrO8lU",
+      "company_name": "The Other Side Lawn Care",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "710 Balsam St, Pocatello, ID 83201, USA",
+      "phone": "(208) 821-4426",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJkZLf3wxJVVMR0L-__jrO8lU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:30.816492+00:00",
+      "metadata": {
+        "search_query": "lawn care in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ5Rjr_pFPVVMREddzIDClflM",
+      "company_name": "Union County Roofing",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "171 Maplewood Ave, Pocatello, ID 83204, USA",
+      "phone": "(908) 408-5721",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ5Rjr_pFPVVMREddzIDClflM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:33.603256+00:00",
+      "metadata": {
+        "search_query": "roofing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ6bH71TtGVVMR11Q0Efv8fnM",
+      "company_name": "Straight Line Roofing LLC",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "2180 Douglas St, Pocatello, ID 83201, USA",
+      "phone": "(208) 406-6729",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ6bH71TtGVVMR11Q0Efv8fnM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:33.603299+00:00",
+      "metadata": {
+        "search_query": "roofing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJCwuoIczzP2kRp2msEYwHxsw",
+      "company_name": "Dawson’s Painting & Roofing",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "1110 Yellowstone Ave #360, Pocatello, ID 83201, USA",
+      "phone": "(208) 242-8532",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJCwuoIczzP2kRp2msEYwHxsw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:33.603308+00:00",
+      "metadata": {
+        "search_query": "roofing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJY58wu7NFVVMRNyjpVFxrbyY",
+      "company_name": "Roof Specialties LLC",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "3330 Pole Line Rd, Pocatello, ID 83201, USA",
+      "phone": "(208) 241-1159",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJY58wu7NFVVMRNyjpVFxrbyY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:33.603315+00:00",
+      "metadata": {
+        "search_query": "roofing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJFfq5o2tFVVMRnk1uNaiy79Q",
+      "company_name": "Snake River Contracting LLC",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "816 Berryman Rd, Pocatello, ID 83201, USA",
+      "phone": "(208) 760-7553",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJFfq5o2tFVVMRnk1uNaiy79Q",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:33.603323+00:00",
+      "metadata": {
+        "search_query": "roofing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJj2RmPIFPVVMRFd9Lz5sLjf0",
+      "company_name": "Start To Finish Painting Solutions L.L.C.",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1048 S Main St, Pocatello, ID 83204, USA",
+      "phone": "(208) 244-8323",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJj2RmPIFPVVMRFd9Lz5sLjf0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:34.953322+00:00",
+      "metadata": {
+        "search_query": "painting in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ7agioNhFVVMRA3-390vFkzM",
+      "company_name": "Lonnie Leslie Painting",
+      "trade_category": "painting",
+      "description": null,
+      "address": "493 Holly St, Pocatello, ID 83202, USA",
+      "phone": "(208) 406-4326",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ7agioNhFVVMRA3-390vFkzM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:34.953340+00:00",
+      "metadata": {
+        "search_query": "painting in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJtce9mg9GVVMRVZ3qUP8q4no",
+      "company_name": "Final Touch Custom Painting",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1650 Churchill Downs, Pocatello, ID 83201, USA",
+      "phone": "(208) 251-9126",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJtce9mg9GVVMRVZ3qUP8q4no",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:34.953344+00:00",
+      "metadata": {
+        "search_query": "painting in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJZ_KgkfZFVVMRqicLcR-Bd3o",
+      "company_name": "1 Action Painting LLC",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1255 W Quinn Rd, Pocatello, ID 83202, USA",
+      "phone": "(208) 240-7625",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJZ_KgkfZFVVMRqicLcR-Bd3o",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:34.953348+00:00",
+      "metadata": {
+        "search_query": "painting in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJvxzYqCVqi6sRaN-AuYNAJlE",
+      "company_name": "A&B Painting and Home Improvements",
+      "trade_category": "painting",
+      "description": null,
+      "address": "3894 Hawthorne Rd, Pocatello, ID 83201, USA",
+      "phone": "(208) 242-6327",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJvxzYqCVqi6sRaN-AuYNAJlE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:34.953352+00:00",
+      "metadata": {
+        "search_query": "painting in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJwd8JpQZPVVMRpUYlH3gkGlo",
+      "company_name": "Simply Pest",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "303 N Lincoln Ave, Pocatello, ID 83204, USA",
+      "phone": "(208) 232-0606",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJwd8JpQZPVVMRpUYlH3gkGlo",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:36.270363+00:00",
+      "metadata": {
+        "search_query": "pest control in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ7yoyaD1PVVMRvhiMQFH8kkQ",
+      "company_name": "Pest Solutions",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "15579 W Reservation Rd, Pocatello, ID 83202, USA",
+      "phone": "(208) 223-0703",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ7yoyaD1PVVMRvhiMQFH8kkQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:36.270390+00:00",
+      "metadata": {
+        "search_query": "pest control in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJCzAnxBpPVVMRrJaabMWxfeA",
+      "company_name": "Defend Pest & Lawn",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "294 Valleyview Dr, Pocatello, ID 83204, USA",
+      "phone": "(208) 716-5616",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJCzAnxBpPVVMRrJaabMWxfeA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:36.270399+00:00",
+      "metadata": {
+        "search_query": "pest control in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJQb2oRq9IVVMRhOVXRgCX6Z0",
+      "company_name": "Pocatello Carpet Cleaning",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "953 S Main St, Pocatello, ID 83204, USA",
+      "phone": "(208) 744-7990",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJQb2oRq9IVVMRhOVXRgCX6Z0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:37.702898+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJuQ9Q0mZPVVMR8-p77KH_BEs",
+      "company_name": "Carpet Solutions",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "806 S 1st Ave c, Pocatello, ID 83201, USA",
+      "phone": "(208) 705-5669",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJuQ9Q0mZPVVMR8-p77KH_BEs",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:37.702944+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ7fPBmPtHVVMRo7cPsYQc3u8",
+      "company_name": "Medalist Cleaning / 24-7",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "208 Laurel Ln, Pocatello, ID 83202, USA",
+      "phone": "(208) 237-0114",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ7fPBmPtHVVMRo7cPsYQc3u8",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:37.702958+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJQxHatoRGVVMR5uXfGJZIPrA",
+      "company_name": "Rockin R Cleaning",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "168 Jacob St, Chubbuck, ID 83202, USA",
+      "phone": "(208) 220-3680",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJQxHatoRGVVMR5uXfGJZIPrA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:37.702970+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJjYIjT7ZIVVMRgNsrbebMano",
+      "company_name": "Next Level Service Pros.",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "457 Vista Dr #5086, Pocatello, ID 83201, USA",
+      "phone": "(208) 233-5663",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJjYIjT7ZIVVMRgNsrbebMano",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:37.702981+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ1ayRHCDg1EkRSFCEJF68k8U",
+      "company_name": "Busy Bee Handyman",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "1450 Champlaine St, Pocatello, ID 83204, USA",
+      "phone": "(208) 380-6803",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ1ayRHCDg1EkRSFCEJF68k8U",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:39.130026+00:00",
+      "metadata": {
+        "search_query": "handyman in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJWV2mSVtPVVMR3yjWWaFB_dw",
+      "company_name": "Pocatello Handyman",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "529 Warren Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 546-4812",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJWV2mSVtPVVMR3yjWWaFB_dw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:39.130040+00:00",
+      "metadata": {
+        "search_query": "handyman in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJq3XgkCTETA0RTzbWLcqNB_c",
+      "company_name": "Solid Rock Construction",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "226 Roosevelt Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 251-2411",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJq3XgkCTETA0RTzbWLcqNB_c",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:39.130045+00:00",
+      "metadata": {
+        "search_query": "handyman in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ_7ezZRdPVVMRKGJo_cKy_W0",
+      "company_name": "Dan The Handyman LLC",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "353 E Lander St, Pocatello, ID 83201, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ_7ezZRdPVVMRKGJo_cKy_W0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:39.130049+00:00",
+      "metadata": {
+        "search_query": "handyman in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJuSFfEEdPVVMR9rpGhsNKpmg",
+      "company_name": "Kingdom Keys",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "1050 E Center St Ste A, Pocatello, ID 83201, USA",
+      "phone": "(208) 478-1808",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJuSFfEEdPVVMR9rpGhsNKpmg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:39.130052+00:00",
+      "metadata": {
+        "search_query": "handyman in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJHVQWCHJPVVMRNCjEycDbeRE",
+      "company_name": "M/B WEST",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "465 Filmore Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 221-2477",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJHVQWCHJPVVMRNCjEycDbeRE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:40.583276+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJE9NTQ5lGVVMRt3-12QuMw6c",
+      "company_name": "Kevin's Appliance Repair Service",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "5965 Eden St, Pocatello, ID 83202, USA",
+      "phone": "(208) 604-3100",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJE9NTQ5lGVVMRt3-12QuMw6c",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:41.920675+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ-TPGJgBPVVMRhnUqmFDmEOc",
+      "company_name": "Green & Clean Appliances",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "609 S 1st Ave, Pocatello, ID 83201, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ-TPGJgBPVVMRhnUqmFDmEOc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:41.920699+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJCfUXe75LVVMREFJlRdb0TUk",
+      "company_name": "Larsens Tree Service",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "2701 W Old Hwy 91, Inkom, ID 83245, USA",
+      "phone": "(208) 775-4547",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJCfUXe75LVVMREFJlRdb0TUk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:43.276933+00:00",
+      "metadata": {
+        "search_query": "tree service in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ79kHEINGVVMRT38bmOHEjRU",
+      "company_name": "Monroe Fence Co",
+      "trade_category": "fencing",
+      "description": null,
+      "address": "103 W Siphon Rd, Chubbuck, ID 83202, USA",
+      "phone": "(208) 237-1491",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ79kHEINGVVMRT38bmOHEjRU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:44.594820+00:00",
+      "metadata": {
+        "search_query": "fencing in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJWeLq7lpPVVMRfYsfNgF9FOs",
+      "company_name": "Portneuf valley concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "447 Cochise Ave, Pocatello, ID 83204, USA",
+      "phone": "(208) 242-6166",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJWeLq7lpPVVMRfYsfNgF9FOs",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992792+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJqWPb021PVVMRZISFmBaXS6o",
+      "company_name": "Guerrero Brothers Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1780 N 1st Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 234-2420",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJqWPb021PVVMRZISFmBaXS6o",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992817+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJv4a-sDxPVVMRsplzc6blGkM",
+      "company_name": "Castle Concrete Co Inc",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "2300 N Main St, Pocatello, ID 83204, USA",
+      "phone": "(208) 233-4151",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJv4a-sDxPVVMRsplzc6blGkM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992822+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJA7QECuhOVVMRh-KFZsRoFu0",
+      "company_name": "Final Aspect Concrete, LLC",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1913 S 2nd Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 530-0783",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJA7QECuhOVVMRh-KFZsRoFu0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992826+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJj2-haJ5FVVMRBAbsR-G5Dd8",
+      "company_name": "Murdock & Walker Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "3717 US-30, Pocatello, ID 83201, USA",
+      "phone": "(208) 234-1332",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJj2-haJ5FVVMRBAbsR-G5Dd8",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992833+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJV4eKPdFFVVMRxSDgKHCg31o",
+      "company_name": "Creative Edge Custom Concrete Curbing and landscape",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "4811 S Afton Pl, Pocatello, ID 83202, USA",
+      "phone": "(208) 681-8685",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJV4eKPdFFVVMRxSDgKHCg31o",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992836+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJH19spVBPVVMRhdKVC5aHb0Y",
+      "company_name": "Jerry Bateman Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1913 S 2nd Ave, Pocatello, ID 83201, USA",
+      "phone": "(208) 530-0783",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJH19spVBPVVMRhdKVC5aHb0Y",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992840+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJrVKlV2xPVVMRaCz20tvShiY",
+      "company_name": "Kershaw Curb & Gutter",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "13165 N Dekay Rd, Pocatello, ID 83202, USA",
+      "phone": "(208) 237-2371",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJrVKlV2xPVVMRaCz20tvShiY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:45.992844+00:00",
+      "metadata": {
+        "search_query": "concrete in Pocatello, ID",
+        "location": "Pocatello, ID"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:46:45.993125+00:00"
+}

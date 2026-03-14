@@ -1,0 +1,481 @@
+{
+  "city": "Logan, UT",
+  "leads": [
+    {
+      "id": "google_places_ChIJVVnqPfWDVIcR3TKQFmldsDU",
+      "company_name": "Myers Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "1150 W 600 N, Logan, UT 84321, USA",
+      "phone": "(435) 881-7189",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJVVnqPfWDVIcR3TKQFmldsDU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:00.661043+00:00",
+      "metadata": {
+        "search_query": "plumbing in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJPR1yBgV-VIcRx3VDCaT-wz8",
+      "company_name": "C J Electrical",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "14 Fairway Ln, Logan, UT 84321, USA",
+      "phone": "(435) 787-1865",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJPR1yBgV-VIcRx3VDCaT-wz8",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:01.951604+00:00",
+      "metadata": {
+        "search_query": "electrical in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJF3fFKVeHVIcR2EAJH7-26CQ",
+      "company_name": "Lowery Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "1124 W 600 N, Logan, UT 84321, USA",
+      "phone": "(435) 753-0343",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJF3fFKVeHVIcR2EAJH7-26CQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:01.951649+00:00",
+      "metadata": {
+        "search_query": "electrical in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJnVxtOTCAU4cRj5FzGbJdgyY",
+      "company_name": "Webb All-Pro Lawn Care & Landscaping",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "1035 W 2470 S, Nibley, UT 84321, USA",
+      "phone": "(435) 494-9788",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJnVxtOTCAU4cRj5FzGbJdgyY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:03.387967+00:00",
+      "metadata": {
+        "search_query": "lawn care in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJNVo9AJl_VIcRp4x_jnPq574",
+      "company_name": "Rogers Landscape LLC",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "1099 Three Pointe Ave, Logan, UT 84321, USA",
+      "phone": "(435) 557-9914",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJNVo9AJl_VIcRp4x_jnPq574",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:03.387984+00:00",
+      "metadata": {
+        "search_query": "lawn care in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJo01BwAx-VIcRCMQuv_pS6_k",
+      "company_name": "Logan Siding & Roofing",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "Logan, UT 84321, USA",
+      "phone": "(435) 512-9303",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJo01BwAx-VIcRCMQuv_pS6_k",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:06.055856+00:00",
+      "metadata": {
+        "search_query": "roofing in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJKyZbvQh_VIcRqOJJNVJgctU",
+      "company_name": "Chad Vernon Roofing",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "555 Eastwood Cir, Providence, UT 84332, USA",
+      "phone": "(435) 753-2784",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJKyZbvQh_VIcRqOJJNVJgctU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:06.055901+00:00",
+      "metadata": {
+        "search_query": "roofing in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJOy0CYayBVIcRbksxh8nP1Ws",
+      "company_name": "LateBloomingArtist",
+      "trade_category": "painting",
+      "description": null,
+      "address": "80 Crayon Ct, Logan, UT 84321, USA",
+      "phone": "(435) 881-1967",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJOy0CYayBVIcRbksxh8nP1Ws",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:07.686989+00:00",
+      "metadata": {
+        "search_query": "painting in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJQ9PVus9_VIcRXAGyHPQ_MAU",
+      "company_name": "Mountain View Pest Control",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "1347 N 1500 E, Logan, UT 84341, USA",
+      "phone": "(435) 363-6849",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJQ9PVus9_VIcRXAGyHPQ_MAU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:09.119703+00:00",
+      "metadata": {
+        "search_query": "pest control in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJk4Prrx-XVIcRKnyT5f_FyFA",
+      "company_name": "Extraction Express Carpet Cleaning",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "6215 W 13600 N, Garland, UT 84312, USA",
+      "phone": "(435) 257-3220",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJk4Prrx-XVIcRKnyT5f_FyFA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:10.655486+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJD4eLmTt-VIcRjALa40OK1IM",
+      "company_name": "Omni Clean",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "196 S 100 W #100, Logan, UT 84321, USA",
+      "phone": "(435) 754-7777",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJD4eLmTt-VIcRjALa40OK1IM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:10.655501+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJl6Hl5cB9VIcRuJHfhiAJZbM",
+      "company_name": "Logan Carpet Care",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "1536 N 200 E, North Logan, UT 84341, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJl6Hl5cB9VIcRuJHfhiAJZbM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:10.655506+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ2_9Gpzh_VIcRenUxc_bSPpg",
+      "company_name": "I fix it handyman service",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "1723 620 S, Logan, UT 84321, USA",
+      "phone": "(435) 760-3234",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ2_9Gpzh_VIcRenUxc_bSPpg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:12.098847+00:00",
+      "metadata": {
+        "search_query": "handyman in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJfdCXIuh9VIcR_a9ALkme0Rg",
+      "company_name": "Powerhouse Handyman",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "10 E Center St, Hyde Park, UT 84318, USA",
+      "phone": "(435) 494-6106",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJfdCXIuh9VIcR_a9ALkme0Rg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:12.098889+00:00",
+      "metadata": {
+        "search_query": "handyman in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJN4yuqeZjVIcRa_uqCIPNQ6k",
+      "company_name": "Chandler’s Appliance",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "240 Summit Dr, Smithfield, UT 84335, USA",
+      "phone": "(435) 799-9938",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJN4yuqeZjVIcRa_uqCIPNQ6k",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:15.062531+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJEY_TeBxjVIcRivDgcIljw7c",
+      "company_name": "Summit Appliance Repair Cache Valley",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "125 W 560 S, Smithfield, UT 84335, USA",
+      "phone": "(435) 294-7922",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJEY_TeBxjVIcRivDgcIljw7c",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:15.062579+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJOacUkxJ-VIcRsJA0JfgTmkI",
+      "company_name": "A-1 Pete's Tree Services",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "1294 Stuart Ct #6075, Logan, UT 84321, USA",
+      "phone": "(435) 881-9155",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJOacUkxJ-VIcRsJA0JfgTmkI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:16.492013+00:00",
+      "metadata": {
+        "search_query": "tree service in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJRRyxhA99VIcR4mXHzd7hNao",
+      "company_name": "Treelove",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "51 Kings Ct, Logan, UT 84321, USA",
+      "phone": "(435) 374-2430",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJRRyxhA99VIcR4mXHzd7hNao",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:16.492027+00:00",
+      "metadata": {
+        "search_query": "tree service in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ17vJUbGUzkIRN7PstAUWxNM",
+      "company_name": "TM Tree Care",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "1010 S 200 E, Wellsville, UT 84339, USA",
+      "phone": "(435) 757-6212",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ17vJUbGUzkIRN7PstAUWxNM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:16.492031+00:00",
+      "metadata": {
+        "search_query": "tree service in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJjWxPQqKBVIcRN9kL7oq59I0",
+      "company_name": "Empire Fencing LLC",
+      "trade_category": "fencing",
+      "description": null,
+      "address": "1219 W 240 S, Logan, UT 84321, USA",
+      "phone": "(435) 890-0341",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJjWxPQqKBVIcRN9kL7oq59I0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:17.928144+00:00",
+      "metadata": {
+        "search_query": "fencing in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJc5t65Od9VIcRMzxt7AkgzrI",
+      "company_name": "Central Valley Concrete Cutting & Coring",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1017n 180 W, Logan, UT 84341, USA",
+      "phone": "(435) 265-0408",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJc5t65Od9VIcRMzxt7AkgzrI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:19.295304+00:00",
+      "metadata": {
+        "search_query": "concrete in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJBYUWpPiBVIcRft_shLIgZRo",
+      "company_name": "JM Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "3054 S 1000 W, Logan, UT 84321, USA",
+      "phone": "(435) 881-6023",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJBYUWpPiBVIcRft_shLIgZRo",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:19.295351+00:00",
+      "metadata": {
+        "search_query": "concrete in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJDb2sy6eAVIcR3HNwkelxg6A",
+      "company_name": "Mando's Concrete & Design",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "987 W 330 S, Logan, UT 84321, USA",
+      "phone": "(435) 232-6075",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJDb2sy6eAVIcR3HNwkelxg6A",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:19.295390+00:00",
+      "metadata": {
+        "search_query": "concrete in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJkR2scFCkuEYRj1NcZ_CNLt4",
+      "company_name": "Moises Concrete & Supply",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "197 100 N, Hyde Park, UT 84318, USA",
+      "phone": "(435) 890-5357",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJkR2scFCkuEYRj1NcZ_CNLt4",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:19.295402+00:00",
+      "metadata": {
+        "search_query": "concrete in Logan, UT",
+        "location": "Logan, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJd9mCc4VjVIcR9qQ9pEFSn8U",
+      "company_name": "Barrus Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "639 N 600 E, Smithfield, UT 84335, USA",
+      "phone": "(435) 770-2366",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJd9mCc4VjVIcR9qQ9pEFSn8U",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:19.295412+00:00",
+      "metadata": {
+        "search_query": "concrete in Logan, UT",
+        "location": "Logan, UT"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:45:19.296185+00:00"
+}

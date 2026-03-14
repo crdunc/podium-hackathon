@@ -1,0 +1,310 @@
+{
+  "city": "Boise, ID",
+  "leads": [
+    {
+      "id": "google_places_ChIJrZVr8ORTrlQRJaa9XEQkBCc",
+      "company_name": "American Pro Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "7606 W Settlers Ave, Boise, ID 83704, USA",
+      "phone": "(208) 515-1111",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJrZVr8ORTrlQRJaa9XEQkBCc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:06.974603+00:00",
+      "metadata": {
+        "search_query": "electrical in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJH0bl2dpVrlQR80yVuMi48fs",
+      "company_name": "Apex Electrical Services",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "2339 N Siesta Way, Boise, ID 83704, USA",
+      "phone": "(208) 407-5261",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJH0bl2dpVrlQR80yVuMi48fs",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:06.974617+00:00",
+      "metadata": {
+        "search_query": "electrical in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ_XFlAUf4rlQR8I9JfNW6udg",
+      "company_name": "TN Lawncare",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "1727 Division Ave, Boise, ID 83706, USA",
+      "phone": "(208) 794-1627",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ_XFlAUf4rlQR8I9JfNW6udg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:08.302049+00:00",
+      "metadata": {
+        "search_query": "lawn care in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ02oKWSpVrlQRmbGkcn5Dpeg",
+      "company_name": "Brilliant landscape and lawn care LLC.",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "P.0, box 45185, Boise, ID 83704, USA",
+      "phone": "(208) 605-0650",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ02oKWSpVrlQRmbGkcn5Dpeg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:08.302065+00:00",
+      "metadata": {
+        "search_query": "lawn care in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJM-qdnjFUrlQRLCtEmDJ7DSs",
+      "company_name": "Johnny Lawn Aeration",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "1111 S Orchard St #223, Boise, ID 83705, USA",
+      "phone": "(208) 703-7217",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJM-qdnjFUrlQRLCtEmDJ7DSs",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:08.302070+00:00",
+      "metadata": {
+        "search_query": "lawn care in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ_cY1k8T5rlQRTsx_IacUCWk",
+      "company_name": "Blue summer lawn care",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "Boise, ID 83705, USA",
+      "phone": "(208) 713-2851",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ_cY1k8T5rlQRTsx_IacUCWk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:08.302075+00:00",
+      "metadata": {
+        "search_query": "lawn care in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJNTXpWa1XrlQRamnkkngDFRw",
+      "company_name": "Boise Roofing and Gutters",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "901 S Robert St, Boise, ID 83705, USA",
+      "phone": "(208) 795-4913",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJNTXpWa1XrlQRamnkkngDFRw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:11.279810+00:00",
+      "metadata": {
+        "search_query": "roofing in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJdaHL1AwJ5gQRzLDzotOEOts",
+      "company_name": "Reliable Pest Control Boise",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "101 S 15th St, Boise, ID 83702, USA",
+      "phone": "(208) 379-9793",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJdaHL1AwJ5gQRzLDzotOEOts",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:15.054568+00:00",
+      "metadata": {
+        "search_query": "pest control in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJdaEtQdtWrlQRh-_Zfb5q2R0",
+      "company_name": "Heritage Carpet Cleaners",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "2165 Trapper Cv Ave S, Boise, ID 83709, USA",
+      "phone": "(208) 388-4626",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJdaEtQdtWrlQRh-_Zfb5q2R0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:16.630884+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ2Vy2QkJVrlQRtFS8fWZIMPk",
+      "company_name": "Ace Handyman Services Meridian",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "9460 W Fairview Ave #145, Boise, ID 83704, USA",
+      "phone": "(208) 593-6939",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ2Vy2QkJVrlQRtFS8fWZIMPk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:18.137675+00:00",
+      "metadata": {
+        "search_query": "handyman in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJfc07o95XrlQRNsLevsgn6LE",
+      "company_name": "Handyman Leo LLC",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "4920 S Caden Creek Way, Boise, ID 83709, USA",
+      "phone": "(208) 362-3624",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJfc07o95XrlQRNsLevsgn6LE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:18.137692+00:00",
+      "metadata": {
+        "search_query": "handyman in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJ9WsoEQBVrlQRqhCuzkCcjCA",
+      "company_name": "Jenkins Garage Door's Co. LLC.",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "10280 Fairview Ave, Boise, ID 83704, USA",
+      "phone": "(208) 361-5041",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ9WsoEQBVrlQRqhCuzkCcjCA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:19.573461+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJPbh5IXhXrlQRjI0Ji4eeY3w",
+      "company_name": "Perfect Appliance Fix",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "1507 N McKinney Ln, Boise, ID 83704, USA",
+      "phone": "(208) 571-1588",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJPbh5IXhXrlQRjI0Ji4eeY3w",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:21.107028+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJY0q1D1q0r1QR6BBYfzfMjtw",
+      "company_name": "All Aces Appliance Repair",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "216 E Beech St, Caldwell, ID 83605, USA",
+      "phone": "(208) 995-6480",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJY0q1D1q0r1QR6BBYfzfMjtw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:21.107042+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJKyNQ6574rlQRNBTx5pNYIMg",
+      "company_name": "All Brands Appliance",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "5326 W Overland Rd, Boise, ID 83705, USA",
+      "phone": "(986) 207-2650",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJKyNQ6574rlQRNBTx5pNYIMg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:21.107046+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Boise, ID",
+        "location": "Boise, ID"
+      }
+    },
+    {
+      "id": "google_places_ChIJT3hXVpz5rlQRRNkGFpdxNU8",
+      "company_name": "Eagle Excavation & Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1925 N Liberty St, Boise, ID 83704, USA",
+      "phone": "(208) 269-4415",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJT3hXVpz5rlQRRNkGFpdxNU8",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:46:25.415508+00:00",
+      "metadata": {
+        "search_query": "concrete in Boise, ID",
+        "location": "Boise, ID"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:46:25.416279+00:00"
+}

@@ -1,0 +1,253 @@
+{
+  "city": "St. George, UT",
+  "leads": [
+    {
+      "id": "google_places_ChIJORKbZTtbyoAR4FP9FT5XWmU",
+      "company_name": "Triple E Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "446 N Park St, St. George, UT 84770, USA",
+      "phone": "(435) 673-1571",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJORKbZTtbyoAR4FP9FT5XWmU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:40.963381+00:00",
+      "metadata": {
+        "search_query": "electrical in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ7480MIJByoARYGYbLUpndws",
+      "company_name": "Ence Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "851 Redrock Rd, St. George, UT 84770, USA",
+      "phone": "(435) 656-1223",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ7480MIJByoARYGYbLUpndws",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:40.963428+00:00",
+      "metadata": {
+        "search_query": "electrical in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJZUItBIRRyoARXP42MLZsJsU",
+      "company_name": "Miguel’s Landscaping and Lawn Care",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "3272 East 3050 S St, St. George, UT 84790, USA",
+      "phone": "(435) 619-1210",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJZUItBIRRyoARXP42MLZsJsU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:42.493140+00:00",
+      "metadata": {
+        "search_query": "lawn care in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJrWxYwUZbyoARwnlQbGQuKic",
+      "company_name": "Elite Landscape and Maintenance",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "St. George, UT 84790, USA",
+      "phone": "(435) 862-0006",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJrWxYwUZbyoARwnlQbGQuKic",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:42.493154+00:00",
+      "metadata": {
+        "search_query": "lawn care in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJlcC2KWFFyoARstEDvCpI0Yc",
+      "company_name": "St. George Roofing Pros",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "485 E 600 S, St. George, UT 84770, USA",
+      "phone": "(435) 236-3082",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJlcC2KWFFyoARstEDvCpI0Yc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:45.362326+00:00",
+      "metadata": {
+        "search_query": "roofing in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJCfqGGoBbyoARBe7I7zMklV0",
+      "company_name": "Patriot Painting LLC",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1150 E Riverside Dr Ste 910745, St. George, UT 84790, USA",
+      "phone": "(435) 574-9459",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJCfqGGoBbyoARBe7I7zMklV0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:46.700713+00:00",
+      "metadata": {
+        "search_query": "painting in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJge9flBSdQ28RtbJZsCdIDwg",
+      "company_name": "Outlaw Pest Control Service",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "5699 S Garnet Dr, St. George, UT 84790, USA",
+      "phone": "(435) 322-0890",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJge9flBSdQ28RtbJZsCdIDwg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:48.230509+00:00",
+      "metadata": {
+        "search_query": "pest control in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJzw3DphhFyoARIgQThjvEBH0",
+      "company_name": "Black Diamond Carpet Cleaning - St. George",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "307 N Main St, St. George, UT 84770, USA",
+      "phone": "(435) 767-1242",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJzw3DphhFyoARIgQThjvEBH0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:49.662989+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJObtkDaaTRIYRqQWPn2iJKU8",
+      "company_name": "Vishous LLC handyman services, St George",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "25 W 625 N, La Verkin, UT 84745, USA",
+      "phone": "(512) 667-5367",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJObtkDaaTRIYRqQWPn2iJKU8",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:50.997327+00:00",
+      "metadata": {
+        "search_query": "handyman in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJOZqmXe4OC0YRjQoyOmyhSpU",
+      "company_name": "Wards Handyman Service",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "2990 E Riverside Dr, St. George, UT 84790, USA",
+      "phone": "(801) 637-3339",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJOZqmXe4OC0YRjQoyOmyhSpU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:50.997343+00:00",
+      "metadata": {
+        "search_query": "handyman in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJfbeyzmpQyoARzzuYregfeiE",
+      "company_name": "ROLLING ROCK CONCRETE",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "3730 1700 E St, St. George, UT 84790, USA",
+      "phone": "(435) 634-0232",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJfbeyzmpQyoARzzuYregfeiE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:57.932258+00:00",
+      "metadata": {
+        "search_query": "concrete in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJGxxP6WpQyoAR31WyCo9KwLU",
+      "company_name": "Jemmer Distributing & Rocky Mountain Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "St. George, UT 84790, USA",
+      "phone": "(435) 673-4767",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJGxxP6WpQyoAR31WyCo9KwLU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:57.932275+00:00",
+      "metadata": {
+        "search_query": "concrete in St. George, UT",
+        "location": "St. George, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJDRvJg4NEyoARv7lOA_rQ5gA",
+      "company_name": "Got Concrete Inc",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "851 Redrock Rd, St. George, UT 84770, USA",
+      "phone": "(435) 652-4383",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJDRvJg4NEyoARv7lOA_rQ5gA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:57.932281+00:00",
+      "metadata": {
+        "search_query": "concrete in St. George, UT",
+        "location": "St. George, UT"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:44:57.932548+00:00"
+}

@@ -1,0 +1,538 @@
+{
+  "city": "Layton, UT",
+  "leads": [
+    {
+      "id": "google_places_ChIJbWM-aIbV6YkR2ey4W-QOq5o",
+      "company_name": "1st Plumbing Layton Service",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "67 S Main St #300, Layton, UT 84041, USA",
+      "phone": "(801) 640-4642",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJbWM-aIbV6YkR2ey4W-QOq5o",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:22.511951+00:00",
+      "metadata": {
+        "search_query": "plumbing in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJlVT5xcMDU4cR-GiLl17JPx4",
+      "company_name": "Layton Quick Commercial Water Heaters",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "1014 W Hill Field Rd #6000, Layton, UT 84041, USA",
+      "phone": "(385) 217-7869",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJlVT5xcMDU4cR-GiLl17JPx4",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:22.511972+00:00",
+      "metadata": {
+        "search_query": "plumbing in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJCZdqHuMBU4cRl6GWRh6CQ-k",
+      "company_name": "Layton & Son Plumbing-Heating",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "3264 W 200 N, Layton, UT 84041, USA",
+      "phone": "(801) 628-6209",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJCZdqHuMBU4cRl6GWRh6CQ-k",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:22.511978+00:00",
+      "metadata": {
+        "search_query": "plumbing in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJm0CntYABU4cRRIu7M-UbgUE",
+      "company_name": "Wild West Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "278 Dixie St, Layton, UT 84041, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJm0CntYABU4cRRIu7M-UbgUE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:23.845139+00:00",
+      "metadata": {
+        "search_query": "electrical in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJobtcLeQDU4cRTWsn7iyFzFU",
+      "company_name": "Whiterock Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "290 E 2150 N, Layton, UT 84041, USA",
+      "phone": "(801) 825-7800",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJobtcLeQDU4cRTWsn7iyFzFU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:23.845155+00:00",
+      "metadata": {
+        "search_query": "electrical in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJgfetaK8DU4cR-W2UGgSnXbU",
+      "company_name": "RMS Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "606 Marshall Way N Ste.#2, Layton, UT 84041, USA",
+      "phone": "(801) 544-7666",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJgfetaK8DU4cR-W2UGgSnXbU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:23.845161+00:00",
+      "metadata": {
+        "search_query": "electrical in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJI9731KQDU4cRuJ7P61oRdIk",
+      "company_name": "Rocky Mountain Power",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "635 1100 W, Layton, UT 84041, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJI9731KQDU4cRuJ7P61oRdIk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:23.845166+00:00",
+      "metadata": {
+        "search_query": "electrical in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJVVXRbPADU4cRPmMNlk0JMCA",
+      "company_name": "Bone Electric, Llc",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "25 E 2450 N, Layton, UT 84041, USA",
+      "phone": "(801) 513-0040",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJVVXRbPADU4cRPmMNlk0JMCA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:23.845169+00:00",
+      "metadata": {
+        "search_query": "electrical in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJVVVlZKYDU4cRIyG4puA0AdE",
+      "company_name": "Canyon River Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "857 Marshall Way N Suite A&B, Layton, UT 84041, USA",
+      "phone": "(801) 544-8000",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJVVVlZKYDU4cRIyG4puA0AdE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:23.845174+00:00",
+      "metadata": {
+        "search_query": "electrical in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ-1b2QY8DU4cRCtsnMBqcHMA",
+      "company_name": "Villa's Landscape LLC",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "N Laverde Ave W, Layton, UT 84041, USA",
+      "phone": "(385) 405-0729",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ-1b2QY8DU4cRCtsnMBqcHMA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:25.303250+00:00",
+      "metadata": {
+        "search_query": "lawn care in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJrVdoEmEBU4cRTVqYOsGeqvA",
+      "company_name": "Ginger Bee Farms & Landscaping",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "2278 N Fairfield Rd, Layton, UT 84041, USA",
+      "phone": "(801) 458-8273",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJrVdoEmEBU4cRTVqYOsGeqvA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:25.303295+00:00",
+      "metadata": {
+        "search_query": "lawn care in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJCZdqHuMBU4cRFvBE8hjWgog",
+      "company_name": "Shelton Landscaping",
+      "trade_category": "landscaping",
+      "description": null,
+      "address": "Kaysville, UT 84037, USA",
+      "phone": "(801) 663-3989",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJCZdqHuMBU4cRFvBE8hjWgog",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:26.766836+00:00",
+      "metadata": {
+        "search_query": "landscaping in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJIaykGySBUocRimsXA4D2b-M",
+      "company_name": "Layton Roofing Company Inc",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "14851 Heritage Crest Way # D, Riverton, UT 84065, USA",
+      "phone": "(801) 495-3939",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJIaykGySBUocRimsXA4D2b-M",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:28.370515+00:00",
+      "metadata": {
+        "search_query": "roofing in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJixxjc1cFU4cRosQ64HmIlVw",
+      "company_name": "Layton Roofing Solutions",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "1750 Antelope Dr, Layton, UT 84041, USA",
+      "phone": "(866) 767-4481",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJixxjc1cFU4cRosQ64HmIlVw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:28.370540+00:00",
+      "metadata": {
+        "search_query": "roofing in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJwRvaI20DU4cROLFtWLwArkI",
+      "company_name": "Different Strokes Art Studio",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1596 N Hill Field Rd Suite F, Layton, UT 84041, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJwRvaI20DU4cROLFtWLwArkI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:29.823575+00:00",
+      "metadata": {
+        "search_query": "painting in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJhU-n0rcDU4cRRh6BdLAj8Fg",
+      "company_name": "Frameworks of Utah",
+      "trade_category": "painting",
+      "description": null,
+      "address": "563 N Main St, Layton, UT 84041, USA",
+      "phone": "(801) 444-1001",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJhU-n0rcDU4cRRh6BdLAj8Fg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:29.823593+00:00",
+      "metadata": {
+        "search_query": "painting in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJjwLeELsDU4cRFiX1GksB3ls",
+      "company_name": "Kelly’s Carpet Cleaning",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "990 N 1125 W, Layton, UT 84041, USA",
+      "phone": "(801) 889-2144",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJjwLeELsDU4cRFiX1GksB3ls",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:32.569582+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJr0yCJHIDU4cRSnh9rx4K3rI",
+      "company_name": "Big Sky Handyman",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "1862 Hill St, Kaysville, UT 84037, USA",
+      "phone": "(385) 439-5759",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJr0yCJHIDU4cRSnh9rx4K3rI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:33.898971+00:00",
+      "metadata": {
+        "search_query": "handyman in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJOxeD81UOmIcRUxbIObSLNSU",
+      "company_name": "Dick's Construction llc.",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "1169 N Angel St, Layton, UT 84041, USA",
+      "phone": "(385) 200-5500",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJOxeD81UOmIcRUxbIObSLNSU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:33.898986+00:00",
+      "metadata": {
+        "search_query": "handyman in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJZShtOGoBU4cRkLwqIbZNNEc",
+      "company_name": "Alpine Overhead Garage Door Service",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "1833 E 2050 N, Layton, UT 84040, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJZShtOGoBU4cRkLwqIbZNNEc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:35.343340+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ3eGYn0EFU4cRar0QDevjbnw",
+      "company_name": "Advance Appliance Services",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "863 N 450 W, Sunset, UT 84015, USA",
+      "phone": "(801) 825-1085",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ3eGYn0EFU4cRar0QDevjbnw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:36.817005+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJS_u7ZBEBU4cRvmblCan9MPA",
+      "company_name": "Appliances and more",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "192 N Fairfield Rd, Layton, UT 84041, USA",
+      "phone": "(801) 989-1455",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJS_u7ZBEBU4cRvmblCan9MPA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:36.817019+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJLV9JqnoFU4cRsDBka4g4MXg",
+      "company_name": "Eagle Appliance Repair",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "113 W 250 N, Clearfield, UT 84015, USA",
+      "phone": "(801) 792-3054",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJLV9JqnoFU4cRsDBka4g4MXg",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:36.817023+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJOxKlgCsbU4cR3XELLrO_FHI",
+      "company_name": "Tailored Tree Care",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "459 S 1350 W, Syracuse, UT 84075, USA",
+      "phone": "(801) 513-0989",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJOxKlgCsbU4cR3XELLrO_FHI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:38.304097+00:00",
+      "metadata": {
+        "search_query": "tree service in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJYWEq5WABU4cR1l87pFf1Z1c",
+      "company_name": "Woodward Concrete Cutting & Demolition",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1101 E Cambridge Cir Suite 2, Layton, UT 84040, USA",
+      "phone": "(801) 721-7110",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJYWEq5WABU4cR1l87pFf1Z1c",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:41.051274+00:00",
+      "metadata": {
+        "search_query": "concrete in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJXTRoTVYBU4cRNLg_CN7WbdU",
+      "company_name": "D & D Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "2951 N Fairfield Rd, Layton, UT 84041, USA",
+      "phone": "(801) 771-3881",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJXTRoTVYBU4cRNLg_CN7WbdU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:41.051294+00:00",
+      "metadata": {
+        "search_query": "concrete in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJDQsIs3UEU4cRVNfvT8Ybk7A",
+      "company_name": "Ready Mix Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "750 UT-193, Layton, UT 84041, USA",
+      "phone": "(801) 479-6550",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJDQsIs3UEU4cRVNfvT8Ybk7A",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:41.051300+00:00",
+      "metadata": {
+        "search_query": "concrete in Layton, UT",
+        "location": "Layton, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ5au6UHgDU4cR3yKzvOPAvgM",
+      "company_name": "Paradise Patio",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "805 W 750 S, Layton, UT 84041, USA",
+      "phone": "(801) 928-9070",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ5au6UHgDU4cR3yKzvOPAvgM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:45:41.051305+00:00",
+      "metadata": {
+        "search_query": "concrete in Layton, UT",
+        "location": "Layton, UT"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:45:41.051635+00:00"
+}
