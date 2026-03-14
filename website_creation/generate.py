@@ -1,6 +1,7 @@
 """Generate professional websites for scraped leads."""
 
 import hashlib
+import json
 import os
 import re
 import sys
@@ -58,12 +59,32 @@ def pick_testimonials(company_name: str, testimonials: list, count: int = 3) -> 
     return unique[:count]
 
 
+def compute_variants(company_name: str) -> dict:
+    """Deterministically pick layout variants based on company name hash."""
+    h = int(hashlib.sha256(company_name.encode()).hexdigest(), 16)
+    return {
+        "hero_variant": h % 4,
+        "nav_variant": (h >> 4) % 2,
+        "services_variant": (h >> 8) % 3,
+        "about_variant": (h >> 12) % 2,
+        "testimonials_variant": (h >> 16) % 3,
+        "form_variant": (h >> 20) % 2,
+        "font_variant": (h >> 24) % 4,
+    }
+
+
 def generate_sites():
     """Main generation function."""
     env = Environment(loader=FileSystemLoader(str(TEMPLATES_DIR)), autoescape=False)
     template = env.get_template("base.html")
 
     SITES_DIR.mkdir(parents=True, exist_ok=True)
+
+    # Load photo manifest if it exists
+    manifest_path = SITES_DIR / "photo_manifest.json"
+    photo_manifest = {}
+    if manifest_path.exists():
+        photo_manifest = json.loads(manifest_path.read_text())
 
     # Load all lead collections
     lead_files = sorted(LEADS_DIR.glob("*.json"))
@@ -75,6 +96,9 @@ def generate_sites():
     used_slugs = {}  # slug -> count for dedup
     year = datetime.now().year
     skipped = 0
+
+    # Track variant distribution for summary
+    variant_counts = {"hero": {}, "services": {}, "testimonials": {}, "form": {}, "font": {}}
 
     for lead_file in lead_files:
         collection = LeadCollection.load(lead_file)
@@ -109,6 +133,19 @@ def generate_sites():
             # Pick testimonials
             testimonials = pick_testimonials(lead.company_name, trade["testimonials"])
 
+            # Compute layout variants
+            variants = compute_variants(lead.company_name)
+
+            # Track distribution
+            variant_counts["hero"][variants["hero_variant"]] = variant_counts["hero"].get(variants["hero_variant"], 0) + 1
+            variant_counts["services"][variants["services_variant"]] = variant_counts["services"].get(variants["services_variant"], 0) + 1
+            variant_counts["testimonials"][variants["testimonials_variant"]] = variant_counts["testimonials"].get(variants["testimonials_variant"], 0) + 1
+            variant_counts["form"][variants["form_variant"]] = variant_counts["form"].get(variants["form_variant"], 0) + 1
+            variant_counts["font"][variants["font_variant"]] = variant_counts["font"].get(variants["font_variant"], 0) + 1
+
+            # Check for photo
+            has_photo = photo_manifest.get(slug) is not None and photo_manifest.get(slug) != None
+
             # Render
             html = template.render(
                 company_name=lead.company_name,
@@ -119,6 +156,8 @@ def generate_sites():
                 testimonials=testimonials,
                 formspree_id=FORMSPREE_ID,
                 year=year,
+                has_photo=has_photo,
+                **variants,
             )
 
             # Write site
@@ -135,6 +174,10 @@ def generate_sites():
     print(f"  Sites generated: {len(all_sites)}")
     print(f"  Leads skipped:   {skipped}")
     print(f"  Output directory: {SITES_DIR}")
+    print(f"\nVariant distribution:")
+    for section, counts in variant_counts.items():
+        dist = ", ".join(f"v{k}={v}" for k, v in sorted(counts.items()))
+        print(f"  {section}: {dist}")
     print(f"\nGitHub Pages URL:  {GITHUB_PAGES_BASE}/{{slug}}/")
 
 
@@ -165,15 +208,17 @@ def generate_index(all_sites: list):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generated Sites Directory</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = {{ theme: {{ extend: {{ fontFamily: {{ sans: ['Inter', 'system-ui', 'sans-serif'] }} }} }} }}</script>
 </head>
-<body class="bg-gray-50 min-h-screen">
+<body class="bg-gray-50 min-h-screen font-sans antialiased">
     <div class="max-w-5xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-bold mb-2">Generated Sites Directory</h1>
         <p class="text-gray-500 mb-8">{len(all_sites)} sites generated across {len(cities)} cities</p>
         <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-            <table class="w-full text-left">
-                <thead class="bg-gray-100 text-gray-600 text-sm uppercase">
+            <table class="w-full text-left text-sm">
+                <thead class="bg-gray-100 text-gray-600 uppercase text-xs">
                     <tr>
                         <th class="px-4 py-3">Company</th>
                         <th class="px-4 py-3">Trade</th>

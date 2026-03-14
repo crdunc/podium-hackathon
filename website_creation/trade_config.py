@@ -7,6 +7,9 @@ TRADE_CONFIG = {
         "primary_color": "from-blue-600",
         "secondary_color": "to-cyan-500",
         "accent_color": "blue-600",
+        "hex_primary": "#2563eb",
+        "hex_dark": "#1d4ed8",
+        "hex_light": "#eff6ff",
         "tagline": "Trusted Heating & Cooling Experts in {city}",
         "services": [
             "AC Installation & Replacement",
@@ -35,6 +38,9 @@ TRADE_CONFIG = {
         "primary_color": "from-sky-600",
         "secondary_color": "to-blue-400",
         "accent_color": "sky-600",
+        "hex_primary": "#0284c7",
+        "hex_dark": "#0369a1",
+        "hex_light": "#f0f9ff",
         "tagline": "Reliable Plumbing Services in {city}",
         "services": [
             "Drain Cleaning & Unclogging",
@@ -63,6 +69,9 @@ TRADE_CONFIG = {
         "primary_color": "from-amber-500",
         "secondary_color": "to-yellow-400",
         "accent_color": "amber-500",
+        "hex_primary": "#f59e0b",
+        "hex_dark": "#d97706",
+        "hex_light": "#fffbeb",
         "tagline": "Licensed Electricians Serving {city}",
         "services": [
             "Electrical Panel Upgrades",
@@ -91,6 +100,9 @@ TRADE_CONFIG = {
         "primary_color": "from-green-600",
         "secondary_color": "to-lime-500",
         "accent_color": "green-600",
+        "hex_primary": "#16a34a",
+        "hex_dark": "#15803d",
+        "hex_light": "#f0fdf4",
         "tagline": "Professional Lawn Care in {city}",
         "services": [
             "Weekly Lawn Mowing",
@@ -119,6 +131,9 @@ TRADE_CONFIG = {
         "primary_color": "from-emerald-600",
         "secondary_color": "to-green-400",
         "accent_color": "emerald-600",
+        "hex_primary": "#059669",
+        "hex_dark": "#047857",
+        "hex_light": "#ecfdf5",
         "tagline": "Beautiful Landscaping Design & Installation in {city}",
         "services": [
             "Landscape Design & Planning",
@@ -147,6 +162,9 @@ TRADE_CONFIG = {
         "primary_color": "from-red-700",
         "secondary_color": "to-orange-500",
         "accent_color": "red-700",
+        "hex_primary": "#b91c1c",
+        "hex_dark": "#991b1b",
+        "hex_light": "#fef2f2",
         "tagline": "Expert Roofing Contractors in {city}",
         "services": [
             "Roof Replacement",
@@ -175,6 +193,9 @@ TRADE_CONFIG = {
         "primary_color": "from-violet-600",
         "secondary_color": "to-purple-400",
         "accent_color": "violet-600",
+        "hex_primary": "#7c3aed",
+        "hex_dark": "#6d28d9",
+        "hex_light": "#f5f3ff",
         "tagline": "Professional Painting Services in {city}",
         "services": [
             "Interior Painting",
@@ -203,6 +224,9 @@ TRADE_CONFIG = {
         "primary_color": "from-teal-600",
         "secondary_color": "to-green-500",
         "accent_color": "teal-600",
+        "hex_primary": "#0d9488",
+        "hex_dark": "#0f766e",
+        "hex_light": "#f0fdfa",
         "tagline": "Effective Pest Control Solutions in {city}",
         "services": [
             "General Pest Treatment",
@@ -231,6 +255,9 @@ TRADE_CONFIG = {
         "primary_color": "from-indigo-600",
         "secondary_color": "to-blue-400",
         "accent_color": "indigo-600",
+        "hex_primary": "#4f46e5",
+        "hex_dark": "#4338ca",
+        "hex_light": "#eef2ff",
         "tagline": "Professional Carpet & Upholstery Cleaning in {city}",
         "services": [
             "Deep Steam Carpet Cleaning",
@@ -259,6 +286,9 @@ TRADE_CONFIG = {
         "primary_color": "from-orange-600",
         "secondary_color": "to-amber-400",
         "accent_color": "orange-600",
+        "hex_primary": "#ea580c",
+        "hex_dark": "#c2410c",
+        "hex_light": "#fff7ed",
         "tagline": "Your Trusted Handyman in {city}",
         "services": [
             "General Home Repairs",
@@ -287,6 +317,9 @@ TRADE_CONFIG = {
         "primary_color": "from-gray-700",
         "secondary_color": "to-slate-500",
         "accent_color": "gray-700",
+        "hex_primary": "#374151",
+        "hex_dark": "#1f2937",
+        "hex_light": "#f9fafb",
         "tagline": "Expert Garage Door Repair & Installation in {city}",
         "services": [
             "Garage Door Repair",
@@ -315,6 +348,9 @@ TRADE_CONFIG = {
         "primary_color": "from-slate-600",
         "secondary_color": "to-gray-400",
         "accent_color": "slate-600",
+        "hex_primary": "#475569",
+        "hex_dark": "#334155",
+        "hex_light": "#f8fafc",
         "tagline": "Fast & Reliable Appliance Repair in {city}",
         "services": [
             "Refrigerator Repair",
@@ -343,6 +379,9 @@ TRADE_CONFIG = {
         "primary_color": "from-green-800",
         "secondary_color": "to-emerald-500",
         "accent_color": "green-800",
+        "hex_primary": "#166534",
+        "hex_dark": "#14532d",
+        "hex_light": "#f0fdf4",
         "tagline": "Professional Tree Care & Removal in {city}",
         "services": [
             "Tree Trimming & Pruning",
@@ -371,6 +410,9 @@ TRADE_CONFIG = {
         "primary_color": "from-yellow-700",
         "secondary_color": "to-amber-500",
         "accent_color": "yellow-700",
+        "hex_primary": "#a16207",
+        "hex_dark": "#854d0e",
+        "hex_light": "#fefce8",
         "tagline": "Quality Fence Installation & Repair in {city}",
         "services": [
             "Wood Fence Installation",
@@ -399,6 +441,9 @@ TRADE_CONFIG = {
         "primary_color": "from-stone-600",
         "secondary_color": "to-gray-400",
         "accent_color": "stone-600",
+        "hex_primary": "#57534e",
+        "hex_dark": "#44403c",
+        "hex_light": "#fafaf9",
         "tagline": "Expert Concrete Services in {city}",
         "services": [
             "Concrete Driveway Installation",
