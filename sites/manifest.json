@@ -1,373 +1,100 @@
 {
-  "piper-electric": {
-    "company_name": "Piper Electric",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/piper-electric/",
-    "trade": "electrical",
-    "city": "Denver",
-    "phone": "(303) 422-9219"
-  },
-  "piper-electric-2": {
-    "company_name": "Piper Electric",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/piper-electric-2/",
-    "trade": "electrical",
-    "city": "Denver",
-    "phone": "(303) 422-9219"
-  },
-  "piper-electric-3": {
-    "company_name": "Piper Electric",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/piper-electric-3/",
-    "trade": "electrical",
-    "city": "Denver",
-    "phone": "(303) 422-9219"
-  },
-  "shamrock-plumbing-llc": {
-    "company_name": "Shamrock Plumbing LLC",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/shamrock-plumbing-llc/",
+  "apache-plumbing-services": {
+    "company_name": "Apache Plumbing Services",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/apache-plumbing-services/",
     "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 505-9505"
+    "city": "Phoenix, AZ",
+    "phone": "(602) 246-2944"
   },
-  "manwill-plumbing-heating-air-conditioning": {
-    "company_name": "Manwill Plumbing Heating & Air Conditioning",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/manwill-plumbing-heating-air-conditioning/",
+  "red-sky-plumbing": {
+    "company_name": "Red Sky Plumbing",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/red-sky-plumbing/",
     "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 262-4671"
+    "city": "Phoenix, AZ",
+    "phone": "(480) 248-1650"
   },
-  "sb-plumbing-services": {
-    "company_name": "S&B Plumbing Services",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/sb-plumbing-services/",
+  "sveagle-plumbing": {
+    "company_name": "Sveagle Plumbing",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/sveagle-plumbing/",
     "trade": "plumbing",
-    "city": "Ogden",
-    "phone": "(801) 528-4999"
+    "city": "Denver, CO",
+    "phone": "(303) 795-7498"
   },
-  "mike-bachman-plumbing": {
-    "company_name": "Mike Bachman Plumbing",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/mike-bachman-plumbing/",
+  "mccomb-plumbing": {
+    "company_name": "McComb Plumbing",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/mccomb-plumbing/",
     "trade": "plumbing",
-    "city": "Ogden",
-    "phone": "(801) 627-5953"
+    "city": "Denver, CO",
+    "phone": "(303) 753-1715"
   },
-  "alabama-cooling-and-heating": {
-    "company_name": "Alabama Cooling and Heating",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/alabama-cooling-and-heating/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(205) 956-4328"
-  },
-  "brown-cooling-heating-plumbing-and-electrical": {
-    "company_name": "Brown Cooling, Heating, Plumbing and Electrical",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/brown-cooling-heating-plumbing-and-electrical/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(205) 235-2809"
-  },
-  "hutchens-company": {
-    "company_name": "Hutchens Company",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/hutchens-company/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(256) 536-1557"
-  },
-  "the-air-company-of-georgia": {
-    "company_name": "The AIR Company of Georgia",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/the-air-company-of-georgia/",
-    "trade": "hvac",
-    "city": "Georgia",
-    "phone": "(404) 583-7788"
-  },
-  "blake-brothers-plumbing-electrical-heating-air": {
-    "company_name": "Blake Brothers Plumbing, Electrical, Heating & Air",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/blake-brothers-plumbing-electrical-heating-air/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(256) 460-6174"
-  },
-  "fuller-heating-air-conditioning-plumbing-electrical": {
-    "company_name": "Fuller Heating, Air Conditioning, Plumbing & Electrical",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/fuller-heating-air-conditioning-plumbing-electrical/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(256) 381-7195"
-  },
-  "wehby-plumbing-inc": {
-    "company_name": "Wehby Plumbing Inc.",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/wehby-plumbing-inc/",
+  "roto-rooter-plumbing-water-cleanup": {
+    "company_name": "Roto-Rooter Plumbing & Water Cleanup",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/roto-rooter-plumbing-water-cleanup/",
     "trade": "plumbing",
-    "city": "Nashville",
-    "phone": "(615) 255-7424"
+    "city": "Phoenix, AZ",
+    "phone": "(623) 915-0995"
   },
-  "morton-plumbing-heating-cooling": {
-    "company_name": "Morton Plumbing, Heating & Cooling",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/morton-plumbing-heating-cooling/",
+  "tucker-hill-air-plumbing-electric": {
+    "company_name": "Tucker Hill Air, Plumbing & Electric",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/tucker-hill-air-plumbing-electric/",
     "trade": "plumbing",
-    "city": "Nashville",
-    "phone": "(615) 255-2527"
+    "city": "Phoenix, AZ",
+    "phone": "(602) 661-3659"
   },
-  "jack-ward-sons-plumbing-co": {
-    "company_name": "Jack Ward & Sons Plumbing Co.",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/jack-ward-sons-plumbing-co/",
+  "rooter-hero-plumbing": {
+    "company_name": "Rooter Hero Plumbing",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/rooter-hero-plumbing/",
     "trade": "plumbing",
-    "city": "Nashville",
-    "phone": "(615) 227-2811"
+    "city": "Phoenix, AZ",
+    "phone": "(623) 257-7722"
   },
-  "hardy-heating": {
-    "company_name": "Hardy Heating",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/hardy-heating/",
-    "trade": "hvac",
-    "city": "Alaska",
-    "phone": "(907) 917-4286"
-  },
-  "discount-mechanical-heating-plumbing": {
-    "company_name": "Discount Mechanical Heating & Plumbing",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/discount-mechanical-heating-plumbing/",
-    "trade": "hvac",
-    "city": "Alaska",
-    "phone": "(907) 336-3100"
-  },
-  "elite-mechanical-inc": {
-    "company_name": "Elite Mechanical Inc.",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/elite-mechanical-inc/",
-    "trade": "hvac",
-    "city": "Hawaii",
-    "phone": "(808) 831-5050"
-  },
-  "air-works-of-alabama": {
-    "company_name": "Air Works of Alabama",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/air-works-of-alabama/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(334) 547-3892"
-  },
-  "thomas-service-company-thomas-hvac-company-inc": {
-    "company_name": "Thomas Service Company (Thomas HVAC Company, Inc.)",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/thomas-service-company-thomas-hvac-company-inc/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(256) 858-4822"
-  },
-  "legacy-hvac-legacy-heating-and-cooling": {
-    "company_name": "Legacy HVAC (Legacy Heating and Cooling)",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/legacy-hvac-legacy-heating-and-cooling/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(205) 364-1044"
-  },
-  "extreme-heating-air": {
-    "company_name": "Extreme Heating & Air",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/extreme-heating-air/",
-    "trade": "hvac",
-    "city": "Alaska",
-    "phone": "(907) 726-1805"
-  },
-  "cool-air-mechanical-inc": {
-    "company_name": "Cool Air Mechanical, Inc.",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/cool-air-mechanical-inc/",
-    "trade": "hvac",
-    "city": "Alaska",
-    "phone": "(907) 868-2889"
-  },
-  "heatsource-mechanical": {
-    "company_name": "HeatSource Mechanical",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/heatsource-mechanical/",
-    "trade": "hvac",
-    "city": "Alaska",
-    "phone": "(907) 376-4130"
-  },
-  "heide-cook-llc": {
-    "company_name": "Heide & Cook, LLC",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/heide-cook-llc/",
-    "trade": "hvac",
-    "city": "Hawaii",
-    "phone": "(808) 841-6161"
-  },
-  "carter-sons-hvac": {
-    "company_name": "Carter & Sons HVAC",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/carter-sons-hvac/",
-    "trade": "hvac",
-    "city": "Georgia",
-    "phone": "(770) 434-4095"
-  },
-  "sl-plumbing-co-llc": {
-    "company_name": "S&L Plumbing Co. LLC",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/sl-plumbing-co-llc/",
+  "roto-rooter-plumbing-drain-services": {
+    "company_name": "Roto-Rooter Plumbing & Drain Services",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/roto-rooter-plumbing-drain-services/",
     "trade": "plumbing",
-    "city": "Lehi",
-    "phone": "(385) 250-8900"
+    "city": "Denver, CO",
+    "phone": "(303) 666-0045"
   },
-  "wrights-plumbing-and-rooter": {
-    "company_name": "Wright's Plumbing and Rooter",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/wrights-plumbing-and-rooter/",
+  "prime-plumbing-heating": {
+    "company_name": "Prime Plumbing & Heating",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/prime-plumbing-heating/",
     "trade": "plumbing",
-    "city": "Ogden",
-    "phone": "(801) 662-8786"
+    "city": "Denver, CO",
+    "phone": "(720) 542-8153"
   },
-  "start-2-finish-plumbing": {
-    "company_name": "Start 2 Finish Plumbing",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/start-2-finish-plumbing/",
+  "brothers-plumbing-heating-electric": {
+    "company_name": "Brothers Plumbing, Heating & Electric",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/brothers-plumbing-heating-electric/",
     "trade": "plumbing",
-    "city": "Ogden",
-    "phone": "(801) 917-6446"
+    "city": "Denver, CO",
+    "phone": "(303) 468-2294"
   },
-  "stiles-heating-and-cooling-inc": {
-    "company_name": "Stiles Heating and Cooling Inc",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/stiles-heating-and-cooling-inc/",
-    "trade": "hvac",
-    "city": "Georgia",
-    "phone": "(706) 809-5941"
-  },
-  "cunningham-associates-heating-air-conditioning": {
-    "company_name": "Cunningham Associates Heating & Air Conditioning",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/cunningham-associates-heating-air-conditioning/",
-    "trade": "hvac",
-    "city": "Georgia",
-    "phone": "(770) 343-7565"
-  },
-  "plumbing-solutions": {
-    "company_name": "Plumbing Solutions",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/plumbing-solutions/",
+  "blue-sky-plumbing-heating": {
+    "company_name": "Blue Sky Plumbing & Heating",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/blue-sky-plumbing-heating/",
     "trade": "plumbing",
-    "city": "Nashville",
-    "phone": "(615) 825-2889"
+    "city": "Denver, CO",
+    "phone": "(720) 617-0417"
   },
-  "pv-heating-and-air": {
-    "company_name": "PV Heating and Air",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/pv-heating-and-air/",
-    "trade": "hvac",
-    "city": "Georgia",
-    "phone": "(404) 798-9672"
-  },
-  "comfort-masters-of-north-alabama-llc": {
-    "company_name": "Comfort Masters of North Alabama LLC",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/comfort-masters-of-north-alabama-llc/",
-    "trade": "hvac",
-    "city": "Alabama",
-    "phone": "(256) 701-7123"
-  },
-  "a-h-electricians": {
-    "company_name": "A & H Electricians",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/a-h-electricians/",
-    "trade": "electrical",
-    "city": "New Jersey",
-    "phone": "(908) 272-7909"
-  },
-  "salisbury-plumbing": {
-    "company_name": "Salisbury Plumbing",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/salisbury-plumbing/",
+  "king-rooter-plumbing": {
+    "company_name": "King Rooter & Plumbing",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/king-rooter-plumbing/",
     "trade": "plumbing",
-    "city": "Lehi",
-    "phone": "(385) 375-1207"
+    "city": "Denver, CO",
+    "phone": "(303) 949-2593"
   },
-  "plumbwell-plumbing-and-drains": {
-    "company_name": "PlumbWell Plumbing and Drains",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/plumbwell-plumbing-and-drains/",
+  "copperhead-plumbing": {
+    "company_name": "Copperhead Plumbing",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/copperhead-plumbing/",
     "trade": "plumbing",
-    "city": "Ogden",
-    "phone": "(385) 330-4652"
+    "city": "Denver, CO",
+    "phone": "(303) 552-3491"
   },
-  "scott-hale-plumbing-drains-heating-air": {
-    "company_name": "Scott Hale Plumbing, Drains, Heating & Air",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/scott-hale-plumbing-drains-heating-air/",
+  "my-denver-plumber": {
+    "company_name": "My Denver Plumber",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/my-denver-plumber/",
     "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 954-0046"
-  },
-  "igloo-ac": {
-    "company_name": "Igloo AC",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/igloo-ac/",
-    "trade": "hvac",
-    "city": "Hawaii",
-    "phone": "(808) 797-0039"
-  },
-  "hoffmann-brothers-nashville": {
-    "company_name": "Hoffmann Brothers Nashville",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/hoffmann-brothers-nashville/",
-    "trade": "plumbing",
-    "city": "Nashville",
-    "phone": "(615) 515-3015"
-  },
-  "millcreek-plumbing": {
-    "company_name": "Millcreek Plumbing",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/millcreek-plumbing/",
-    "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 277-3342"
-  },
-  "standard-air": {
-    "company_name": "Standard Air",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/standard-air/",
-    "trade": "hvac",
-    "city": "Hawaii",
-    "phone": "(808) 302-0644"
-  },
-  "craigs-air-conditioning": {
-    "company_name": "Craig's Air Conditioning",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/craigs-air-conditioning/",
-    "trade": "hvac",
-    "city": "Hawaii",
-    "phone": "(808) 682-0970"
-  },
-  "salt-city-plumbing-heating-and-air": {
-    "company_name": "Salt City Plumbing, Heating, and Air",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/salt-city-plumbing-heating-and-air/",
-    "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 640-9785"
-  },
-  "mr-expert-plumbing": {
-    "company_name": "Mr. Expert Plumbing",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/mr-expert-plumbing/",
-    "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 560-8207"
-  },
-  "donahue-plumbing-service": {
-    "company_name": "Donahue Plumbing Service",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/donahue-plumbing-service/",
-    "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 262-0500"
-  },
-  "copper-peaks-plumbing-leak-detection": {
-    "company_name": "Copper Peaks Plumbing & Leak Detection",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/copper-peaks-plumbing-leak-detection/",
-    "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 916-3349"
-  },
-  "valley-plumbing-heating-cooling": {
-    "company_name": "Valley Plumbing, Heating & Cooling",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/valley-plumbing-heating-cooling/",
-    "trade": "plumbing",
-    "city": "Salt Lake City",
-    "phone": "(801) 341-4222"
-  },
-  "upfront-plumbing-drains-heating-air": {
-    "company_name": "Upfront Plumbing, Drains, Heating & Air",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/upfront-plumbing-drains-heating-air/",
-    "trade": "plumbing",
-    "city": "Ogden",
-    "phone": "(801) 651-4906"
-  },
-  "benjamin-franklin-plumbing-of-nashville": {
-    "company_name": "Benjamin Franklin Plumbing of Nashville",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/benjamin-franklin-plumbing-of-nashville/",
-    "trade": "plumbing",
-    "city": "Nashville",
-    "phone": "(615) 590-3240"
-  },
-  "roto-rooter-plumbing-nashville": {
-    "company_name": "Roto-Rooter Plumbing – Nashville",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/roto-rooter-plumbing-nashville/",
-    "trade": "plumbing",
-    "city": "Nashville",
-    "phone": "(615) 361-6647"
-  },
-  "roto-rooter-plumbing": {
-    "company_name": "Roto-Rooter Plumbing",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/roto-rooter-plumbing/",
-    "trade": "plumbing",
-    "city": "Ogden",
-    "phone": "(801) 621-8500"
+    "city": "Denver, CO",
+    "phone": "(720) 620-4177"
   }
 }
