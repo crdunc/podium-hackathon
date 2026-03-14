@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { createHash } from 'crypto';
+import { execSync } from 'child_process';
 import type { AgentResult, Lead } from '@podium/shared';
 import { log } from '../utils/logger';
 import { getAllLeads, updateSiteUrl } from '../utils/supabase';
@@ -318,6 +319,22 @@ export async function runWebsiteAgent(
   }
   writeFileSync(join(sitesDir, 'manifest.json'), JSON.stringify(manifest, null, 2), 'utf-8');
   log('info', AGENT_NAME, `Manifest written: ${Object.keys(manifest).length} entries`);
+
+  // Push to GitHub so GitHub Pages deploys the new sites
+  if (generatedSites.length > 0) {
+    try {
+      log('info', AGENT_NAME, 'Pushing sites to GitHub for Pages deployment...');
+      execSync(`git add ${sitesDir}`, { stdio: 'pipe' });
+      const commitMsg = `Add ${generatedSites.length} generated site(s)`;
+      execSync(`git commit -m "${commitMsg}"`, { stdio: 'pipe' });
+      execSync('git push origin main', { stdio: 'pipe' });
+      log('success', AGENT_NAME, `Pushed ${generatedSites.length} sites to GitHub — Pages will redeploy`);
+    } catch (err) {
+      const msg = `Git push failed: ${(err as Error).message}`;
+      log('warn', AGENT_NAME, msg);
+      errors.push(msg);
+    }
+  }
 
   const durationMs = Date.now() - startTime;
   log('success', AGENT_NAME,
