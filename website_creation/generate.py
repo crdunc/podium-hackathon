@@ -70,6 +70,9 @@ def compute_variants(company_name: str) -> dict:
         "testimonials_variant": (h >> 16) % 3,
         "form_variant": (h >> 20) % 2,
         "font_variant": (h >> 24) % 4,
+        "tagline_variant": (h >> 28) % 6,
+        "subtitle_variant": (h >> 32) % 6,
+        "about_copy_variant": (h >> 36) % 4,
     }
 
 
@@ -144,7 +147,14 @@ def generate_sites():
             variant_counts["font"][variants["font_variant"]] = variant_counts["font"].get(variants["font_variant"], 0) + 1
 
             # Check for photo
-            has_photo = photo_manifest.get(slug) is not None and photo_manifest.get(slug) != None
+            has_photo = bool(photo_manifest.get(slug))
+
+            # Resolve copy variants
+            tagline = trade["taglines"][variants["tagline_variant"] % len(trade["taglines"])]
+            subtitle = trade["subtitles"][variants["subtitle_variant"] % len(trade["subtitles"])].format(city=city)
+            about_copy = trade["about_paragraphs"][variants["about_copy_variant"] % len(trade["about_paragraphs"])]
+            about_p1 = about_copy["p1"].format(company_name=lead.company_name, city=city, trade=trade["display_name"].lower())
+            about_p2 = about_copy["p2"].format(company_name=lead.company_name, city=city, trade=trade["display_name"].lower())
 
             # Render
             html = template.render(
@@ -157,6 +167,10 @@ def generate_sites():
                 formspree_id=FORMSPREE_ID,
                 year=year,
                 has_photo=has_photo,
+                tagline=tagline,
+                subtitle=subtitle,
+                about_p1=about_p1,
+                about_p2=about_p2,
                 **variants,
             )
 

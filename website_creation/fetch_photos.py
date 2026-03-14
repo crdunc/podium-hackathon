@@ -55,8 +55,8 @@ async def download_photo(client: httpx.AsyncClient, photo_name: str, output_path
         resp = await client.get(
             PHOTO_MEDIA_URL.format(photo_name=photo_name),
             params={
-                "maxWidthPx": 800,
-                "maxHeightPx": 600,
+                "maxWidthPx": 1600,
+                "maxHeightPx": 1200,
                 "key": API_KEY,
             },
             follow_redirects=True,

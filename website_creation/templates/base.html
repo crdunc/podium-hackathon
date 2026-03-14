@@ -50,17 +50,13 @@
 <body class="bg-white text-gray-800 font-sans antialiased">
 
 {# ============================================================ #}
-{# NAV — 2 variants                                             #}
+{# NAV                                                           #}
 {# ============================================================ #}
 {% if nav_variant == 0 %}
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3 min-w-0">
-                {% if has_photo %}
-                <img src="photo.jpg" alt="{{ company_name }}" class="w-9 h-9 rounded-full object-cover ring-2 ring-gray-100 flex-shrink-0">
-                {% else %}
-                <div class="w-9 h-9 rounded-full bg-brand flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{{ company_name[0] }}</div>
-                {% endif %}
+            <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-8 h-8 rounded-md bg-brand flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{{ company_name[0] }}</div>
                 <span class="font-semibold text-gray-900 truncate">{{ company_name }}</span>
             </div>
             <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
@@ -75,10 +71,8 @@
 {% else %}
     <nav class="sticky top-0 z-50 bg-gray-900 text-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-3 min-w-0">
-                {% if has_photo %}
-                <img src="photo.jpg" alt="{{ company_name }}" class="w-8 h-8 rounded object-cover flex-shrink-0">
-                {% endif %}
+            <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-8 h-8 rounded-md bg-brand flex items-center justify-center text-white font-bold text-sm flex-shrink-0">{{ company_name[0] }}</div>
                 <span class="font-bold truncate">{{ company_name }}</span>
             </div>
             <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
@@ -93,57 +87,71 @@
 {# HERO — 4 variants                                            #}
 {# ============================================================ #}
 {% if hero_variant == 0 %}
-    {# Centered gradient hero with pattern #}
-    <section class="relative overflow-hidden bg-gray-900 text-white">
-        <div class="absolute inset-0 bg-gradient-to-br {{ trade.primary_color }} {{ trade.secondary_color }} opacity-90"></div>
-        <div class="absolute inset-0 opacity-[0.07]" style="background-image:url('data:image/svg+xml,<svg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;%23fff&quot; fill-opacity=&quot;1&quot;><circle cx=&quot;20&quot; cy=&quot;20&quot; r=&quot;1.5&quot;/></g></svg>');"></div>
+    {# Centered hero — photo as bg or gradient #}
+    <section class="relative overflow-hidden text-white" {% if has_photo %}style="min-height:480px"{% endif %}>
+        {% if has_photo %}
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('photo.jpg')"></div>
+        <div class="absolute inset-0 bg-gray-900/70"></div>
+        {% else %}
+        <div class="absolute inset-0 bg-gradient-to-br {{ trade.primary_color }} {{ trade.secondary_color }}"></div>
+        <div class="absolute inset-0 opacity-[0.06]" style="background-image:url('data:image/svg+xml,<svg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;%23fff&quot;><circle cx=&quot;20&quot; cy=&quot;20&quot; r=&quot;1.5&quot;/></g></svg>');"></div>
+        {% endif %}
         <div class="relative max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
-            {% if has_photo %}<img src="photo.jpg" alt="{{ company_name }}" class="w-20 h-20 rounded-xl object-cover mx-auto mb-6 ring-4 ring-white/20 shadow-lg">{% endif %}
-            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4">{{ company_name }}</h1>
-            <p class="text-lg sm:text-xl text-white/80 mb-8 max-w-2xl mx-auto">{{ trade.tagline.format(city=city) }}</p>
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4">{{ tagline }}</h1>
+            <p class="text-lg sm:text-xl text-white/80 mb-2 font-semibold">{{ company_name }}</p>
+            <p class="text-base text-white/60 mb-8">{{ subtitle }}</p>
             <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="#book" class="inline-flex justify-center bg-white text-gray-900 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition shadow-lg">Request a Free Estimate</a>
-                <a href="tel:{{ phone }}" class="inline-flex justify-center items-center border border-white/40 text-white px-6 py-3 rounded-md font-semibold hover:bg-white/10 transition">
+                <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold text-base transition shadow-lg shadow-brand/25">Request a Free Estimate</a>
+                <a href="tel:{{ phone }}" class="inline-flex justify-center items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3.5 rounded-lg font-semibold hover:bg-white/20 transition text-sm">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                    Call {{ phone }}
+                    {{ phone }}
                 </a>
             </div>
         </div>
     </section>
 
 {% elif hero_variant == 1 %}
-    {# Left-aligned dark hero with accent stripe #}
-    <section class="bg-gray-900 text-white relative">
-        <div class="absolute top-0 left-0 right-0 h-1 bg-brand"></div>
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+    {# Left-aligned hero — photo as bg or dark solid #}
+    <section class="relative overflow-hidden text-white" {% if has_photo %}style="min-height:460px"{% endif %}>
+        {% if has_photo %}
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('photo.jpg')"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/75 to-gray-900/40"></div>
+        {% else %}
+        <div class="absolute inset-0 bg-gray-900"></div>
+        {% endif %}
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
             <div class="max-w-2xl">
-                {% if has_photo %}<img src="photo.jpg" alt="{{ company_name }}" class="w-16 h-16 rounded-lg object-cover mb-5 ring-2 ring-brand/40">{% endif %}
-                <p class="text-brand font-semibold text-sm uppercase tracking-wider mb-3">{{ trade.display_name }} in {{ city }}</p>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-4">{{ company_name }}</h1>
-                <p class="text-lg text-gray-400 mb-8">{{ trade.tagline.format(city=city) }}</p>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-3">{{ tagline }}</h1>
+                <p class="text-lg text-white/90 font-semibold mb-1">{{ company_name }}</p>
+                <p class="text-base text-gray-400 mb-8">{{ subtitle }}</p>
                 <div class="flex flex-col sm:flex-row gap-3">
-                    <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-6 py-3 rounded-md font-semibold transition">Get a Free Estimate</a>
-                    <a href="tel:{{ phone }}" class="inline-flex justify-center items-center border border-gray-700 text-gray-300 hover:text-white hover:border-gray-500 px-6 py-3 rounded-md font-semibold transition">{{ phone }}</a>
+                    <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold transition shadow-lg shadow-brand/25">Get a Free Estimate</a>
+                    <a href="tel:{{ phone }}" class="inline-flex justify-center items-center border border-gray-600 text-gray-300 hover:text-white hover:border-gray-400 px-6 py-3.5 rounded-lg font-semibold transition text-sm">{{ phone }}</a>
                 </div>
             </div>
         </div>
     </section>
 
 {% elif hero_variant == 2 %}
-    {# Split hero — text left, brand box right #}
+    {# Split hero — text left, photo/brand right #}
     <section class="bg-white">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div>
-                    {% if has_photo %}<img src="photo.jpg" alt="{{ company_name }}" class="w-16 h-16 rounded-lg object-cover mb-5 shadow">{% endif %}
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-4">{{ company_name }}</h1>
-                    <p class="text-lg text-gray-500 mb-8">{{ trade.tagline.format(city=city) }}</p>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-3">{{ tagline }}</h1>
+                    <p class="text-lg text-gray-700 font-semibold mb-1">{{ company_name }}</p>
+                    <p class="text-base text-gray-500 mb-8">{{ subtitle }}</p>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-6 py-3 rounded-md font-semibold transition shadow">Request a Free Estimate</a>
-                        <a href="tel:{{ phone }}" class="inline-flex justify-center items-center text-gray-600 hover:text-brand px-6 py-3 rounded-md font-semibold border border-gray-300 hover:border-brand transition">{{ phone }}</a>
+                        <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold transition shadow-lg shadow-brand/25">Request a Free Estimate</a>
+                        <a href="tel:{{ phone }}" class="inline-flex justify-center items-center text-gray-600 hover:text-brand px-6 py-3.5 rounded-lg font-semibold border border-gray-300 hover:border-brand transition text-sm">{{ phone }}</a>
                     </div>
                 </div>
                 <div class="hidden md:block">
+                    {% if has_photo %}
+                    <div class="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+                        <img src="photo.jpg" alt="{{ company_name }}" class="w-full h-full object-cover">
+                    </div>
+                    {% else %}
                     <div class="bg-gradient-to-br {{ trade.primary_color }} {{ trade.secondary_color }} rounded-2xl p-10 text-white text-center">
                         <div class="text-6xl mb-4">{{ trade.icon }}</div>
                         <div class="text-2xl font-bold mb-2">Quality {{ trade.display_name }}</div>
@@ -155,35 +163,36 @@
                             <div class="bg-white/10 rounded-lg p-3"><div class="font-bold">Fast</div><div class="text-white/60 text-xs">Response</div></div>
                         </div>
                     </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
     </section>
 
 {% else %}
-    {# Minimal white hero with large colored text #}
-    <section class="bg-brand-light border-b border-gray-200">
+    {# Full-bleed photo banner or brand tint #}
+    <section class="relative overflow-hidden" {% if has_photo %}style="min-height:420px"{% endif %}>
+        {% if has_photo %}
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('photo.jpg')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/30"></div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 pt-32 pb-16 md:pt-44 md:pb-20">
+        {% else %}
+        <div class="bg-brand-light border-b border-gray-200">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-24">
-            <div class="flex items-start gap-5 mb-6">
-                {% if has_photo %}
-                <img src="photo.jpg" alt="{{ company_name }}" class="w-14 h-14 rounded-xl object-cover shadow flex-shrink-0">
-                {% else %}
-                <div class="w-14 h-14 rounded-xl bg-brand flex items-center justify-center text-white text-2xl font-bold flex-shrink-0">{{ company_name[0] }}</div>
-                {% endif %}
-                <div>
-                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">{{ company_name }}</h1>
-                    <p class="text-brand font-medium mt-1">{{ trade.display_name }} &middot; {{ city }}</p>
-                </div>
-            </div>
-            <p class="text-lg text-gray-600 mb-8 max-w-2xl">{{ trade.tagline.format(city=city) }}</p>
+        {% endif %}
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-2">{{ tagline }}</h1>
+            <p class="text-lg text-gray-700 font-semibold">{{ company_name }}</p>
+            <p class="text-brand font-medium text-sm">{{ trade.display_name }} &middot; {{ city }}</p>
+            <p class="text-base text-gray-500 mt-3 mb-8 max-w-2xl">{{ subtitle }}</p>
             <div class="flex flex-col sm:flex-row gap-3">
-                <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-6 py-3 rounded-lg font-semibold transition shadow-sm">Request a Free Estimate</a>
+                <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold transition shadow-lg shadow-brand/25">Request a Free Estimate</a>
                 <a href="tel:{{ phone }}" class="inline-flex justify-center items-center text-gray-700 hover:text-brand font-semibold transition">
                     <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                     {{ phone }}
                 </a>
             </div>
         </div>
+        {% if not has_photo %}</div>{% endif %}
     </section>
 {% endif %}
 
@@ -191,7 +200,7 @@
 {# TRUST BAR                                                     #}
 {# ============================================================ #}
 {% if hero_variant != 2 %}
-    <section class="border-b border-gray-200 {% if hero_variant == 3 %}bg-white{% else %}bg-gray-50{% endif %}">
+    <section class="border-b border-gray-200 bg-gray-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-5">
             <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-gray-600">
                 <div class="flex items-center gap-2">
@@ -219,7 +228,6 @@
 {# SERVICES — 3 variants                                        #}
 {# ============================================================ #}
 {% if services_variant == 0 %}
-    {# Checkmark list #}
     <section id="services" class="py-16 md:py-20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
@@ -238,7 +246,6 @@
     </section>
 
 {% elif services_variant == 1 %}
-    {# Numbered cards #}
     <section id="services" class="py-16 md:py-20 bg-gray-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Our Services</h2>
@@ -255,7 +262,6 @@
     </section>
 
 {% else %}
-    {# Two-column clean list #}
     <section id="services" class="py-16 md:py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-12">
@@ -283,14 +289,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
                 <div>
                     <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">About {{ company_name }}</h2>
-                    <p class="text-gray-600 leading-relaxed mb-4">
-                        {{ company_name }} is a trusted {{ trade.display_name | lower }} provider proudly serving {{ city }} and the surrounding areas.
-                        Our experienced team delivers top-quality workmanship, honest pricing, and reliable service on every job.
-                    </p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Whether you need a quick repair or a major project, we treat every home and business like our own.
-                        We're fully licensed, insured, and committed to your complete satisfaction.
-                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-4">{{ about_p1 }}</p>
+                    <p class="text-gray-600 leading-relaxed">{{ about_p2 }}</p>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-white rounded-lg p-5 text-center border border-gray-200">
@@ -318,10 +318,8 @@
     <section class="py-16 md:py-20 border-y border-gray-200">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Why {{ company_name }}?</h2>
-            <p class="text-gray-600 leading-relaxed text-lg mb-8">
-                We're a locally owned {{ trade.display_name | lower }} company serving {{ city }} and surrounding communities.
-                Our team is fully licensed, insured, and dedicated to honest pricing and top-quality workmanship on every job — big or small.
-            </p>
+            <p class="text-gray-600 leading-relaxed text-lg mb-4">{{ about_p1 }}</p>
+            <p class="text-gray-600 leading-relaxed text-lg mb-8">{{ about_p2 }}</p>
             <div class="flex flex-wrap justify-center gap-6 text-sm">
                 <div class="flex items-center gap-2 text-gray-700">
                     <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
@@ -348,7 +346,6 @@
 {# TESTIMONIALS — 3 variants                                    #}
 {# ============================================================ #}
 {% if testimonials_variant == 0 %}
-    {# Three equal cards #}
     <section class="py-16 md:py-20">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-12">What Our Customers Say</h2>
@@ -369,7 +366,6 @@
     </section>
 
 {% elif testimonials_variant == 1 %}
-    {# Featured large quote + 2 smaller #}
     <section class="py-16 md:py-20 bg-gray-50">
         <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-12">Customer Reviews</h2>
@@ -401,7 +397,6 @@
     </section>
 
 {% else %}
-    {# Minimal inline quotes with left border #}
     <section class="py-16 md:py-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-10">Reviews</h2>
@@ -552,12 +547,8 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <div class="flex items-center gap-3 mb-3">
-                        {% if has_photo %}
-                        <img src="photo.jpg" alt="{{ company_name }}" class="w-8 h-8 rounded-full object-cover ring-2 ring-white/20">
-                        {% else %}
-                        <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center text-white font-bold text-xs">{{ company_name[0] }}</div>
-                        {% endif %}
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <div class="w-8 h-8 rounded-md bg-brand flex items-center justify-center text-white font-bold text-xs flex-shrink-0">{{ company_name[0] }}</div>
                         <span class="font-semibold">{{ company_name }}</span>
                     </div>
                     <p class="text-sm text-gray-400 leading-relaxed">Professional {{ trade.display_name | lower }} services in {{ city }} and surrounding areas.</p>
