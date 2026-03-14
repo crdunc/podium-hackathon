@@ -1,0 +1,16 @@
+{
+  "pipeline_run": {
+    "run_id": "9dd64a70",
+    "started_at": "2026-03-14T18:04:43.396Z",
+    "completed_at": "2026-03-14T18:04:43.424Z",
+    "results": {
+      "searched": 62,
+      "qualified": 60,
+      "enriched": 60,
+      "stored": 58,
+      "duplicatesSkipped": 2
+    }
+  },
+  "cities": [],
+  "total_leads": 0
+}
