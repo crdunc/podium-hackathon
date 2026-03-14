@@ -1,0 +1,742 @@
+// ============================================================
+// Website Template Renderer
+// TypeScript replacement for the Jinja2 base.html template.
+// Generates complete single-page HTML for a lead's website
+// using template literals, with per-section variant support
+// for nav, hero, services, about, testimonials, form, and font.
+// ============================================================
+
+import type { TradeConfig, Testimonial } from './website-trade-config';
+
+export interface SiteRenderData {
+  companyName: string;
+  trade: TradeConfig;
+  city: string;
+  phone: string;
+  address: string;
+  testimonials: Testimonial[];
+  formspreeId: string;
+  year: number;
+  hasPhoto: boolean;
+  tagline: string;
+  subtitle: string;
+  aboutP1: string;
+  aboutP2: string;
+  heroVariant: number;
+  navVariant: number;
+  servicesVariant: number;
+  aboutVariant: number;
+  testimonialsVariant: number;
+  formVariant: number;
+  fontVariant: number;
+}
+
+// ── SVG Icons ──────────────────────────────────────────────
+
+const PHONE_SVG = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>';
+
+const PHONE_SVG_5 = '<svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>';
+
+const CHECK_SVG = '<svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>';
+
+const CHECK_SVG_SMALL = '<svg class="w-5 h-5 text-brand mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>';
+
+const SHIELD_SVG = '<svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>';
+
+const CLOCK_SVG = '<svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>';
+
+const STAR_TRUST_SVG = '<svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>';
+
+const PIN_SVG = '<svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>';
+
+const STAR_SVG_AMBER_4 = '<svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>';
+
+const STAR_SVG_WHITE_5 = '<svg class="w-5 h-5 text-white/80" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>';
+
+// ── Helpers ────────────────────────────────────────────────
+
+function stars(count: number, svg: string): string {
+  return Array.from({ length: count }, () => svg).join('\n                        ');
+}
+
+function starsInline(count: number, svg: string): string {
+  return Array.from({ length: count }, () => svg).join('\n                    ');
+}
+
+// ── Font ───────────────────────────────────────────────────
+
+function fontLink(variant: number): string {
+  switch (variant) {
+    case 0:
+      return `<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">`;
+    case 1:
+      return `<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">`;
+    case 2:
+      return `<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">`;
+    default:
+      return `<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">`;
+  }
+}
+
+function fontFamily(variant: number): string {
+  switch (variant) {
+    case 0:
+      return `sans: ['Inter', 'system-ui', 'sans-serif'],`;
+    case 1:
+      return `sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],`;
+    case 2:
+      return `sans: ['DM Sans', 'system-ui', 'sans-serif'],`;
+    default:
+      return `sans: ['Outfit', 'system-ui', 'sans-serif'],`;
+  }
+}
+
+// ── Nav ────────────────────────────────────────────────────
+
+function renderNav(data: SiteRenderData): string {
+  const { companyName, phone, navVariant } = data;
+  const initial = companyName[0];
+
+  if (navVariant === 0) {
+    return `    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-8 h-8 rounded-md bg-brand flex items-center justify-center text-white font-bold text-sm flex-shrink-0">${initial}</div>
+                <span class="font-semibold text-gray-900 truncate">${companyName}</span>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+                <a href="tel:${phone}" class="hidden sm:flex items-center gap-1.5 text-sm font-medium text-gray-600 hover:text-brand transition">
+                    ${PHONE_SVG}
+                    ${phone}
+                </a>
+                <a href="#book" class="bg-brand hover:bg-brand-dark text-white px-4 py-2 rounded-md text-sm font-semibold transition">Get Estimate</a>
+            </div>
+        </div>
+    </nav>`;
+  }
+
+  return `    <nav class="sticky top-0 z-50 bg-gray-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-2.5 min-w-0">
+                <div class="w-8 h-8 rounded-md bg-brand flex items-center justify-center text-white font-bold text-sm flex-shrink-0">${initial}</div>
+                <span class="font-bold truncate">${companyName}</span>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+                <a href="tel:${phone}" class="hidden sm:flex items-center gap-1.5 text-sm text-gray-300 hover:text-white transition">${phone}</a>
+                <a href="#book" class="bg-brand hover:bg-brand-dark text-white px-4 py-2 rounded text-sm font-semibold transition">Get Estimate</a>
+            </div>
+        </div>
+    </nav>`;
+}
+
+// ── Hero ───────────────────────────────────────────────────
+
+function renderHero(data: SiteRenderData): string {
+  const { companyName, trade, city, phone, hasPhoto, tagline, subtitle, heroVariant } = data;
+
+  if (heroVariant === 0) {
+    // Centered hero — photo as bg or gradient
+    let bgBlock: string;
+    if (hasPhoto) {
+      bgBlock = `        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('photo.jpg')"></div>
+        <div class="absolute inset-0 bg-gray-900/70"></div>`;
+    } else {
+      bgBlock = `        <div class="absolute inset-0 bg-gradient-to-br ${trade.primaryColor} ${trade.secondaryColor}"></div>
+        <div class="absolute inset-0 opacity-[0.06]" style="background-image:url('data:image/svg+xml,<svg width=&quot;40&quot; height=&quot;40&quot; viewBox=&quot;0 0 40 40&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;%23fff&quot;><circle cx=&quot;20&quot; cy=&quot;20&quot; r=&quot;1.5&quot;/></g></svg>');"></div>`;
+    }
+
+    return `    <section class="relative overflow-hidden text-white"${hasPhoto ? ' style="min-height:480px"' : ''}>
+${bgBlock}
+        <div class="relative max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4">${tagline}</h1>
+            <p class="text-lg sm:text-xl text-white/80 mb-2 font-semibold">${companyName}</p>
+            <p class="text-base text-white/60 mb-8">${subtitle}</p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold text-base transition shadow-lg shadow-brand/25">Request a Free Estimate</a>
+                <a href="tel:${phone}" class="inline-flex justify-center items-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3.5 rounded-lg font-semibold hover:bg-white/20 transition text-sm">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    ${phone}
+                </a>
+            </div>
+        </div>
+    </section>`;
+  }
+
+  if (heroVariant === 1) {
+    // Left-aligned hero — photo as bg or dark solid
+    let bgBlock: string;
+    if (hasPhoto) {
+      bgBlock = `        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('photo.jpg')"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900/90 via-gray-900/75 to-gray-900/40"></div>`;
+    } else {
+      bgBlock = `        <div class="absolute inset-0 bg-gray-900"></div>`;
+    }
+
+    return `    <section class="relative overflow-hidden text-white"${hasPhoto ? ' style="min-height:460px"' : ''}>
+${bgBlock}
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+            <div class="max-w-2xl">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-3">${tagline}</h1>
+                <p class="text-lg text-white/90 font-semibold mb-1">${companyName}</p>
+                <p class="text-base text-gray-400 mb-8">${subtitle}</p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold transition shadow-lg shadow-brand/25">Get a Free Estimate</a>
+                    <a href="tel:${phone}" class="inline-flex justify-center items-center border border-gray-600 text-gray-300 hover:text-white hover:border-gray-400 px-6 py-3.5 rounded-lg font-semibold transition text-sm">${phone}</a>
+                </div>
+            </div>
+        </div>
+    </section>`;
+  }
+
+  if (heroVariant === 2) {
+    // Split hero — text left, photo/brand right
+    let rightBlock: string;
+    if (hasPhoto) {
+      rightBlock = `                    <div class="rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
+                        <img src="photo.jpg" alt="${companyName}" class="w-full h-full object-cover">
+                    </div>`;
+    } else {
+      rightBlock = `                    <div class="bg-gradient-to-br ${trade.primaryColor} ${trade.secondaryColor} rounded-2xl p-10 text-white text-center">
+                        <div class="text-6xl mb-4">${trade.icon}</div>
+                        <div class="text-2xl font-bold mb-2">Quality ${trade.displayName}</div>
+                        <div class="text-white/70">Serving ${city}</div>
+                        <div class="mt-6 grid grid-cols-2 gap-4 text-sm">
+                            <div class="bg-white/10 rounded-lg p-3"><div class="font-bold">Licensed</div><div class="text-white/60 text-xs">& Insured</div></div>
+                            <div class="bg-white/10 rounded-lg p-3"><div class="font-bold">Free</div><div class="text-white/60 text-xs">Estimates</div></div>
+                            <div class="bg-white/10 rounded-lg p-3"><div class="font-bold">5-Star</div><div class="text-white/60 text-xs">Rated</div></div>
+                            <div class="bg-white/10 rounded-lg p-3"><div class="font-bold">Fast</div><div class="text-white/60 text-xs">Response</div></div>
+                        </div>
+                    </div>`;
+    }
+
+    return `    <section class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-3">${tagline}</h1>
+                    <p class="text-lg text-gray-700 font-semibold mb-1">${companyName}</p>
+                    <p class="text-base text-gray-500 mb-8">${subtitle}</p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold transition shadow-lg shadow-brand/25">Request a Free Estimate</a>
+                        <a href="tel:${phone}" class="inline-flex justify-center items-center text-gray-600 hover:text-brand px-6 py-3.5 rounded-lg font-semibold border border-gray-300 hover:border-brand transition text-sm">${phone}</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+${rightBlock}
+                </div>
+            </div>
+        </div>
+    </section>`;
+  }
+
+  // heroVariant === 3 (default): Full-bleed photo banner or brand tint
+  let openBlock: string;
+  let closeBlock: string;
+  if (hasPhoto) {
+    openBlock = `        <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('photo.jpg')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-white/30"></div>
+        <div class="relative max-w-5xl mx-auto px-4 sm:px-6 pt-32 pb-16 md:pt-44 md:pb-20">`;
+    closeBlock = `        </div>`;
+  } else {
+    openBlock = `        <div class="bg-brand-light border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-24">`;
+    closeBlock = `        </div>
+        </div>`;
+  }
+
+  return `    <section class="relative overflow-hidden"${hasPhoto ? ' style="min-height:420px"' : ''}>
+${openBlock}
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900 mb-2">${tagline}</h1>
+            <p class="text-lg text-gray-700 font-semibold">${companyName}</p>
+            <p class="text-brand font-medium text-sm">${trade.displayName} &middot; ${city}</p>
+            <p class="text-base text-gray-500 mt-3 mb-8 max-w-2xl">${subtitle}</p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <a href="#book" class="inline-flex justify-center bg-brand hover:bg-brand-dark text-white px-8 py-3.5 rounded-lg font-bold transition shadow-lg shadow-brand/25">Request a Free Estimate</a>
+                <a href="tel:${phone}" class="inline-flex justify-center items-center text-gray-700 hover:text-brand font-semibold transition">
+                    ${PHONE_SVG_5}
+                    ${phone}
+                </a>
+            </div>
+${closeBlock}
+    </section>`;
+}
+
+// ── Trust Bar ──────────────────────────────────────────────
+
+function renderTrustBar(data: SiteRenderData): string {
+  const { city, heroVariant } = data;
+
+  if (heroVariant === 2) {
+    return '';
+  }
+
+  return `    <section class="border-b border-gray-200 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-5">
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-gray-600">
+                <div class="flex items-center gap-2">
+                    ${SHIELD_SVG}
+                    <span class="font-medium">Licensed & Insured</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    ${CLOCK_SVG}
+                    <span class="font-medium">Prompt & Reliable</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    ${STAR_TRUST_SVG}
+                    <span class="font-medium">5-Star Rated</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    ${PIN_SVG}
+                    <span class="font-medium">Serving ${city}</span>
+                </div>
+            </div>
+        </div>
+    </section>`;
+}
+
+// ── Services ───────────────────────────────────────────────
+
+function renderServices(data: SiteRenderData): string {
+  const { trade, servicesVariant } = data;
+  const displayNameLower = trade.displayName.toLowerCase();
+
+  if (servicesVariant === 0) {
+    const items = trade.services.map(service =>
+      `                <div class="flex items-start gap-3 p-4 rounded-lg border border-gray-200 hover:border-brand/30 hover:bg-brand-light transition">
+                    <svg class="w-5 h-5 text-brand mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    <span class="text-gray-700 font-medium text-sm">${service}</span>
+                </div>`
+    ).join('\n');
+
+    return `    <section id="services" class="py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">What We Do</h2>
+                <p class="text-gray-500 mt-2">Professional ${displayNameLower} services tailored to your needs.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+${items}
+            </div>
+        </div>
+    </section>`;
+  }
+
+  if (servicesVariant === 1) {
+    const items = trade.services.map((service, i) =>
+      `                <div class="bg-white rounded-xl p-5 border border-gray-200 hover:shadow-md transition">
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-brand text-white text-sm font-bold mb-3">${i + 1}</span>
+                    <h3 class="font-semibold text-gray-900">${service}</h3>
+                </div>`
+    ).join('\n');
+
+    return `    <section id="services" class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Our Services</h2>
+            <p class="text-gray-500 mb-10">Everything you need from a trusted ${displayNameLower} professional.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+${items}
+            </div>
+        </div>
+    </section>`;
+  }
+
+  // servicesVariant === 2 (default)
+  const items = trade.services.map((service, i) => {
+    const isLast = i === trade.services.length - 1;
+    return `                <div class="flex items-center gap-3 py-3 ${isLast ? '' : 'border-b border-gray-100'}">
+                    <div class="w-2 h-2 rounded-full bg-brand flex-shrink-0"></div>
+                    <span class="text-gray-700">${service}</span>
+                </div>`;
+  }).join('\n');
+
+  return `    <section id="services" class="py-16 md:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Services We Offer</h2>
+                <div class="w-16 h-1 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4">
+${items}
+            </div>
+        </div>
+    </section>`;
+}
+
+// ── About ──────────────────────────────────────────────────
+
+function renderAbout(data: SiteRenderData): string {
+  const { companyName, aboutP1, aboutP2, aboutVariant } = data;
+
+  if (aboutVariant === 0) {
+    return `    <section class="py-16 md:py-20 bg-gray-50 border-y border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">About ${companyName}</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">${aboutP1}</p>
+                    <p class="text-gray-600 leading-relaxed">${aboutP2}</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-white rounded-lg p-5 text-center border border-gray-200">
+                        <div class="text-2xl font-bold text-brand">100%</div>
+                        <div class="text-xs text-gray-500 mt-1 font-medium">Satisfaction Guarantee</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-5 text-center border border-gray-200">
+                        <div class="text-2xl font-bold text-brand">Free</div>
+                        <div class="text-xs text-gray-500 mt-1 font-medium">Estimates</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-5 text-center border border-gray-200">
+                        <div class="text-2xl font-bold text-brand">Fast</div>
+                        <div class="text-xs text-gray-500 mt-1 font-medium">Response Times</div>
+                    </div>
+                    <div class="bg-white rounded-lg p-5 text-center border border-gray-200">
+                        <div class="text-2xl font-bold text-brand">Local</div>
+                        <div class="text-xs text-gray-500 mt-1 font-medium">Owned & Operated</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>`;
+  }
+
+  // aboutVariant === 1 (default)
+  return `    <section class="py-16 md:py-20 border-y border-gray-200">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Why ${companyName}?</h2>
+            <p class="text-gray-600 leading-relaxed text-lg mb-4">${aboutP1}</p>
+            <p class="text-gray-600 leading-relaxed text-lg mb-8">${aboutP2}</p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm">
+                <div class="flex items-center gap-2 text-gray-700">
+                    ${CHECK_SVG}
+                    100% Satisfaction Guarantee
+                </div>
+                <div class="flex items-center gap-2 text-gray-700">
+                    ${CHECK_SVG}
+                    Free Estimates
+                </div>
+                <div class="flex items-center gap-2 text-gray-700">
+                    ${CHECK_SVG}
+                    Fast Response
+                </div>
+                <div class="flex items-center gap-2 text-gray-700">
+                    ${CHECK_SVG}
+                    Locally Owned
+                </div>
+            </div>
+        </div>
+    </section>`;
+}
+
+// ── Testimonials ───────────────────────────────────────────
+
+function renderTestimonials(data: SiteRenderData): string {
+  const { testimonials, testimonialsVariant } = data;
+
+  if (testimonialsVariant === 0) {
+    const cards = testimonials.map(t =>
+      `                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex gap-0.5 mb-3">
+                        ${stars(t.stars, STAR_SVG_AMBER_4)}
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">"${t.text}"</p>
+                    <p class="text-sm font-semibold text-gray-900">${t.name}</p>
+                </div>`
+    ).join('\n');
+
+    return `    <section class="py-16 md:py-20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-12">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+${cards}
+            </div>
+        </div>
+    </section>`;
+  }
+
+  if (testimonialsVariant === 1) {
+    let featuredBlock = '';
+    if (testimonials.length > 0) {
+      const first = testimonials[0];
+      featuredBlock = `            <div class="bg-brand text-white rounded-xl p-8 mb-6">
+                <div class="flex gap-0.5 mb-3">
+                    ${starsInline(first.stars, STAR_SVG_WHITE_5)}
+                </div>
+                <p class="text-lg leading-relaxed mb-4">"${first.text}"</p>
+                <p class="font-semibold text-white/90">&mdash; ${first.name}</p>
+            </div>`;
+    }
+
+    const rest = testimonials.slice(1).map(t =>
+      `                <div class="bg-white rounded-lg border border-gray-200 p-6">
+                    <div class="flex gap-0.5 mb-3">
+                        ${stars(t.stars, STAR_SVG_AMBER_4)}
+                    </div>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-3">"${t.text}"</p>
+                    <p class="text-sm font-semibold text-gray-900">${t.name}</p>
+                </div>`
+    ).join('\n');
+
+    return `    <section class="py-16 md:py-20 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-12">Customer Reviews</h2>
+${featuredBlock}
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+${rest}
+            </div>
+        </div>
+    </section>`;
+  }
+
+  // testimonialsVariant === 2 (default)
+  const items = testimonials.map(t =>
+    `                <div class="border-l-4 border-brand pl-5 py-1">
+                    <div class="flex gap-0.5 mb-2">
+                        ${stars(t.stars, STAR_SVG_AMBER_4)}
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">"${t.text}"</p>
+                    <p class="text-sm font-semibold text-gray-900 mt-2">${t.name}</p>
+                </div>`
+  ).join('\n');
+
+  return `    <section class="py-16 md:py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-10">Reviews</h2>
+            <div class="space-y-6">
+${items}
+            </div>
+        </div>
+    </section>`;
+}
+
+// ── Form ───────────────────────────────────────────────────
+
+function renderForm(data: SiteRenderData): string {
+  const { companyName, phone, trade, formspreeId, formVariant } = data;
+
+  const serviceOptions = trade.services.map(service =>
+    `                        <option value="${service}">${service}</option>`
+  ).join('\n');
+
+  if (formVariant === 0) {
+    return `    <section id="book" class="py-16 md:py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Request an Estimate</h2>
+                <p class="text-gray-500 mt-2 text-sm">Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+            <form action="https://formspree.io/f/${formspreeId}" method="POST" class="bg-white rounded-lg border border-gray-200 p-6 sm:p-8 space-y-5">
+                <input type="hidden" name="business" value="${companyName}">
+                <input type="hidden" name="_subject" value="New Booking: ${companyName}">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none transition">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                        <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none transition">
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="date" class="block text-sm font-medium text-gray-700 mb-1">Preferred Date</label>
+                        <input type="date" id="date" name="date" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none transition">
+                    </div>
+                    <div>
+                        <label for="time" class="block text-sm font-medium text-gray-700 mb-1">Preferred Time</label>
+                        <select id="time" name="time" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none transition bg-white">
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (8am – 12pm)</option>
+                            <option value="afternoon">Afternoon (12pm – 5pm)</option>
+                            <option value="evening">Evening (5pm – 8pm)</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Needed</label>
+                    <select id="service" name="service" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none transition bg-white">
+                        <option value="">Select a service</option>
+${serviceOptions}
+                    </select>
+                </div>
+                <div>
+                    <label for="notes" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                    <textarea id="notes" name="notes" rows="3" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none transition" placeholder="Describe your project or issue..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-brand hover:bg-brand-dark text-white py-2.5 rounded-md font-semibold transition text-sm">Submit Request</button>
+            </form>
+        </div>
+    </section>`;
+  }
+
+  // formVariant === 1 (default)
+  return `    <section id="book" class="py-16 md:py-20 bg-gray-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold mb-4">Ready to Get Started?</h2>
+                    <p class="text-gray-400 mb-6">Request a free, no-obligation estimate. We'll get back to you within 24 hours.</p>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center gap-3">
+                            ${CHECK_SVG}
+                            <span class="text-gray-300">Free estimates — no strings attached</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            ${CHECK_SVG}
+                            <span class="text-gray-300">Response within 24 hours</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            ${CHECK_SVG}
+                            <span class="text-gray-300">Licensed, insured & guaranteed</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-gray-800">
+                        <p class="text-gray-400 text-sm mb-1">Prefer to call?</p>
+                        <a href="tel:${phone}" class="text-xl font-bold text-white hover:text-brand transition">${phone}</a>
+                    </div>
+                </div>
+                <form action="https://formspree.io/f/${formspreeId}" method="POST" class="bg-white text-gray-800 rounded-xl p-6 sm:p-8 space-y-4">
+                    <input type="hidden" name="business" value="${companyName}">
+                    <input type="hidden" name="_subject" value="New Booking: ${companyName}">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none">
+                    </div>
+                    <div>
+                        <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Needed</label>
+                        <select id="service" name="service" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none bg-white">
+                            <option value="">Select a service</option>
+${serviceOptions}
+                        </select>
+                    </div>
+                    <div>
+                        <label for="notes" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                        <textarea id="notes" name="notes" rows="3" class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:ring-2 focus:ring-brand/50 focus:border-brand outline-none" placeholder="Describe your project or issue..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-brand hover:bg-brand-dark text-white py-2.5 rounded-md font-semibold transition text-sm">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>`;
+}
+
+// ── Footer ─────────────────────────────────────────────────
+
+function renderFooter(data: SiteRenderData): string {
+  const { companyName, trade, city, phone, address, year, formVariant } = data;
+  const displayNameLower = trade.displayName.toLowerCase();
+  const footerBg = formVariant === 1 ? 'bg-gray-950' : 'bg-gray-900';
+
+  const addressBlock = address
+    ? `                        <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}" target="_blank" rel="noopener" class="flex items-start gap-2 text-gray-300 hover:text-white transition">
+                            <svg class="w-4 h-4 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            ${address}
+                        </a>`
+    : '';
+
+  return `    <footer class="${footerBg} text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center gap-2.5 mb-3">
+                        <div class="w-8 h-8 rounded-md bg-brand flex items-center justify-center text-white font-bold text-xs flex-shrink-0">${companyName[0]}</div>
+                        <span class="font-semibold">${companyName}</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed">Professional ${displayNameLower} services in ${city} and surrounding areas.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-sm uppercase tracking-wider text-gray-400 mb-3">Contact</h3>
+                    <div class="space-y-2 text-sm">
+                        <a href="tel:${phone}" class="flex items-center gap-2 text-gray-300 hover:text-white transition">
+                            ${PHONE_SVG}
+                            ${phone}
+                        </a>
+${addressBlock ? addressBlock + '\n' : ''}                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-sm uppercase tracking-wider text-gray-400 mb-3">Hours</h3>
+                    <div class="text-sm text-gray-300 space-y-1">
+                        <div class="flex justify-between"><span>Mon – Fri</span><span>8:00am – 6:00pm</span></div>
+                        <div class="flex justify-between"><span>Saturday</span><span>9:00am – 3:00pm</span></div>
+                        <div class="flex justify-between"><span>Sunday</span><span>Closed</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-xs text-gray-500">
+                &copy; ${year} ${companyName}. All rights reserved.
+            </div>
+        </div>
+    </footer>`;
+}
+
+// ── Main Renderer ──────────────────────────────────────────
+
+export function renderSiteHtml(data: SiteRenderData): string {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${data.companyName} | ${data.trade.displayName} in ${data.city}</title>
+    <meta name="description" content="${data.companyName} provides professional ${data.trade.displayName.toLowerCase()} services in ${data.city}. Call ${data.phone} for a free estimate.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    ${fontLink(data.fontVariant)}
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        ${fontFamily(data.fontVariant)}
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '${data.trade.hexPrimary}',
+                            dark: '${data.trade.hexDark}',
+                            light: '${data.trade.hexLight}',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+${renderNav(data)}
+
+${renderHero(data)}
+
+${renderTrustBar(data)}
+
+${renderServices(data)}
+
+${renderAbout(data)}
+
+${renderTestimonials(data)}
+
+${renderForm(data)}
+
+${renderFooter(data)}
+
+</body>
+</html>`;
+}

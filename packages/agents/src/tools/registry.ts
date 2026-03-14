@@ -12,6 +12,7 @@ import { runQualificationAgent } from '../agents/qualification-agent';
 import { runEnrichmentAgent } from '../agents/enrichment-agent';
 import { runStorageAgent } from '../agents/storage-agent';
 import { runReportAgent } from '../agents/report-agent';
+import { runWebsiteAgent } from '../agents/website-agent';
 import { getAllLeads, getLeadStats } from '../agents/storage-agent';
 import { log } from '../utils/logger';
 
@@ -115,6 +116,24 @@ export const TOOL_DEFINITIONS: Anthropic.Messages.Tool[] = [
     },
   },
   {
+    name: 'generate_websites',
+    description:
+      'Generate professional single-page websites for all leads that have no website. ' +
+      'Each site gets a unique layout, copy, and color scheme based on the business\'s trade category. ' +
+      'Sites are written to sites/{slug}/index.html for GitHub Pages deployment. ' +
+      'Call this after leads are stored to create demo sites for outreach.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        formspree_id: {
+          type: 'string',
+          description: 'Formspree form ID for the booking form. Falls back to FORMSPREE_FORM_ID env var.',
+        },
+      },
+      required: [],
+    },
+  },
+  {
     name: 'get_database_stats',
     description:
       'Quick look at what\'s currently stored in data/leads/. Returns total lead count, ' +
@@ -146,6 +165,8 @@ export async function executeTool(
       return await executeStore(context);
     case 'generate_report':
       return await executeReport(context);
+    case 'generate_websites':
+      return await executeWebsites(toolInput, context);
     case 'get_database_stats':
       return await executeStats(context);
     default:
@@ -290,6 +311,24 @@ async function executeReport(context: ToolContext): Promise<string> {
     leads_in_report: result.itemsProcessed,
     report_path: result.data.reportPath,
     json_path: result.data.jsonPath,
+  });
+}
+
+async function executeWebsites(
+  input: Record<string, unknown>,
+  context: ToolContext
+): Promise<string> {
+  const formspreeId = (input.formspree_id as string) || undefined;
+  const result = await runWebsiteAgent(context.leadsDir, { formspreeId });
+
+  return JSON.stringify({
+    success: result.success,
+    sites_generated: result.data.sitesGenerated,
+    leads_skipped: result.data.leadsSkipped,
+    sites_dir: result.data.sitesDir,
+    github_pages_url: result.data.githubPagesUrl,
+    duration_ms: result.durationMs,
+    errors: result.errors,
   });
 }
 
