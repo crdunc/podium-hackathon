@@ -1,0 +1,100 @@
+{
+  "city": "Detroit, MI",
+  "leads": [
+    {
+      "id": "claude_search_motor-city-electric-co-_1773517044584_2",
+      "company_name": "Motor City Electric Co.",
+      "trade_category": "electrical",
+      "description": "Established in 1952, Motor City Electric Co. is an employee-owned, full-service electrical contractor headquartered in Detroit and ranked among the top five electrical contractors in the Midwest. Serves automotive, healthcare, commercial, industrial, and utility markets across North America.",
+      "address": "9440 Grinnell St, Detroit, MI 48213",
+      "phone": "(313) 921-5300",
+      "email": null,
+      "website": "https://www.mceco.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:37:24.584Z",
+      "metadata": {
+        "search_query": "electrical in Detroit, MI",
+        "location": "Detroit, MI",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 88,
+      "qualification_reasons": [
+        "Has phone and website",
+        "Physical address in Detroit",
+        "Operational status",
+        "Professional company name with local branding",
+        "Established business appearance"
+      ],
+      "enriched_at": "2026-03-14T19:37:31.868Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:37:31.881Z",
+      "updated_at": "2026-03-14T19:37:31.881Z"
+    },
+    {
+      "id": "claude_search_detroit-voltage_1773517044584_0",
+      "company_name": "Detroit Voltage",
+      "trade_category": "electrical",
+      "description": "A 100% Black woman-owned electrical contracting company providing residential and commercial electrical services across Metro Detroit, including repairs, rewiring, panel upgrades, EV charger installations, and emergency services.",
+      "address": "400 Monroe St, Suite 261, Detroit, MI 48226",
+      "phone": "(800) 258-1352",
+      "email": null,
+      "website": "https://detroitvoltage.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:37:24.584Z",
+      "metadata": {
+        "search_query": "electrical in Detroit, MI",
+        "location": "Detroit, MI",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 85,
+      "qualification_reasons": [
+        "Has phone and website",
+        "Physical address in Detroit",
+        "Operational status",
+        "Professional company name suggests independent business"
+      ],
+      "enriched_at": "2026-03-14T19:37:31.868Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:37:31.882Z",
+      "updated_at": "2026-03-14T19:37:31.882Z"
+    },
+    {
+      "id": "claude_search_mcchesney-electric--inc-_1773517044584_1",
+      "company_name": "McChesney Electric, Inc.",
+      "trade_category": "electrical",
+      "description": "A family-owned electrical contractor serving the Detroit Tri-County area since 2003, with over 45 years of industry experience. Offers residential and commercial electrical services including service upgrades, lighting retrofits, generator installation, and 24/7 emergency service.",
+      "address": "22036 Woodward Ave, Ferndale, MI 48220",
+      "phone": "(248) 541-5900",
+      "email": null,
+      "website": "https://www.mcchesneyelectric.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:37:24.584Z",
+      "metadata": {
+        "search_query": "electrical in Detroit, MI",
+        "location": "Detroit, MI",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 82,
+      "qualification_reasons": [
+        "Has phone and website",
+        "Incorporated business suggests established operation",
+        "Physical address in metro Detroit area",
+        "Operational status"
+      ],
+      "enriched_at": "2026-03-14T19:37:31.868Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:37:31.882Z",
+      "updated_at": "2026-03-14T19:37:31.882Z"
+    }
+  ],
+  "updated_at": "2026-03-14T19:37:31.882Z"
+}

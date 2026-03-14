@@ -1,0 +1,105 @@
+{
+  "city": "Chicago, IL",
+  "leads": [
+    {
+      "id": "claude_search_a-to-z-electric-co-_1773516784614_0",
+      "company_name": "A to Z Electric Co.",
+      "trade_category": "electrical",
+      "description": "A family-owned electrical contractor serving Chicago and the Chicagoland area for over 50 years. Services include rewiring, electrical upgrades, outlet and light switch installation, and 24/7 emergency electrical services for residential and commercial clients.",
+      "address": "5015 W Lawrence Ave, Chicago, IL 60630",
+      "phone": "(773) 286-4500",
+      "email": null,
+      "website": "https://www.electricatoz.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:33:04.614Z",
+      "metadata": {
+        "search_query": "electrical in Chicago, IL",
+        "location": "Chicago, IL",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 85,
+      "qualification_reasons": [
+        "Has phone number for direct outreach",
+        "Has professional website",
+        "Complete address in target city",
+        "Operational status",
+        "Legitimate business name suggests established company"
+      ],
+      "enriched_at": "2026-03-14T19:33:13.712Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:33:13.724Z",
+      "updated_at": "2026-03-14T19:34:39.770Z",
+      "social_profiles": {}
+    },
+    {
+      "id": "claude_search_sts-electric_1773516784614_1",
+      "company_name": "STS Electric",
+      "trade_category": "electrical",
+      "description": "A full-service, A+ BBB-accredited electrical contractor serving Chicago for over 40 years. Specializes in residential, commercial, and industrial electrical services including emergency repairs, panel upgrades, EV charger installation, and lighting.",
+      "address": "939 W North Ave, Suite 746, Chicago, IL 60642",
+      "phone": "(773) 721-1111",
+      "email": null,
+      "website": "https://www.stselectric.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:33:04.614Z",
+      "metadata": {
+        "search_query": "electrical in Chicago, IL",
+        "location": "Chicago, IL",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 85,
+      "qualification_reasons": [
+        "Has phone number for direct outreach",
+        "Has professional website",
+        "Complete suite address in target city",
+        "Operational status",
+        "Concise professional business name"
+      ],
+      "enriched_at": "2026-03-14T19:33:13.712Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:33:13.724Z",
+      "updated_at": "2026-03-14T19:34:39.770Z",
+      "social_profiles": {}
+    },
+    {
+      "id": "claude_search_continental-electric-construction-co---c_1773516784614_2",
+      "company_name": "Continental Electric Construction Co. (CECCo)",
+      "trade_category": "electrical",
+      "description": "One of Chicago's leading electrical contractors, in business since 1912. Offers a full range of services including design, prefabrication, construction, diagnostics, maintenance, and repair, with over 25,000 completed projects across the Chicagoland area.",
+      "address": "Chicago, IL",
+      "phone": null,
+      "email": null,
+      "website": "https://www.cecco.com",
+      "has_website": true,
+      "contacts": [],
+      "google_place_id": null,
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T19:33:04.614Z",
+      "metadata": {
+        "search_query": "electrical in Chicago, IL",
+        "location": "Chicago, IL",
+        "source": "claude_web_search"
+      },
+      "qualification_score": 65,
+      "qualification_reasons": [
+        "Has website showing business investment",
+        "Operational status",
+        "Professional name suggests established company",
+        "Missing phone number hurts outreach capability",
+        "Vague address lacks street details"
+      ],
+      "enriched_at": "2026-03-14T19:33:13.712Z",
+      "status": "new",
+      "created_at": "2026-03-14T19:33:13.724Z",
+      "updated_at": "2026-03-14T19:34:39.770Z",
+      "social_profiles": {}
+    }
+  ],
+  "updated_at": "2026-03-14T19:34:39.770Z"
+}

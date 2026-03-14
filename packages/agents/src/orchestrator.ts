@@ -8,7 +8,6 @@
 // ============================================================
 
 import Anthropic from '@anthropic-ai/sdk';
-import { LEADS_DIR } from '@podium/shared';
 import {
   TOOL_DEFINITIONS,
   executeTool,
@@ -34,8 +33,6 @@ function withTimeout<T>(promise: Promise<T>, ms: number, label: string): Promise
 
 export interface OrchestratorOptions {
   task: string;
-  leadsDir?: string;
-  reportDir?: string;
   googleApiKey?: string;
   sources?: ScraperSource[];
   model?: string;
@@ -47,8 +44,10 @@ You have these tools available:
 - search_leads: Scrape the web for new business leads in specific trades and cities
 - qualify_leads: Score and filter leads by data quality (0-100)
 - enrich_leads: Visit business websites to extract emails, socials, owner names, services
-- store_leads: Save leads to the database (per-city JSON files with deduplication)
+- store_leads: Save leads to Supabase database
 - generate_report: Create a summary report of all stored leads
+- generate_websites: Generate professional single-page websites for leads (HTML sites deployed to GitHub Pages)
+- start_outreach: Send personalized email + SMS outreach to leads using RAC sales methodology (3-step sequence)
 - get_database_stats: Check what's currently in the database
 
 IMPORTANT RULES:
@@ -57,15 +56,16 @@ IMPORTANT RULES:
 - search_leads returns raw data → qualify_leads filters it → enrich_leads adds depth → store_leads persists it.
 - You must qualify before enriching (enrichment only works on qualified leads).
 - You must qualify or enrich before storing (storage needs scored leads).
-- After storing, generate a report so the user can see results.
+- ALWAYS call generate_websites after storing leads. This is the core product — every lead gets a website. Do not skip this step even if the user doesn't mention it.
+- After generating websites, you can start_outreach to contact the leads via email and SMS.
+- After the pipeline, generate a report so the user can see results.
+- Only start_outreach if the user asks for it or if it's part of a full pipeline run. Do NOT auto-outreach without being told to.
 - If a tool returns an error, reason about what went wrong and adapt.
 - Be efficient — don't re-scrape cities/trades you already have data for unless asked.`;
 
 export async function runOrchestrator(options: OrchestratorOptions) {
   const {
     task,
-    leadsDir = LEADS_DIR,
-    reportDir,
     googleApiKey = process.env.GOOGLE_PLACES_API_KEY,
     sources,
     model = 'claude-sonnet-4-6',
@@ -81,8 +81,6 @@ export async function runOrchestrator(options: OrchestratorOptions) {
   };
 
   const context: ToolContext = {
-    leadsDir,
-    reportDir,
     searchOptions: { googleApiKey, sources },
     state,
   };
@@ -90,7 +88,7 @@ export async function runOrchestrator(options: OrchestratorOptions) {
   logDivider('LEAD HUNTER — ReAct Orchestrator');
   log('pipeline', AGENT_NAME, `Task: ${task}`);
   log('pipeline', AGENT_NAME, `Model: ${model}`);
-  log('pipeline', AGENT_NAME, `Storage: ${leadsDir}`);
+  log('pipeline', AGENT_NAME, `Storage: Supabase`);
   log('pipeline', AGENT_NAME, `Google API: ${googleApiKey ? 'YES' : 'NO'}`);
 
   // Initialize conversation with the user's task

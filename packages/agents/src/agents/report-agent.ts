@@ -6,9 +6,8 @@
 // ============================================================
 
 import Anthropic from '@anthropic-ai/sdk';
-import { writeFileSync, mkdirSync } from 'fs';
 import type { AgentResult, PipelineRun, StoredLead } from '@podium/shared';
-import { getAllLeads, getLeadStats } from './storage-agent';
+import { getAllLeads, getLeadStats } from '../utils/supabase';
 import { log, logDivider, logTable } from '../utils/logger';
 
 const AGENT_NAME = 'ReportAgent';
@@ -169,7 +168,7 @@ async function analyzeWithAI(
 }
 
 /** Generate a console report */
-function printConsoleReport(run: PipelineRun, leads: StoredLead[], leadsDir?: string) {
+async function printConsoleReport(run: PipelineRun, leads: StoredLead[]) {
   logDivider('PIPELINE RUN REPORT');
 
   console.log(`  Run ID:    ${run.runId}`);
@@ -217,7 +216,7 @@ function printConsoleReport(run: PipelineRun, leads: StoredLead[], leadsDir?: st
     );
   }
 
-  const stats = getLeadStats(leadsDir);
+  const stats = await getLeadStats();
   logDivider('DATABASE STATS');
   logTable(
     ['Trade', 'Count', 'Avg Score', 'With Email', 'With Phone'],
@@ -242,13 +241,12 @@ function printConsoleReport(run: PipelineRun, leads: StoredLead[], leadsDir?: st
 }
 
 /** Generate AI-enhanced markdown report */
-function generateMarkdownReport(
+async function generateMarkdownReport(
   run: PipelineRun,
   leads: StoredLead[],
   aiAnalysis: Awaited<ReturnType<typeof analyzeWithAI>>,
-  leadsDir?: string
-): string {
-  const stats = getLeadStats(leadsDir);
+): Promise<string> {
+  const stats = await getLeadStats();
   const now = new Date().toISOString().slice(0, 10);
 
   let md = `# Lead Hunter Report\n\n`;
@@ -378,30 +376,27 @@ function generateJsonExport(run: PipelineRun, leads: StoredLead[]): string {
   }, null, 2);
 }
 
-/** Main report agent */
+/** Main report agent — console output only, data lives in Supabase */
 export async function runReportAgent(
   run: PipelineRun,
-  outputDir: string = './data/reports',
-  leadsDir?: string
 ): Promise<AgentResult<{ reportPath: string; jsonPath: string }>> {
   const startTime = Date.now();
   const errors: string[] = [];
 
-  log('agent', AGENT_NAME, 'Generating pipeline report');
+  log('agent', AGENT_NAME, 'Generating pipeline report from Supabase');
 
-  const leads = getAllLeads(leadsDir);
+  const leads = await getAllLeads();
   const useAI = !!process.env.ANTHROPIC_API_KEY;
 
   // AI analysis
   let aiAnalysis: Awaited<ReturnType<typeof analyzeWithAI>> = null;
   if (useAI && leads.length > 0) {
     log('info', AGENT_NAME, 'Running AI analysis on lead data...');
-    const stats = getLeadStats(leadsDir);
+    const stats = await getLeadStats();
     aiAnalysis = await analyzeWithAI(leads, stats);
     if (aiAnalysis) {
       log('success', AGENT_NAME, `AI analysis complete — Data Quality: ${aiAnalysis.data_quality_score}/100`);
 
-      // Print AI insights to console
       logDivider('AI INSIGHTS');
       console.log(`\n  ${aiAnalysis.executive_summary}\n`);
       console.log(`  Data Quality: ${aiAnalysis.data_quality_score}/100\n`);
@@ -421,36 +416,15 @@ export async function runReportAgent(
     log('info', AGENT_NAME, 'Using deterministic report (no ANTHROPIC_API_KEY)');
   }
 
-  // Console report (always deterministic for reliability)
-  printConsoleReport(run, leads, leadsDir);
-
-  // Write files
-  mkdirSync(outputDir, { recursive: true });
-  const timestamp = new Date().toISOString().slice(0, 19).replace(/[T:]/g, '-');
-
-  const reportPath = `${outputDir}/report-${timestamp}.md`;
-  const jsonPath = `${outputDir}/leads-${timestamp}.json`;
-
-  try {
-    writeFileSync(reportPath, generateMarkdownReport(run, leads, aiAnalysis, leadsDir));
-    log('success', AGENT_NAME, `Markdown report: ${reportPath}`);
-  } catch (err) {
-    errors.push(`Failed to write markdown report: ${(err as Error).message}`);
-  }
-
-  try {
-    writeFileSync(jsonPath, generateJsonExport(run, leads));
-    log('success', AGENT_NAME, `JSON export: ${jsonPath}`);
-  } catch (err) {
-    errors.push(`Failed to write JSON report: ${(err as Error).message}`);
-  }
+  // Console report
+  await printConsoleReport(run, leads);
 
   const durationMs = Date.now() - startTime;
 
   return {
     agentName: AGENT_NAME,
     success: errors.length === 0,
-    data: { reportPath, jsonPath },
+    data: { reportPath: 'supabase', jsonPath: 'supabase' },
     itemsProcessed: leads.length,
     errors,
     durationMs,

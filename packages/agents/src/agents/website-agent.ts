@@ -6,12 +6,12 @@
 // for unique layouts, copy, and styling.
 // ============================================================
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join } from 'path';
 import { createHash } from 'crypto';
-import type { AgentResult, Lead, CityLeadsFile } from '@podium/shared';
-import { LEADS_DIR } from '@podium/shared';
+import type { AgentResult, Lead } from '@podium/shared';
 import { log } from '../utils/logger';
+import { getAllLeads } from '../utils/supabase';
 import { TRADE_CONFIG, type TradeConfig } from './website-trade-config';
 import { renderSiteHtml } from './website-template';
 
@@ -77,24 +77,13 @@ function pickTestimonials(
   return result.slice(0, count);
 }
 
-/** Load all leads from per-city JSON files */
-function loadAllLeads(leadsDir: string): Array<{ city: string; lead: Lead }> {
-  const results: Array<{ city: string; lead: Lead }> = [];
-  if (!existsSync(leadsDir)) return results;
-
-  const files = readdirSync(leadsDir).filter(f => f.endsWith('.json'));
-  for (const file of files) {
-    try {
-      const raw = readFileSync(join(leadsDir, file), 'utf-8');
-      const data: CityLeadsFile = JSON.parse(raw);
-      for (const lead of data.leads) {
-        results.push({ city: data.city, lead });
-      }
-    } catch {
-      // skip malformed files
-    }
-  }
-  return results;
+/** Load all leads from Supabase */
+async function loadAllLeadsFromDb(): Promise<Array<{ city: string; lead: Lead }>> {
+  const leads = await getAllLeads();
+  return leads.map(lead => ({
+    city: (lead as any).city || lead.metadata?.location || 'Unknown',
+    lead,
+  }));
 }
 
 // ── Index Page Generator ────────────────────────────────────
@@ -160,6 +149,8 @@ function generateIndexHtml(
 export interface WebsiteAgentOptions {
   formspreeId?: string;
   sitesDir?: string;
+  /** If provided, only generate websites for these leads instead of all leads in the database */
+  leads?: Lead[];
 }
 
 export interface WebsiteAgentResult {
@@ -170,7 +161,6 @@ export interface WebsiteAgentResult {
 }
 
 export async function runWebsiteAgent(
-  leadsDir: string = LEADS_DIR,
   options: WebsiteAgentOptions = {}
 ): Promise<AgentResult<WebsiteAgentResult>> {
   const startTime = Date.now();
@@ -179,12 +169,21 @@ export async function runWebsiteAgent(
   const formspreeId = options.formspreeId || process.env.FORMSPREE_FORM_ID || 'YOUR_FORM_ID';
   const year = new Date().getFullYear();
 
-  log('agent', AGENT_NAME, `Generating websites from leads in ${leadsDir}`);
-
   mkdirSync(sitesDir, { recursive: true });
 
-  // Load leads
-  const allLeads = loadAllLeads(leadsDir);
+  // Use provided leads or load all from Supabase
+  let allLeads: Array<{ city: string; lead: Lead }>;
+  if (options.leads && options.leads.length > 0) {
+    log('agent', AGENT_NAME, `Generating websites for ${options.leads.length} specific leads`);
+    allLeads = options.leads.map(lead => ({
+      city: lead.metadata.location || 'Unknown',
+      lead,
+    }));
+  } else {
+    log('agent', AGENT_NAME, 'Loading all leads from Supabase');
+    allLeads = await loadAllLeadsFromDb();
+  }
+
   if (allLeads.length === 0) {
     log('warn', AGENT_NAME, 'No leads found');
     return {
@@ -197,7 +196,7 @@ export async function runWebsiteAgent(
     };
   }
 
-  log('info', AGENT_NAME, `Loaded ${allLeads.length} leads from ${new Set(allLeads.map(l => l.city)).size} cities`);
+  log('info', AGENT_NAME, `Processing ${allLeads.length} leads`);
 
   // Load photo manifest if exists
   const manifestPath = join(sitesDir, 'photo_manifest.json');

@@ -6,21 +6,20 @@
 
 import type Anthropic from '@anthropic-ai/sdk';
 import type { Lead, QualifiedLead, EnrichedLead, SearchConfig } from '@podium/shared';
-import { DEFAULT_CONFIG, LEADS_DIR } from '@podium/shared';
+import { DEFAULT_CONFIG } from '@podium/shared';
 import { runSearchAgent, type SearchAgentOptions } from '../agents/search-agent';
 import { runQualificationAgent } from '../agents/qualification-agent';
 import { runEnrichmentAgent } from '../agents/enrichment-agent';
 import { runStorageAgent } from '../agents/storage-agent';
 import { runReportAgent } from '../agents/report-agent';
 import { runWebsiteAgent } from '../agents/website-agent';
-import { getAllLeads, getLeadStats } from '../agents/storage-agent';
+import { runOutreachAgent } from '../agents/outreach/outreach-agent';
+import { getLeadStats } from '../utils/supabase';
 import { log } from '../utils/logger';
 
 // ── Types ───────────────────────────────────────────────────
 
 export interface ToolContext {
-  leadsDir: string;
-  reportDir?: string;
   searchOptions: SearchAgentOptions;
   /** In-memory state passed between tool calls within a single run */
   state: PipelineState;
@@ -94,8 +93,7 @@ export const TOOL_DEFINITIONS: Anthropic.Messages.Tool[] = [
   {
     name: 'store_leads',
     description:
-      'Save leads to per-city JSON files in data/leads/. Deduplicates by Google Place ID and by ' +
-      'company name + trade category. Merges new data into existing leads (keeps non-null values). ' +
+      'Save leads to Supabase database. Upserts by lead ID with deduplication. ' +
       'Call this after qualify_leads or enrich_leads to persist results.',
     input_schema: {
       type: 'object' as const,
@@ -134,9 +132,28 @@ export const TOOL_DEFINITIONS: Anthropic.Messages.Tool[] = [
     },
   },
   {
+    name: 'start_outreach',
+    description:
+      'Start the outreach sequence for stored leads. Sends initial email + SMS (step 1), ' +
+      'then schedules follow-ups at day 3 and day 7. Uses Claude to generate personalized ' +
+      'messages with RAC sales methodology. Sends via Resend (email) and Twilio (SMS). ' +
+      'Call this after leads are stored and websites are generated.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        lead_ids: {
+          type: 'array',
+          items: { type: 'string' },
+          description: 'Specific lead UUIDs to contact. If omitted, contacts all pending leads with email.',
+        },
+      },
+      required: [],
+    },
+  },
+  {
     name: 'get_database_stats',
     description:
-      'Quick look at what\'s currently stored in data/leads/. Returns total lead count, ' +
+      'Quick look at what\'s in the Supabase database. Returns total lead count, ' +
       'breakdown by trade and city, and how many have emails/phones. ' +
       'Useful for understanding what data you already have before deciding what to scrape.',
     input_schema: {
@@ -167,6 +184,8 @@ export async function executeTool(
       return await executeReport(context);
     case 'generate_websites':
       return await executeWebsites(toolInput, context);
+    case 'start_outreach':
+      return await executeOutreach(toolInput);
     case 'get_database_stats':
       return await executeStats(context);
     default:
@@ -283,7 +302,7 @@ async function executeStore(context: ToolContext): Promise<string> {
     return JSON.stringify({ error: 'No leads to store. Run search_leads and qualify_leads first.' });
   }
 
-  const result = await runStorageAgent(leadsToStore, context.leadsDir);
+  const result = await runStorageAgent(leadsToStore);
 
   return JSON.stringify({
     success: result.success,
@@ -304,7 +323,7 @@ async function executeReport(context: ToolContext): Promise<string> {
     agentResults: [],
   };
 
-  const result = await runReportAgent(run, context.reportDir, context.leadsDir);
+  const result = await runReportAgent(run);
 
   return JSON.stringify({
     success: result.success,
@@ -319,7 +338,18 @@ async function executeWebsites(
   context: ToolContext
 ): Promise<string> {
   const formspreeId = (input.formspree_id as string) || undefined;
-  const result = await runWebsiteAgent(context.leadsDir, { formspreeId });
+
+  // Pass only the leads from this pipeline run, not the entire database
+  const pipelineLeads = context.state.enrichedLeads.length > 0
+    ? context.state.enrichedLeads
+    : context.state.qualifiedLeads.length > 0
+      ? context.state.qualifiedLeads
+      : context.state.rawLeads;
+
+  const result = await runWebsiteAgent({
+    formspreeId,
+    leads: pipelineLeads.length > 0 ? pipelineLeads : undefined,
+  });
 
   return JSON.stringify({
     success: result.success,
@@ -332,8 +362,22 @@ async function executeWebsites(
   });
 }
 
-async function executeStats(context: ToolContext): Promise<string> {
-  const stats = getLeadStats(context.leadsDir);
+async function executeOutreach(input: Record<string, unknown>): Promise<string> {
+  const leadIds = (input.lead_ids as string[]) || undefined;
+  const result = await runOutreachAgent(leadIds);
+
+  return JSON.stringify({
+    success: result.success,
+    contacted: result.data.contacted,
+    follow_ups_processed: result.data.followUpsProcessed,
+    skipped: result.data.skipped,
+    duration_ms: result.durationMs,
+    errors: result.errors,
+  });
+}
+
+async function executeStats(_context: ToolContext): Promise<string> {
+  const stats = await getLeadStats();
 
   return JSON.stringify({
     total_leads: stats.total,

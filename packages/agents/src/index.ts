@@ -23,8 +23,7 @@ dotenv.config({ path: resolve(process.cwd(), '../../.env') });
 dotenv.config();
 import { Command } from 'commander';
 import { runOrchestrator } from './orchestrator';
-import { getLeadStats } from './agents/storage-agent';
-import { LEADS_DIR } from '@podium/shared';
+import { getLeadStats } from './utils/supabase';
 import { logDivider, logTable } from './utils/logger';
 import type { ScraperSource } from './scrapers';
 import chalk from 'chalk';
@@ -40,10 +39,9 @@ program
   .command('hunt', { isDefault: true })
   .description('Run the AI orchestrator with a task')
   .argument('[task...]', 'What you want the agent to do (in natural language)')
-  .option('--leads-dir <dir>', 'Storage directory for city JSON files', LEADS_DIR)
   .option('--google-api-key <key>', 'Google Places API key (overrides env var)')
   .option('--sources <sources>', 'Comma-separated scraper sources: google_places,yelp,yellowpages')
-  .option('--model <model>', 'Claude model to use', 'claude-sonnet-4-20250514')
+  .option('--model <model>', 'Claude model to use', 'claude-sonnet-4-6')
   .action(async (taskParts: string[], opts) => {
     const task = taskParts.join(' ') ||
       'Find new leads for all trade categories in the configured cities. ' +
@@ -57,6 +55,14 @@ program
       process.exit(1);
     }
 
+    if (!process.env.SUPABASE_URL || !(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY)) {
+      console.error(chalk.red(
+        '\nMissing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY. Set them in .env.\n' +
+        'Get them from your Supabase project settings.\n'
+      ));
+      process.exit(1);
+    }
+
     const sources = opts.sources
       ? opts.sources.split(',').map((s: string) => s.trim() as ScraperSource)
       : undefined;
@@ -64,7 +70,6 @@ program
     try {
       await runOrchestrator({
         task,
-        leadsDir: opts.leadsDir,
         googleApiKey: opts.googleApiKey,
         sources,
         model: opts.model,
@@ -77,11 +82,10 @@ program
 
 program
   .command('stats')
-  .description('Show database statistics (no AI needed)')
-  .option('--leads-dir <dir>', 'Directory containing city lead JSON files', LEADS_DIR)
-  .action(async (opts) => {
+  .description('Show database statistics from Supabase')
+  .action(async () => {
     try {
-      const stats = getLeadStats(opts.leadsDir);
+      const stats = await getLeadStats();
 
       if (stats.total === 0) {
         console.log(chalk.yellow('\nNo leads found. Run "hunt" first.\n'));
