@@ -6,6 +6,7 @@
   "main": "src/index.ts",
   "scripts": {
     "start": "node --import tsx/esm src/index.ts",
+    "serve": "node --import tsx/esm src/server.ts",
     "hunt": "node --import tsx/esm src/index.ts hunt",
     "report": "node --import tsx/esm src/index.ts report",
     "stats": "node --import tsx/esm src/index.ts stats"

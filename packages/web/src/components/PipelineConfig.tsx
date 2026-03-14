@@ -1,95 +1,38 @@
 'use client';
 
-import { useState, type KeyboardEvent } from 'react';
-
-const TRADES = [
-  'hvac',
-  'electrical',
-  'plumbing',
-  'lawn care',
-  'roofing',
-  'painting',
-  'carpet cleaning',
-  'appliance repair',
-  'tree service',
-  'fencing',
-  'concrete',
-  'handyman',
-  'pest control',
-  'garage door repair',
-] as const;
+import { useState } from 'react';
 
 interface PipelineConfigProps {
   onSwitchToAgents?: () => void;
 }
 
 export default function PipelineConfig({ onSwitchToAgents }: PipelineConfigProps) {
-  const [selectedTrades, setSelectedTrades] = useState<Set<string>>(new Set());
-  const [locations, setLocations] = useState<string[]>([]);
-  const [locationInput, setLocationInput] = useState('');
-  const [minScore, setMinScore] = useState(30);
+  const [task, setTask] = useState('');
+  const [minScore, setMinScore] = useState('30');
+  const [maxResults, setMaxResults] = useState('10');
   const [enrichment, setEnrichment] = useState(true);
-  const [websiteGen, setWebsiteGen] = useState(false);
+  const [websiteGen, setWebsiteGen] = useState(true);
   const [outreach, setOutreach] = useState(false);
 
   const [submitting, setSubmitting] = useState(false);
-  const [status, setStatus] = useState<'idle' | 'success' | 'error' | 'running'>('idle');
+  const [status, setStatus] = useState<'idle' | 'running' | 'error'>('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
-  // --- Trade selection ---
-  function toggleTrade(trade: string) {
-    setSelectedTrades((prev) => {
-      const next = new Set(prev);
-      if (next.has(trade)) next.delete(trade);
-      else next.add(trade);
-      return next;
-    });
-  }
-
-  function selectAllTrades() {
-    if (selectedTrades.size === TRADES.length) {
-      setSelectedTrades(new Set());
-    } else {
-      setSelectedTrades(new Set(TRADES));
-    }
-  }
-
-  // --- Location chips ---
-  function handleLocationKeyDown(e: KeyboardEvent<HTMLInputElement>) {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      const value = locationInput.trim();
-      if (value && !locations.includes(value)) {
-        setLocations((prev) => [...prev, value]);
-      }
-      setLocationInput('');
-    }
-  }
-
-  function removeLocation(loc: string) {
-    setLocations((prev) => prev.filter((l) => l !== loc));
-  }
-
-  // --- Submit ---
   async function handleSubmit() {
-    if (selectedTrades.size === 0) {
-      setErrorMsg('Select at least one trade.');
-      setStatus('error');
-      return;
-    }
-    if (locations.length === 0) {
-      setErrorMsg('Add at least one location.');
+    const trimmed = task.trim();
+    if (!trimmed) {
+      setErrorMsg('Describe what you want the pipeline to do.');
       setStatus('error');
       return;
     }
 
-    const trades = Array.from(selectedTrades).join(', ');
-    const locs = locations.join('; ');
-
-    let task = `Find ${trades} businesses in ${locs} with a minimum qualification score of ${minScore}.`;
-    if (enrichment) task += ' Enrich leads with contact details and website data.';
-    if (websiteGen) task += ' Generate website content for qualified leads.';
-    if (outreach) task += ' Send outreach emails to qualified leads.';
+    // Append config + toggle instructions to the task
+    let fullTask = trimmed;
+    if (maxResults) fullTask += ` Limit to ${maxResults} results per search.`;
+    if (minScore) fullTask += ` Minimum qualification score of ${minScore}.`;
+    if (enrichment) fullTask += ' Enrich leads with contact details and website data.';
+    if (websiteGen) fullTask += ' Generate websites for the leads.';
+    if (outreach) fullTask += ' Start outreach for the leads.';
 
     setSubmitting(true);
     setStatus('idle');
@@ -99,7 +42,7 @@ export default function PipelineConfig({ onSwitchToAgents }: PipelineConfigProps
       const res = await fetch('/api/pipeline', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ task }),
+        body: JSON.stringify({ task: fullTask }),
       });
 
       if (!res.ok) {
@@ -116,7 +59,6 @@ export default function PipelineConfig({ onSwitchToAgents }: PipelineConfigProps
     }
   }
 
-  // --- Toggle component ---
   function Toggle({
     label,
     enabled,
@@ -158,83 +100,50 @@ export default function PipelineConfig({ onSwitchToAgents }: PipelineConfigProps
   return (
     <div className="space-y-6">
       <div className="rounded-lg border border-gray-800 bg-gray-900 p-6 space-y-6">
-        {/* Trades */}
-        <div>
-          <div className="mb-2 flex items-center justify-between">
-            <label className="text-sm font-medium text-gray-200">Trades</label>
-            <button
-              type="button"
-              onClick={selectAllTrades}
-              className="text-xs text-blue-400 hover:text-blue-300"
-            >
-              {selectedTrades.size === TRADES.length ? 'Deselect All' : 'Select All'}
-            </button>
-          </div>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-            {TRADES.map((trade) => (
-              <label
-                key={trade}
-                className={`flex cursor-pointer items-center gap-2 rounded-md border px-3 py-2 text-sm transition-colors ${
-                  selectedTrades.has(trade)
-                    ? 'border-blue-500/50 bg-blue-500/10 text-blue-300'
-                    : 'border-gray-700 bg-gray-800/50 text-gray-400 hover:border-gray-600'
-                }`}
-              >
-                <input
-                  type="checkbox"
-                  checked={selectedTrades.has(trade)}
-                  onChange={() => toggleTrade(trade)}
-                  className="h-3.5 w-3.5 rounded border-gray-600 bg-gray-800 text-blue-500 focus:ring-blue-500 focus:ring-offset-0"
-                />
-                <span className="capitalize">{trade}</span>
-              </label>
-            ))}
-          </div>
-        </div>
-
-        {/* Locations */}
-        <div>
-          <label className="mb-2 block text-sm font-medium text-gray-200">Locations</label>
-          <div className="flex flex-wrap items-center gap-2 rounded-md border border-gray-700 bg-gray-800/50 px-3 py-2">
-            {locations.map((loc) => (
-              <span
-                key={loc}
-                className="inline-flex items-center gap-1 rounded-full bg-blue-500/15 px-2.5 py-0.5 text-xs font-medium text-blue-300"
-              >
-                {loc}
-                <button
-                  type="button"
-                  onClick={() => removeLocation(loc)}
-                  className="ml-0.5 text-blue-300/60 hover:text-blue-200"
-                >
-                  &times;
-                </button>
-              </span>
-            ))}
-            <input
-              type="text"
-              value={locationInput}
-              onChange={(e) => setLocationInput(e.target.value)}
-              onKeyDown={handleLocationKeyDown}
-              placeholder={locations.length === 0 ? 'Type a city, e.g. "Austin, TX" and press Enter' : 'Add another...'}
-              className="min-w-[180px] flex-1 bg-transparent text-sm text-gray-200 placeholder-gray-500 outline-none"
-            />
-          </div>
-        </div>
-
-        {/* Min Score */}
+        {/* Task prompt */}
         <div>
           <label className="mb-2 block text-sm font-medium text-gray-200">
-            Minimum Qualification Score
+            What should the pipeline do?
           </label>
-          <input
-            type="number"
-            min={0}
-            max={100}
-            value={minScore}
-            onChange={(e) => setMinScore(Number(e.target.value))}
-            className="w-24 rounded-md border border-gray-700 bg-gray-800/50 px-3 py-2 text-sm text-gray-200 outline-none focus:border-blue-500"
+          <textarea
+            value={task}
+            onChange={(e) => setTask(e.target.value)}
+            placeholder='e.g. "Find 5 plumbers and HVAC companies in Austin, TX and Denver, CO"'
+            rows={3}
+            className="w-full rounded-md border border-gray-700 bg-gray-800/50 px-4 py-3 text-sm text-gray-200 placeholder-gray-500 outline-none focus:border-blue-500 resize-none"
           />
+          <p className="mt-1.5 text-xs text-gray-500">
+            Describe trades, cities, limits, or any instructions. The AI orchestrator will figure out the rest.
+          </p>
+        </div>
+
+        {/* Configuration */}
+        <div className="grid grid-cols-2 gap-6">
+          <div>
+            <label className="mb-2 block text-sm font-medium text-gray-200">
+              Min Qualification Score
+            </label>
+            <input
+              type="text"
+              placeholder="e.g. 30"
+              value={minScore}
+              onChange={(e) => setMinScore(e.target.value.replace(/[^0-9]/g, ''))}
+              className="w-24 rounded-md border border-gray-700 bg-gray-800/50 px-3 py-2 text-sm text-gray-200 outline-none focus:border-blue-500"
+            />
+          </div>
+          <div>
+            <label className="mb-2 block text-sm font-medium text-gray-200">
+              Max Results Per Search
+            </label>
+            <input
+              type="text"
+              placeholder="e.g. 10"
+              value={maxResults}
+              onChange={(e) => setMaxResults(e.target.value.replace(/[^0-9]/g, ''))}
+              className="w-24 rounded-md border border-gray-700 bg-gray-800/50 px-3 py-2 text-sm text-gray-200 outline-none focus:border-blue-500"
+            />
+            <p className="mt-1 text-xs text-gray-500">Per trade/city combination</p>
+          </div>
         </div>
 
         {/* Toggles */}

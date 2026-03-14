@@ -141,15 +141,14 @@ export default function LeadFilters({ filters, onFilterChange }: LeadFiltersProp
             Min Score
           </label>
           <input
-            type="number"
+            type="text"
             className={inputClasses}
-            placeholder="0"
-            min={0}
-            max={100}
-            value={filters.minScore ?? ''}
-            onChange={(e) =>
-              handleChange('minScore', e.target.value ? Number(e.target.value) : undefined)
-            }
+            placeholder="e.g. 50"
+            value={filters.minScore === undefined ? '' : String(filters.minScore)}
+            onChange={(e) => {
+              const raw = e.target.value.replace(/[^0-9]/g, '');
+              onFilterChange({ ...filters, minScore: raw === '' ? undefined : Number(raw) });
+            }}
           />
         </div>
 

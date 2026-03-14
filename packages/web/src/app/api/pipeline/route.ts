@@ -14,8 +14,27 @@ export async function POST(request: Request) {
       );
     }
 
+    const pipelineUrl = process.env.PIPELINE_API_URL;
+
+    if (pipelineUrl) {
+      // Production: call Railway service
+      const res = await fetch(`${pipelineUrl}/run`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ task }),
+      });
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error || `Pipeline service returned ${res.status}`);
+      }
+
+      return NextResponse.json({ success: true, message: 'Pipeline started' });
+    }
+
+    // Local dev: spawn CLI process
     const child = spawn('pnpm', ['hunt', task], {
-      cwd: path.resolve(process.cwd(), '../..'), // monorepo root
+      cwd: path.resolve(process.cwd(), '../..'),
       detached: true,
       stdio: 'ignore',
       env: { ...process.env },
@@ -23,10 +42,7 @@ export async function POST(request: Request) {
 
     child.unref();
 
-    return NextResponse.json(
-      { success: true, message: 'Pipeline started' },
-      { status: 200 }
-    );
+    return NextResponse.json({ success: true, message: 'Pipeline started' });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
