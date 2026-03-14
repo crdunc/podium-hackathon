@@ -1,0 +1,291 @@
+{
+  "city": "Salt Lake City, UT",
+  "leads": [
+    {
+      "id": "google_places_ChIJMwLhK_uKUocRPiE2DxwQraU",
+      "company_name": "Stott Plumbing & Excavating",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "165 Gregson Ave S, Salt Lake City, UT 84115, USA",
+      "phone": "(801) 467-2432",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJMwLhK_uKUocRPiE2DxwQraU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:30.806209+00:00",
+      "metadata": {
+        "search_query": "plumbing in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJwUBFcWyLUocRv0EtPZ24JjY",
+      "company_name": "Joshua & Sons Electricians Company",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "727 E 3300 S #1710, Salt Lake City, UT 84106, USA",
+      "phone": "(385) 348-4906",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJwUBFcWyLUocRv0EtPZ24JjY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:32.239320+00:00",
+      "metadata": {
+        "search_query": "electrical in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJk0u_RFCHUocRCkLoN5xQoco",
+      "company_name": "Electrician Salt Lake City",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "208 Belle Glenn Cir Suite A, Sandy, UT 84070, USA",
+      "phone": "(801) 516-3723",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJk0u_RFCHUocRCkLoN5xQoco",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:32.239343+00:00",
+      "metadata": {
+        "search_query": "electrical in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJD1cudtn1UocRSbQ9yVntIlM",
+      "company_name": "Express Electrician",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "310 E 500 S, Salt Lake City, UT 84111, USA",
+      "phone": "(385) 213-4682",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJD1cudtn1UocRSbQ9yVntIlM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:32.239351+00:00",
+      "metadata": {
+        "search_query": "electrical in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJtzpU__b1UocRLxHjqhNUtx0",
+      "company_name": "SafePower Electrical",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "134 S 400 E, Salt Lake City, UT 84111, USA",
+      "phone": "(839) 303-9383",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJtzpU__b1UocRLxHjqhNUtx0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:32.239356+00:00",
+      "metadata": {
+        "search_query": "electrical in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJWXBp1x2LUocR_-3JwZl2AXM",
+      "company_name": "Handyman Direct LLC",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "2880 S 200 E #1, South Salt Lake, UT 84115, USA",
+      "phone": "(801) 759-3773",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJWXBp1x2LUocR_-3JwZl2AXM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:42.260557+00:00",
+      "metadata": {
+        "search_query": "handyman in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJyRPGP4phUocRFEdQY8iLpGI",
+      "company_name": "Jim's Handyman Home Improvement Service",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "3115 Lion Ln, Holladay, UT 84121, USA",
+      "phone": "(801) 347-6263",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJyRPGP4phUocRFEdQY8iLpGI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:42.260576+00:00",
+      "metadata": {
+        "search_query": "handyman in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ03b9R0OLUocR-d3SNA9VplI",
+      "company_name": "Affordable appliance and repair",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "4621 Cherry St, South Salt Lake, UT 84119, USA",
+      "phone": "(385) 378-4693",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ03b9R0OLUocR-d3SNA9VplI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:45.303953+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJtwXI-Xr1UocR12zMqSPcTGM",
+      "company_name": "Pinnacle Fix Pros",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "22 E Broadway, Salt Lake City, UT 84111, USA",
+      "phone": "(801) 438-4977",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJtwXI-Xr1UocR12zMqSPcTGM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:45.303992+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJeQFKhfiKUocRYA3JCTnLkEI",
+      "company_name": "Wise Appliances",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "3532 S W Temple St, Salt Lake City, UT 84115, USA",
+      "phone": "(801) 688-1012",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJeQFKhfiKUocRYA3JCTnLkEI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:45.304001+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJKbqPvh99TYcRqi4jYHeGjcc",
+      "company_name": "Wholesale Vinyl Fence",
+      "trade_category": "fencing",
+      "description": null,
+      "address": "6354 Davis Knolls Dr, Eagle Mountain, UT 84005, USA",
+      "phone": "(801) 842-1886",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJKbqPvh99TYcRqi4jYHeGjcc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:48.113295+00:00",
+      "metadata": {
+        "search_query": "fencing in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJd_hrHIuETYcRwKk5whzgqO4",
+      "company_name": "Utah Rock & Concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1058 N Geneva Rd, Orem, UT 84057, USA",
+      "phone": "(801) 709-5555",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJd_hrHIuETYcRwKk5whzgqO4",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:49.648839+00:00",
+      "metadata": {
+        "search_query": "concrete in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJBXWN6AL1UocR9dwBaXX0TlI",
+      "company_name": "Metro Ready Mix",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "343 W 400 S Suite B, Salt Lake City, UT 84101, USA",
+      "phone": "(801) 456-6833",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJBXWN6AL1UocR9dwBaXX0TlI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:49.648886+00:00",
+      "metadata": {
+        "search_query": "concrete in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJVVUeLfH0UocR59fATGzpPVo",
+      "company_name": "R & S Concrete, Llc",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "338 1000 W, Salt Lake City, UT 84104, USA",
+      "phone": "(385) 210-5639",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJVVUeLfH0UocR59fATGzpPVo",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:42:49.648899+00:00",
+      "metadata": {
+        "search_query": "concrete in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJZVod20j1UocRRJh2N1ezoIY",
+      "company_name": "Spark Wave Electric Services",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "11 N Rio Grande St, Salt Lake City, UT 84101, USA",
+      "phone": "(840) 225-3264",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJZVod20j1UocRRJh2N1ezoIY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:36.038779+00:00",
+      "metadata": {
+        "search_query": "electrical in Salt Lake City, UT",
+        "location": "Salt Lake City, UT"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:43:53.549846+00:00"
+}

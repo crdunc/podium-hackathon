@@ -1,0 +1,538 @@
+{
+  "city": "Ogden, UT",
+  "leads": [
+    {
+      "id": "google_places_ChIJuxmcuycPU4cRDnh0k6Ti9g0",
+      "company_name": "Vargas Brothers Plumbing Co",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "2380 Washington Blvd #38B, Ogden, UT 84401, USA",
+      "phone": "(385) 331-1933",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJuxmcuycPU4cRDnh0k6Ti9g0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:18.305763+00:00",
+      "metadata": {
+        "search_query": "plumbing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJp5l-nR8PU4cRNTayq9sd--c",
+      "company_name": "Riley's Finest Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "936 W Riverdale Rd #3500, Ogden, UT 84405, USA",
+      "phone": "(385) 331-1410",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJp5l-nR8PU4cRNTayq9sd--c",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:18.305779+00:00",
+      "metadata": {
+        "search_query": "plumbing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ8-FUH6YPU4cRQKWhYoRadXA",
+      "company_name": "One Plumbing Ogden",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "2417 Kiesel Ave, Ogden, UT 84401, USA",
+      "phone": "(385) 521-8091",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ8-FUH6YPU4cRQKWhYoRadXA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:18.305783+00:00",
+      "metadata": {
+        "search_query": "plumbing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJJ4xvVWoOU4cRxqT2yjfIHF8",
+      "company_name": "Thompson Brothers Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "2050 S Painter Ln, Ogden, UT 84401, USA",
+      "phone": "(385) 438-6200",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJJ4xvVWoOU4cRxqT2yjfIHF8",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:18.305787+00:00",
+      "metadata": {
+        "search_query": "plumbing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJxW6mprUPU4cR7DbhTQbhRFo",
+      "company_name": "Riverside Electric Inc",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "1718 W 3300 S, Ogden, UT 84401, USA",
+      "phone": "(801) 399-4200",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJxW6mprUPU4cR7DbhTQbhRFo",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:19.764055+00:00",
+      "metadata": {
+        "search_query": "electrical in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ4XWs2A8NU4cRjPM14_QtM_4",
+      "company_name": "Hadley Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "2147 Rulon White Blvd STE 104, Ogden, UT 84404, USA",
+      "phone": "(801) 782-7602",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ4XWs2A8NU4cRjPM14_QtM_4",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:19.764095+00:00",
+      "metadata": {
+        "search_query": "electrical in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJt5sFqM4PU4cREx2xQoRW8mI",
+      "company_name": "Aarons Lawn Care",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "1065 Wall Ave #128, Ogden, UT 84404, USA",
+      "phone": "(801) 668-9815",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJt5sFqM4PU4cREx2xQoRW8mI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:21.081283+00:00",
+      "metadata": {
+        "search_query": "lawn care in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJnef-SGxqB2MROaNmqBoDzos",
+      "company_name": "Beyond Lawns, LLC",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "751 5th St, Ogden, UT 84404, USA",
+      "phone": "(801) 900-7721",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJnef-SGxqB2MROaNmqBoDzos",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:21.081319+00:00",
+      "metadata": {
+        "search_query": "lawn care in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJJ35yTfQNU4cR_lZ5G87Lqso",
+      "company_name": "Guerrero Lawn Care Services",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "362 Sam Gates Rd, Ogden, UT 84404, USA",
+      "phone": "(385) 865-7951",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJJ35yTfQNU4cR_lZ5G87Lqso",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:21.081330+00:00",
+      "metadata": {
+        "search_query": "lawn care in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJU7uYho8NU4cR5RXdRXrHUdM",
+      "company_name": "New Village Landscaping and lawn care LLC",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "593 Canyon View Dr, Ogden, UT 84404, USA",
+      "phone": "(801) 675-7008",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJU7uYho8NU4cR5RXdRXrHUdM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:21.081339+00:00",
+      "metadata": {
+        "search_query": "lawn care in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJO8-BlJ4OU4cRzpd5qOK2oik",
+      "company_name": "Ogden Roofing Company",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "1921 Grant Ave, Ogden, UT 84401, USA",
+      "phone": "(844) 951-2560",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJO8-BlJ4OU4cRzpd5qOK2oik",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:23.775385+00:00",
+      "metadata": {
+        "search_query": "roofing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJq2f_jlUOU4cRp2Cw4ZAQFQo",
+      "company_name": "Redd Roofing Co.",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "2772 H Ave, Ogden, UT 84401, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJq2f_jlUOU4cRp2Cw4ZAQFQo",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:23.775415+00:00",
+      "metadata": {
+        "search_query": "roofing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJgTDXlZYPU4cR_C5huX_0Az0",
+      "company_name": "David & Sons Shingle Repair",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "5093 1500 W #3700, Ogden, UT 84405, USA",
+      "phone": "(385) 336-4859",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJgTDXlZYPU4cR_C5huX_0Az0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:23.775423+00:00",
+      "metadata": {
+        "search_query": "roofing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJm6tMho8RU4cRjC8GtVfu4S0",
+      "company_name": "Rob Gardner Roofing",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "3678 S 3525 W, Ogden, UT 84401, USA",
+      "phone": "(801) 589-1257",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJm6tMho8RU4cRjC8GtVfu4S0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:23.775429+00:00",
+      "metadata": {
+        "search_query": "roofing in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJFZhzYqgPU4cRMMw_BkJmp_k",
+      "company_name": "3 Brother's Painting",
+      "trade_category": "painting",
+      "description": null,
+      "address": "519 Chester St, Ogden, UT 84404, USA",
+      "phone": "(801) 648-0524",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJFZhzYqgPU4cRMMw_BkJmp_k",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:25.193939+00:00",
+      "metadata": {
+        "search_query": "painting in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJB2McwE0PU4cRZaoQ5GReUQQ",
+      "company_name": "Prime Pest and Lawn - Ogden",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "2909 Washington Blvd, Ogden, UT 84401, USA",
+      "phone": "(385) 360-4900",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJB2McwE0PU4cRZaoQ5GReUQQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:26.623850+00:00",
+      "metadata": {
+        "search_query": "pest control in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJJcXRrPkPU4cRfiQ6rKeqLHw",
+      "company_name": "BugBoss Pest Control",
+      "trade_category": "pest control",
+      "description": null,
+      "address": "2577 W 4400 S, Roy, UT 84067, USA",
+      "phone": "(801) 499-3126",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJJcXRrPkPU4cRfiQ6rKeqLHw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:26.623869+00:00",
+      "metadata": {
+        "search_query": "pest control in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJjwLeELsDU4cRFiX1GksB3ls",
+      "company_name": "Kelly’s Carpet Cleaning",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "990 N 1125 W, Layton, UT 84041, USA",
+      "phone": "(801) 889-2144",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJjwLeELsDU4cRFiX1GksB3ls",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:28.043967+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJJ6U9V7MNU4cRKtdXWeTkX1Q",
+      "company_name": "Zane's Handyman Services",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "774 N Quincy Ave, Ogden, UT 84404, USA",
+      "phone": "(385) 423-5352",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJJ6U9V7MNU4cRKtdXWeTkX1Q",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:29.401566+00:00",
+      "metadata": {
+        "search_query": "handyman in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJz1G5sdUOU4cRAiWVQ7kt2cE",
+      "company_name": "Ogden Handyman",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "2364 Quincy Ave unit 12, Ogden, UT 84401, USA",
+      "phone": "(385) 244-4558",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJz1G5sdUOU4cRAiWVQ7kt2cE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:29.401582+00:00",
+      "metadata": {
+        "search_query": "handyman in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJPRkT7QAFU4cRBt5eoPFE2mQ",
+      "company_name": "Blake's Repair Service LLC",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "5865 Cassie Dr, Ogden, UT 84405, USA",
+      "phone": "(801) 243-4962",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJPRkT7QAFU4cRBt5eoPFE2mQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:29.401587+00:00",
+      "metadata": {
+        "search_query": "handyman in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJyRPGP4phUocRFEdQY8iLpGI",
+      "company_name": "Jim's Handyman Home Improvement Service",
+      "trade_category": "handyman",
+      "description": null,
+      "address": "3115 Lion Ln, Holladay, UT 84121, USA",
+      "phone": "(801) 347-6263",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJyRPGP4phUocRFEdQY8iLpGI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:29.401591+00:00",
+      "metadata": {
+        "search_query": "handyman in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJqyidgpoJU4cRshKeG5vQKzI",
+      "company_name": "Victoria Garage Door Repair",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "2427 Jefferson Ave #602, Ogden, UT 84401, USA",
+      "phone": "(385) 217-9777",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJqyidgpoJU4cRshKeG5vQKzI",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:30.925655+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJudlMzBsPU4cRYDc5sjRKLN0",
+      "company_name": "ABC Garage Door Service and Repair",
+      "trade_category": "garage door repair",
+      "description": null,
+      "address": "1022 Henderson Dr, Ogden, UT 84404, USA",
+      "phone": "(801) 686-3393",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJudlMzBsPU4cRYDc5sjRKLN0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:30.925693+00:00",
+      "metadata": {
+        "search_query": "garage door repair in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ3eGYn0EFU4cRar0QDevjbnw",
+      "company_name": "Advance Appliance Services",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "863 N 450 W, Sunset, UT 84015, USA",
+      "phone": "(801) 825-1085",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ3eGYn0EFU4cRar0QDevjbnw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:32.458220+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJYdDxttcOU4cRnndwC7ujMPA",
+      "company_name": "The Appliance Whisperer's",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "2501 Washington Blvd, Ogden, UT 84401, USA",
+      "phone": "(801) 603-4225",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJYdDxttcOU4cRnndwC7ujMPA",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:32.458235+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ35B0hSMPU4cRY8QLFc75fsQ",
+      "company_name": "Appliance Connection",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "2929 Washington Blvd, Ogden, UT 84401, USA",
+      "phone": "(801) 940-0302",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ35B0hSMPU4cRY8QLFc75fsQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:32.458240+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJA9pWBQAPU4cR2Yid34dNJV0",
+      "company_name": "Silver sun concrete",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1263 W 3050 S, Ogden, UT 84401, USA",
+      "phone": null,
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJA9pWBQAPU4cR2Yid34dNJV0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:36.656570+00:00",
+      "metadata": {
+        "search_query": "concrete in Ogden, UT",
+        "location": "Ogden, UT"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:44:36.656898+00:00"
+}

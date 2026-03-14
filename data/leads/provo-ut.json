@@ -1,0 +1,367 @@
+{
+  "city": "Provo, UT",
+  "leads": [
+    {
+      "id": "google_places_ChIJmyVolmjm0UcRskhYbCKerD0",
+      "company_name": "Comfortable Clean Air",
+      "trade_category": "hvac",
+      "description": null,
+      "address": "760 E 500 S, Provo, UT 84606, USA",
+      "phone": "(385) 625-6078",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJmyVolmjm0UcRskhYbCKerD0",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:55.081860+00:00",
+      "metadata": {
+        "search_query": "hvac in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ3TXM7WGzwoAR1KhdKyRBXBY",
+      "company_name": "Provo Plumbing Drain Services",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "282 W River Bend Ln Suite 230, Provo, UT 84604, USA",
+      "phone": "(801) 877-5175",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ3TXM7WGzwoAR1KhdKyRBXBY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:56.516422+00:00",
+      "metadata": {
+        "search_query": "plumbing in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJE5r39gTfyYsROwJzERmauPo",
+      "company_name": "Plumbing Pros of Provo",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "281 W 1230 N, Provo, UT 84604, USA",
+      "phone": "(385) 412-8168",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJE5r39gTfyYsROwJzERmauPo",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:56.516663+00:00",
+      "metadata": {
+        "search_query": "plumbing in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJZ8k7v5iXTYcRprqsLLKJEvQ",
+      "company_name": "Esparza Brothers Plumbing Co",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "591 S 300 W #8160, Provo, UT 84601, USA",
+      "phone": "(385) 381-6756",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJZ8k7v5iXTYcRprqsLLKJEvQ",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:56.516678+00:00",
+      "metadata": {
+        "search_query": "plumbing in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJP7WLEU-bTYcR9EG4VVaHcsY",
+      "company_name": "Utah Best Plumbing",
+      "trade_category": "plumbing",
+      "description": null,
+      "address": "1111 S Orem Blvd, Orem, UT 84058, USA",
+      "phone": "(435) 334-4881",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJP7WLEU-bTYcR9EG4VVaHcsY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:56.516687+00:00",
+      "metadata": {
+        "search_query": "plumbing in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJi8PTQIGbTYcR--9mHsusago",
+      "company_name": "Legendary Electric",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "321 N 1220 W, Provo, UT 84601, USA",
+      "phone": "(385) 200-4996",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJi8PTQIGbTYcR--9mHsusago",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:57.917053+00:00",
+      "metadata": {
+        "search_query": "electrical in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJNWy69v-ZTYcR920NSyzZCsc",
+      "company_name": "ASA Appliance and Refrigeration",
+      "trade_category": "electrical",
+      "description": null,
+      "address": "480 W Center St, Provo, UT 84601, USA",
+      "phone": "(801) 377-3197",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJNWy69v-ZTYcR920NSyzZCsc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:57.917071+00:00",
+      "metadata": {
+        "search_query": "electrical in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ-xxi0uSRTYcRO6RQzf_05Ow",
+      "company_name": "Craypo Lawn & Yard",
+      "trade_category": "lawn care",
+      "description": null,
+      "address": "Provo, UT 84606, USA",
+      "phone": "(801) 427-3479",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ-xxi0uSRTYcRO6RQzf_05Ow",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:43:59.487505+00:00",
+      "metadata": {
+        "search_query": "lawn care in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ_5-VQrCbTYcRvThOBVkRRjY",
+      "company_name": "Eminence Roofing Services",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "2045 W Center St, Provo, UT 84601, USA",
+      "phone": "(435) 244-0218",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ_5-VQrCbTYcRvThOBVkRRjY",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:02.389109+00:00",
+      "metadata": {
+        "search_query": "roofing in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJATVe4QGRTYcRLGhuyMKxCHM",
+      "company_name": "Devin's Emergency Roofers LLC",
+      "trade_category": "roofing",
+      "description": null,
+      "address": "271 N University Ave #7000, Provo, UT 84601, USA",
+      "phone": "(385) 336-5021",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJATVe4QGRTYcRLGhuyMKxCHM",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:02.389123+00:00",
+      "metadata": {
+        "search_query": "roofing in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJB3pHrYq7TYcRSH5pERiNUkU",
+      "company_name": "Colorful Painting Utah LLC",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1056 S 1000 E, Provo, UT 84606, USA",
+      "phone": "(801) 376-6343",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJB3pHrYq7TYcRSH5pERiNUkU",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:03.743083+00:00",
+      "metadata": {
+        "search_query": "painting in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ62lcRsWbTYcRglAwDPVAjlw",
+      "company_name": "Great Quality work painting",
+      "trade_category": "painting",
+      "description": null,
+      "address": "1701 W 80 S, Provo, UT 84601, USA",
+      "phone": "(801) 995-3106",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ62lcRsWbTYcRglAwDPVAjlw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:03.743125+00:00",
+      "metadata": {
+        "search_query": "painting in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJnS9NtfiATYcRjoFQe2K7spw",
+      "company_name": "PurElements Carpet Cleaning Specialists",
+      "trade_category": "carpet cleaning",
+      "description": null,
+      "address": "2485 W 800 N St, Provo, UT 84601, USA",
+      "phone": "(801) 709-7377",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJnS9NtfiATYcRjoFQe2K7spw",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:06.656943+00:00",
+      "metadata": {
+        "search_query": "carpet cleaning in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJmxeeYMGZTYcR64UqzryJMp8",
+      "company_name": "Appliance Repair Provo Pros",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "345 W 100 N, Provo, UT 84601, USA",
+      "phone": "(801) 438-4144",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJmxeeYMGZTYcR64UqzryJMp8",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:11.263948+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJL4uKlQibTYcRb42JnEAE-4c",
+      "company_name": "Geek Appliance Repair",
+      "trade_category": "appliance repair",
+      "description": null,
+      "address": "357 N 700 E, Orem, UT 84097, USA",
+      "phone": "(801) 449-1127",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJL4uKlQibTYcRb42JnEAE-4c",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:11.263954+00:00",
+      "metadata": {
+        "search_query": "appliance repair in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJc1nPtYObTYcRuz__VrRNDMk",
+      "company_name": "Golden Tree Service",
+      "trade_category": "tree service",
+      "description": null,
+      "address": "1511 N 2800 W, Provo, UT 84601, USA",
+      "phone": "(801) 687-9977",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJc1nPtYObTYcRuz__VrRNDMk",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:12.759123+00:00",
+      "metadata": {
+        "search_query": "tree service in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJKbqPvh99TYcRqi4jYHeGjcc",
+      "company_name": "Wholesale Vinyl Fence",
+      "trade_category": "fencing",
+      "description": null,
+      "address": "6354 Davis Knolls Dr, Eagle Mountain, UT 84005, USA",
+      "phone": "(801) 842-1886",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJKbqPvh99TYcRqi4jYHeGjcc",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:14.163658+00:00",
+      "metadata": {
+        "search_query": "fencing in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJJxDtxsKbTYcR865n_4iMlLE",
+      "company_name": "EFB Concrete, LLC",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1198 Reese Dr, Provo, UT 84601, USA",
+      "phone": "(801) 885-5794",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJJxDtxsKbTYcR865n_4iMlLE",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:15.499546+00:00",
+      "metadata": {
+        "search_query": "concrete in Provo, UT",
+        "location": "Provo, UT"
+      }
+    },
+    {
+      "id": "google_places_ChIJ-YO1b3WaTYcRdDbjBdm_P9Y",
+      "company_name": "Standard Masonry Supply",
+      "trade_category": "concrete",
+      "description": null,
+      "address": "1540 Riverside Ave, Provo, UT 84604, USA",
+      "phone": "(801) 373-9685",
+      "email": null,
+      "website": null,
+      "has_website": false,
+      "contacts": [],
+      "google_place_id": "ChIJ-YO1b3WaTYcRdDbjBdm_P9Y",
+      "business_status": "OPERATIONAL",
+      "collected_at": "2026-03-14T17:44:15.499560+00:00",
+      "metadata": {
+        "search_query": "concrete in Provo, UT",
+        "location": "Provo, UT"
+      }
+    }
+  ],
+  "updated_at": "2026-03-14T17:44:15.499782+00:00"
+}
