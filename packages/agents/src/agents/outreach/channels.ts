@@ -4,7 +4,6 @@
 // ============================================================
 
 import { Resend } from 'resend';
-import twilio from 'twilio';
 import { log } from '../../utils/logger';
 
 const AGENT_NAME = 'Outreach';
@@ -43,30 +42,11 @@ export async function sendEmail(params: {
   log('success', AGENT_NAME, `Email sent to ${params.to} (id: ${data?.id})`);
 }
 
-// ── SMS via Twilio ──────────────────────────────────────────
-
-let twilioClient: ReturnType<typeof twilio> | null = null;
-
-function getTwilio() {
-  if (!twilioClient) {
-    if (!process.env.TWILIO_ACCOUNT_SID || !process.env.TWILIO_AUTH_TOKEN) {
-      throw new Error('TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN are required for SMS outreach');
-    }
-    twilioClient = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
-  }
-  return twilioClient;
-}
+// ── SMS via Twilio (disabled — pending verification) ────────
 
 export async function sendSms(params: {
   to: string;
   body: string;
 }): Promise<void> {
-  const fromNumber = process.env.TWILIO_PHONE_NUMBER ?? '';
-  const message = await getTwilio().messages.create({
-    from: fromNumber,
-    to: params.to,
-    body: params.body,
-  });
-
-  log('success', AGENT_NAME, `SMS sent to ${params.to} (sid: ${message.sid})`);
+  log('warn', AGENT_NAME, `SMS skipped (Twilio pending verification) — would send to ${params.to}`);
 }

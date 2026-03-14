@@ -6,7 +6,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import type { OutreachLead, OutreachMessage } from './types';
 
-const client = new Anthropic();
 
 const COMPANY_NAME = process.env.YOUR_COMPANY_NAME ?? 'WebPros';
 const YOUR_WEBSITE = process.env.YOUR_WEBSITE ?? 'https://webpros.com';
@@ -109,6 +108,7 @@ async function generateWithTools(
     { role: 'user', content: userPrompt },
   ];
 
+  const client = new Anthropic();
   let response = await client.messages.create({
     model: 'claude-sonnet-4-6',
     max_tokens: 800,

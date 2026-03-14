@@ -42,7 +42,8 @@ export interface SequenceStep {
 }
 
 export const SEQUENCE_STEPS: SequenceStep[] = [
-  { stepNumber: 1, delayDays: 0, channels: ['email', 'sms'], label: 'Initial outreach' },
+  { stepNumber: 1, delayDays: 0, channels: ['email'], label: 'Initial outreach' },
   { stepNumber: 2, delayDays: 3, channels: ['email'], label: 'Follow-up #1' },
-  { stepNumber: 3, delayDays: 7, channels: ['email', 'sms'], label: 'Final follow-up' },
+  { stepNumber: 3, delayDays: 7, channels: ['email'], label: 'Final follow-up' },
+  // TODO: Add 'sms' back to steps 1 and 3 once Twilio is verified
 ];
