@@ -11,7 +11,7 @@ import { join } from 'path';
 import { createHash } from 'crypto';
 import type { AgentResult, Lead } from '@podium/shared';
 import { log } from '../utils/logger';
-import { getAllLeads } from '../utils/supabase';
+import { getAllLeads, updateSiteUrl } from '../utils/supabase';
 import { TRADE_CONFIG, type TradeConfig } from './website-trade-config';
 import { renderSiteHtml } from './website-template';
 
@@ -282,6 +282,15 @@ export async function runWebsiteAgent(
       const siteDir = join(sitesDir, slug);
       mkdirSync(siteDir, { recursive: true });
       writeFileSync(join(siteDir, 'index.html'), html, 'utf-8');
+
+      // Save site_url to Supabase so outreach can reference it
+      const siteUrl = `${GITHUB_PAGES_BASE}/${slug}/`;
+      try {
+        await updateSiteUrl(lead.id, siteUrl);
+        log('success', AGENT_NAME, `Saved site_url for ${lead.company_name}: ${siteUrl}`);
+      } catch (err) {
+        log('warn', AGENT_NAME, `Could not update site_url in DB for ${lead.company_name}: ${(err as Error).message}`);
+      }
 
       generatedSites.push({ city, companyName: lead.company_name, slug, tradeCategory: lead.trade_category });
     } catch (err) {

@@ -123,6 +123,20 @@ export async function getLeadsByCity(city: string): Promise<StoredLead[]> {
   return (data || []) as StoredLead[];
 }
 
+/** Update site_url for a lead by source_id */
+export async function updateSiteUrl(sourceId: string, siteUrl: string): Promise<void> {
+  const supabase = getClient();
+  const { error } = await supabase
+    .from('leads')
+    .update({ site_url: siteUrl, updated_at: new Date().toISOString() })
+    .eq('source_id', sourceId);
+
+  if (error) {
+    log('error', AGENT_NAME, `Failed to update site_url for ${sourceId}: ${error.message}`);
+    throw error;
+  }
+}
+
 /** Get lead stats from Supabase */
 export async function getLeadStats(): Promise<{
   total: number;
