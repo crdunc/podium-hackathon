@@ -7,7 +7,7 @@
 // ============================================================
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
-import { join } from 'path';
+import { join, resolve } from 'path';
 import { createHash } from 'crypto';
 import { execSync } from 'child_process';
 import type { AgentResult, Lead } from '@podium/shared';
@@ -18,7 +18,16 @@ import { renderSiteHtml } from './website-template';
 
 const AGENT_NAME = 'WebsiteAgent';
 
-export const SITES_DIR = './sites';
+// Resolve to monorepo root sites/ directory (not packages/agents/sites/)
+function findMonorepoRoot(): string {
+  let dir = process.cwd();
+  for (let i = 0; i < 5; i++) {
+    if (existsSync(resolve(dir, 'pnpm-workspace.yaml'))) return dir;
+    dir = resolve(dir, '..');
+  }
+  return process.cwd();
+}
+export const SITES_DIR = resolve(findMonorepoRoot(), 'sites');
 export const GITHUB_PAGES_BASE = 'https://crdunc.github.io/podium-hackathon/sites';
 
 // ── Utilities ───────────────────────────────────────────────
