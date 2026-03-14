@@ -1,9 +1,51 @@
 {
-  "a-h-electricians": {
-    "company_name": "A & H Electricians",
-    "url": "https://crdunc.github.io/podium-hackathon/sites/a-h-electricians/",
-    "trade": "electrical",
-    "city": "New Jersey",
-    "phone": "(908) 272-7909"
+  "wehby-plumbing-inc": {
+    "company_name": "Wehby Plumbing Inc.",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/wehby-plumbing-inc/",
+    "trade": "plumbing",
+    "city": "Nashville, TN",
+    "phone": "(615) 255-7424"
+  },
+  "morton-plumbing-heating-cooling": {
+    "company_name": "Morton Plumbing, Heating & Cooling",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/morton-plumbing-heating-cooling/",
+    "trade": "plumbing",
+    "city": "Nashville, TN",
+    "phone": "(615) 255-2527"
+  },
+  "jack-ward-sons-plumbing-co": {
+    "company_name": "Jack Ward & Sons Plumbing Co.",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/jack-ward-sons-plumbing-co/",
+    "trade": "plumbing",
+    "city": "Nashville, TN",
+    "phone": "(615) 227-2811"
+  },
+  "plumbing-solutions": {
+    "company_name": "Plumbing Solutions",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/plumbing-solutions/",
+    "trade": "plumbing",
+    "city": "Nashville, TN",
+    "phone": "(615) 825-2889"
+  },
+  "benjamin-franklin-plumbing-of-nashville": {
+    "company_name": "Benjamin Franklin Plumbing of Nashville",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/benjamin-franklin-plumbing-of-nashville/",
+    "trade": "plumbing",
+    "city": "Nashville, TN",
+    "phone": "(615) 590-3240"
+  },
+  "hoffmann-brothers-nashville": {
+    "company_name": "Hoffmann Brothers Nashville",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/hoffmann-brothers-nashville/",
+    "trade": "plumbing",
+    "city": "Nashville, TN",
+    "phone": "(615) 515-3015"
+  },
+  "roto-rooter-plumbing-nashville": {
+    "company_name": "Roto-Rooter Plumbing – Nashville",
+    "url": "https://crdunc.github.io/podium-hackathon/sites/roto-rooter-plumbing-nashville/",
+    "trade": "plumbing",
+    "city": "Nashville, TN",
+    "phone": "(615) 361-6647"
   }
 }
