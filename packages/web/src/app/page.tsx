@@ -166,6 +166,7 @@ export default function Dashboard() {
             fetchRunDetail(run.runId);
           }}
           onDeselectRun={() => setSelectedRun(null)}
+          onRefresh={fetchRuns}
         />
       )}
     </div>
@@ -174,13 +175,72 @@ export default function Dashboard() {
 
 // ── Agent Monitor ───────────────────────────────────────────
 
+function HuntLauncher({ onLaunched }: { onLaunched: () => void }) {
+  const [task, setTask] = useState('');
+  const [launching, setLaunching] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!task.trim() || launching) return;
+
+    setLaunching(true);
+    setError('');
+    try {
+      const res = await fetch('/api/agents/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ task: task.trim() }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setError(data.error || 'Failed to start');
+        return;
+      }
+      setTask('');
+      onLaunched();
+    } catch {
+      setError('Failed to connect');
+    } finally {
+      setLaunching(false);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="mb-6">
+      <div className="flex gap-2">
+        <input
+          type="text"
+          value={task}
+          onChange={e => setTask(e.target.value)}
+          placeholder="Find 5 plumbers in Denver, CO"
+          className="flex-1 bg-gray-900 border border-gray-700 rounded-lg px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-blue-500 transition-colors"
+        />
+        <button
+          type="submit"
+          disabled={!task.trim() || launching}
+          className="px-5 py-2.5 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors shrink-0"
+        >
+          {launching ? 'Starting...' : 'Run Pipeline'}
+        </button>
+      </div>
+      {error && <p className="text-red-400 text-xs mt-2">{error}</p>}
+    </form>
+  );
+}
+
 function AgentMonitor({
-  runs, selectedRun, onSelectRun, onDeselectRun,
+  runs,
+  selectedRun,
+  onSelectRun,
+  onDeselectRun,
+  onRefresh,
 }: {
   runs: AgentRun[];
   selectedRun: AgentRun | null;
   onSelectRun: (run: AgentRun) => void;
   onDeselectRun: () => void;
+  onRefresh: () => void;
 }) {
   if (selectedRun) {
     return <RunDetail run={selectedRun} onBack={onDeselectRun} />;
@@ -188,12 +248,13 @@ function AgentMonitor({
 
   return (
     <div>
+      <HuntLauncher onLaunched={onRefresh} />
       <h2 className="text-xl font-semibold text-white mb-4">Agent Runs</h2>
       {runs.length === 0 ? (
         <div className="bg-gray-900 rounded-lg border border-gray-800 p-12 text-center">
           <div className="text-gray-500 text-lg mb-2">No agent runs yet</div>
           <p className="text-gray-600 text-sm">
-            Run <code className="bg-gray-800 px-1.5 py-0.5 rounded">pnpm hunt</code> or use the Pipeline tab
+            Enter a task above or use the Pipeline tab to start
           </p>
         </div>
       ) : (

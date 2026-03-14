@@ -60,7 +60,7 @@ program
       process.exit(1);
     }
 
-    if (!process.env.SUPABASE_URL || !(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY)) {
+    if (!process.env.SUPABASE_URL || !(process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.SUPABASE_ANON_KEY || process.env.SUPABASE_KEY)) {
       console.error(chalk.red(
         '\nMissing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY. Set them in .env.\n' +
         'Get them from your Supabase project settings.\n'
